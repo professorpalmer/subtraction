@@ -1,0 +1,432 @@
+[
+  {
+    "actual": {
+      "adapter_job_id": "job_cd32645816a8",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 253816,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 2883,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": 256699,
+      "turns": null
+    },
+    "candidate_sha256": "5eda71a54f17f0935e4beb07456ecc3a2b79a715f3c2f901d9410147a5e2624b",
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a03fe8b753b4",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "neutral_control",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -25,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [
+          "possible_compression"
+        ],
+        "likely_move_or_copy": false,
+        "raw_added": 1,
+        "raw_net": -6,
+        "raw_removed": 7,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -2,
+        "structural_symbols_removed": 2,
+        "symbols_added": [],
+        "symbols_removed": [
+          "first_name",
+          "last_name"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "nonpositive",
+      "failure_reasons": [],
+      "model": "gpt-5.6-luna",
+      "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-shared-strip",
+      "task_type": "refactor",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 253816,
+        "output_tokens": 2883
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f2341aac8130",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 272124,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 2485,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": 274609,
+      "turns": null
+    },
+    "candidate_sha256": "e86004d800313870fc841bdb6f761bc18aa97550bdd61061355f8865fc01e96e",
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-cc7a1705ea44",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "subtractive_rubric",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -30,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [
+          "possible_compression"
+        ],
+        "likely_move_or_copy": false,
+        "raw_added": 1,
+        "raw_net": -6,
+        "raw_removed": 7,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -2,
+        "structural_symbols_removed": 2,
+        "symbols_added": [],
+        "symbols_removed": [
+          "first_name",
+          "last_name"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "nonpositive",
+      "failure_reasons": [],
+      "model": "gpt-5.6-luna",
+      "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-shared-strip",
+      "task_type": "refactor",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 272124,
+        "output_tokens": 2485
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_91f46319c847",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 312993,
+      "model": "grok-4.5",
+      "output_tokens": 6327,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": 319320,
+      "turns": null
+    },
+    "candidate_sha256": "edde88ab519c169f96917d777ff0aba0010f8b3a7646d9c34e54ec011bb93ea8",
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-0a589f65f94c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "neutral_control",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -20,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [
+          "possible_compression"
+        ],
+        "likely_move_or_copy": true,
+        "raw_added": 3,
+        "raw_net": -3,
+        "raw_removed": 6,
+        "similar_removed_lines": 2,
+        "structural_symbols_added": 1,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 2,
+        "symbols_added": [
+          "normalize_name"
+        ],
+        "symbols_removed": [
+          "first_name",
+          "last_name"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "nonpositive",
+      "failure_reasons": [],
+      "model": "grok-4.5",
+      "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+      "reasoning_effort": "high",
+      "task_id": "refactor-shared-strip",
+      "task_type": "refactor",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 312993,
+        "output_tokens": 6327
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e68fe2e89adc",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 156266,
+      "model": "grok-4.5",
+      "output_tokens": 3632,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": 159898,
+      "turns": null
+    },
+    "candidate_sha256": "e86004d800313870fc841bdb6f761bc18aa97550bdd61061355f8865fc01e96e",
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a7a1f5578f8d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "subtractive_rubric",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -30,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [
+          "possible_compression"
+        ],
+        "likely_move_or_copy": false,
+        "raw_added": 1,
+        "raw_net": -6,
+        "raw_removed": 7,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -2,
+        "structural_symbols_removed": 2,
+        "symbols_added": [],
+        "symbols_removed": [
+          "first_name",
+          "last_name"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "nonpositive",
+      "failure_reasons": [],
+      "model": "grok-4.5",
+      "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+      "reasoning_effort": "high",
+      "task_id": "refactor-shared-strip",
+      "task_type": "refactor",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 156266,
+        "output_tokens": 3632
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_6182f76bc708",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 784760,
+      "model": "composer-2.5",
+      "output_tokens": 6022,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": 790782,
+      "turns": null
+    },
+    "candidate_sha256": "edde88ab519c169f96917d777ff0aba0010f8b3a7646d9c34e54ec011bb93ea8",
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-66d9bbf5b97e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "neutral_control",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -20,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [
+          "possible_compression"
+        ],
+        "likely_move_or_copy": true,
+        "raw_added": 3,
+        "raw_net": -3,
+        "raw_removed": 6,
+        "similar_removed_lines": 2,
+        "structural_symbols_added": 1,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 2,
+        "symbols_added": [
+          "normalize_name"
+        ],
+        "symbols_removed": [
+          "first_name",
+          "last_name"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "nonpositive",
+      "failure_reasons": [],
+      "model": "composer-2.5",
+      "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+      "reasoning_effort": "default",
+      "task_id": "refactor-shared-strip",
+      "task_type": "refactor",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 784760,
+        "output_tokens": 6022
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_1899e2604843",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 74722,
+      "model": "composer-2.5",
+      "output_tokens": 3062,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": 77784,
+      "turns": null
+    },
+    "candidate_sha256": "e86004d800313870fc841bdb6f761bc18aa97550bdd61061355f8865fc01e96e",
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d89964d38d22",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "subtractive_rubric",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -30,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [
+          "possible_compression"
+        ],
+        "likely_move_or_copy": false,
+        "raw_added": 1,
+        "raw_net": -6,
+        "raw_removed": 7,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -2,
+        "structural_symbols_removed": 2,
+        "symbols_added": [],
+        "symbols_removed": [
+          "first_name",
+          "last_name"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "nonpositive",
+      "failure_reasons": [],
+      "model": "composer-2.5",
+      "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+      "reasoning_effort": "default",
+      "task_id": "refactor-shared-strip",
+      "task_type": "refactor",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 74722,
+        "output_tokens": 3062
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  }
+]
