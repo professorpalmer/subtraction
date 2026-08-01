@@ -65,3 +65,6 @@ notes/                  # scratch, session notes
 - [x] Phase 0 multi-model memos
 - [x] Prior-work reconnaissance
 - [x] Phase 0 synthesis
+- [x] Phase 1 measurement protocol and offline benchmark
+- [x] Phase 1 three-model live pilot
+- [x] Phase 1 cleanup-task replication

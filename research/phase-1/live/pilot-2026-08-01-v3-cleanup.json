@@ -1,0 +1,193 @@
+{
+  "protocol": "phase-1-pilot-v3",
+  "generated_at": "2026-08-01",
+  "task_id": "cleanup-legacy-flag",
+  "task_type": "cleanup",
+  "task": "Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+  "initial_source_sha256": "4d5c621d80a101b98d790bef06a451c5a661b3dfcfb0aa50afe52ce20398381a",
+  "validity": {
+    "status": "corrected_directional_pilot",
+    "neutral_arm_prompt_confounded": false,
+    "trajectory_fields_reported": false,
+    "model_effort_equalized": false,
+    "repository_state_confounded": true,
+    "repository_state_note": "The earlier pilot files and artifacts remained in the repository; future replications should use isolated clean checkouts."
+  },
+  "measurement": {
+    "harness": "research.phase_1.harness.measure_candidate_patch",
+    "execution_source": "cursor_adapter",
+    "turns_reported": false,
+    "tool_calls_reported": false,
+    "tests": "fixture behavior oracle",
+    "warnings_are_not_failures": true
+  },
+  "records": [
+    {
+      "job_id": "job_d479566acd6e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "arm": "neutral_control",
+      "candidate_path": "research/phase-1/live/luna-neutral-v3-cleanup-legacy-flag.py",
+      "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+      "receipt": {
+        "tokens_in": 260173,
+        "tokens_out": 1649,
+        "total_tokens": 261822,
+        "elapsed_seconds": 33
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 0,
+        "raw_removed": 5,
+        "raw_net": -5,
+        "changed_tokens": -12,
+        "structural_symbols_added": 0,
+        "structural_symbols_removed": 1,
+        "failure_reasons": [],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_a015928b08c8",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "arm": "neutral_control",
+      "candidate_path": "research/phase-1/live/grok-neutral-v3-cleanup-legacy-flag.py",
+      "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+      "receipt": {
+        "tokens_in": 104480,
+        "tokens_out": 1151,
+        "total_tokens": 105631,
+        "elapsed_seconds": 17
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 0,
+        "raw_removed": 5,
+        "raw_net": -5,
+        "changed_tokens": -12,
+        "structural_symbols_added": 0,
+        "structural_symbols_removed": 1,
+        "failure_reasons": [],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_327d7c1c6bda",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "arm": "neutral_control",
+      "candidate_path": "research/phase-1/live/composer-neutral-v3-cleanup-legacy-flag.py",
+      "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+      "receipt": {
+        "tokens_in": 85234,
+        "tokens_out": 1128,
+        "total_tokens": 86362,
+        "elapsed_seconds": 10
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 0,
+        "raw_removed": 5,
+        "raw_net": -5,
+        "changed_tokens": -12,
+        "structural_symbols_added": 0,
+        "structural_symbols_removed": 1,
+        "failure_reasons": [],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_5e2fc94a21e9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "arm": "subtractive_rubric",
+      "candidate_path": "research/phase-1/live/luna-subtractive-v3-cleanup-legacy-flag.py",
+      "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+      "receipt": {
+        "tokens_in": 137262,
+        "tokens_out": 1327,
+        "total_tokens": 138589,
+        "elapsed_seconds": 24
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 0,
+        "raw_removed": 5,
+        "raw_net": -5,
+        "changed_tokens": -12,
+        "structural_symbols_added": 0,
+        "structural_symbols_removed": 1,
+        "failure_reasons": [],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_fa88bb287019",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "arm": "subtractive_rubric",
+      "candidate_path": "research/phase-1/live/grok-subtractive-v3-cleanup-legacy-flag.py",
+      "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+      "receipt": {
+        "tokens_in": 103576,
+        "tokens_out": 1041,
+        "total_tokens": 104617,
+        "elapsed_seconds": 14
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 0,
+        "raw_removed": 5,
+        "raw_net": -5,
+        "changed_tokens": -12,
+        "structural_symbols_added": 0,
+        "structural_symbols_removed": 1,
+        "failure_reasons": [],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_564b23739593",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "arm": "subtractive_rubric",
+      "candidate_path": "research/phase-1/live/composer-subtractive-v3-cleanup-legacy-flag.py",
+      "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+      "receipt": {
+        "tokens_in": 90257,
+        "tokens_out": 1315,
+        "total_tokens": 91572,
+        "elapsed_seconds": 12
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 0,
+        "raw_removed": 5,
+        "raw_net": -5,
+        "changed_tokens": -12,
+        "structural_symbols_added": 0,
+        "structural_symbols_removed": 1,
+        "failure_reasons": [],
+        "gaming_flags": []
+      }
+    }
+  ],
+  "aggregate": {
+    "neutral_total_tokens": 453815,
+    "subtractive_total_tokens": 344778,
+    "neutral_total_tokens_in": 449887,
+    "subtractive_total_tokens_in": 331095,
+    "neutral_total_tokens_out": 3928,
+    "subtractive_total_tokens_out": 3683,
+    "all_runs_total_tokens": 798593,
+    "neutral_models_with_negative_raw_net": 3,
+    "subtractive_models_with_negative_raw_net": 3
+  },
+  "interpretation": [
+    "All three models independently performed the required cleanup under the direction-neutral prompt.",
+    "The subtractive rubric did not change patch direction on this inherently subtractive task.",
+    "The intervention effect is task-dependent: it appears consequential for the refactor fixture but redundant for explicit cleanup work.",
+    "This task is directional evidence only because the repository state and model effort settings were not isolated or equalized."
+  ]
+}

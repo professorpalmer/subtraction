@@ -1,0 +1,2048 @@
+[
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "format_total"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nImplement the task and keep tests green.\nTask: Add format_total(cents), returning a currency string such as $1,250.",
+    "reasoning_effort": null,
+    "task_id": "feature-format-total",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "format_total"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Add format_total(cents), returning a currency string such as $1,250.",
+    "reasoning_effort": null,
+    "task_id": "feature-format-total",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "format_total"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Add format_total(cents), returning a currency string such as $1,250.",
+    "reasoning_effort": null,
+    "task_id": "feature-format-total",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "format_total"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Add format_total(cents), returning a currency string such as $1,250.",
+    "reasoning_effort": null,
+    "task_id": "feature-format-total",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "format_total"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Add format_total(cents), returning a currency string such as $1,250.",
+    "reasoning_effort": null,
+    "task_id": "feature-format-total",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "format_total"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Add format_total(cents), returning a currency string such as $1,250.",
+    "reasoning_effort": null,
+    "task_id": "feature-format-total",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "clamp_score"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nImplement the task and keep tests green.\nTask: Add clamp_score(value) that limits a score to the inclusive range 0..100.",
+    "reasoning_effort": null,
+    "task_id": "feature-clamp-score",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "clamp_score"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Add clamp_score(value) that limits a score to the inclusive range 0..100.",
+    "reasoning_effort": null,
+    "task_id": "feature-clamp-score",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "clamp_score"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Add clamp_score(value) that limits a score to the inclusive range 0..100.",
+    "reasoning_effort": null,
+    "task_id": "feature-clamp-score",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "clamp_score"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Add clamp_score(value) that limits a score to the inclusive range 0..100.",
+    "reasoning_effort": null,
+    "task_id": "feature-clamp-score",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "clamp_score"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Add clamp_score(value) that limits a score to the inclusive range 0..100.",
+    "reasoning_effort": null,
+    "task_id": "feature-clamp-score",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 1,
+      "changed_tokens": 16,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 3,
+      "raw_net": 3,
+      "raw_removed": 0,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": 1,
+      "structural_symbols_removed": 0,
+      "symbols_added": [
+        "clamp_score"
+      ],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "additive",
+    "expected_sign": "positive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Feature task: additions are allowed when required.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Add clamp_score(value) that limits a score to the inclusive range 0..100.",
+    "reasoning_effort": null,
+    "task_id": "feature-clamp-score",
+    "task_type": "feature",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -20,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [
+        "possible_compression"
+      ],
+      "likely_move_or_copy": true,
+      "raw_added": 3,
+      "raw_net": -3,
+      "raw_removed": 6,
+      "similar_removed_lines": 3,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 2,
+      "symbols_added": [
+        "clean_name"
+      ],
+      "symbols_removed": [
+        "first_name",
+        "last_name"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+    "reasoning_effort": null,
+    "task_id": "refactor-shared-strip",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -20,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [
+        "possible_compression"
+      ],
+      "likely_move_or_copy": true,
+      "raw_added": 3,
+      "raw_net": -3,
+      "raw_removed": 6,
+      "similar_removed_lines": 3,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 2,
+      "symbols_added": [
+        "clean_name"
+      ],
+      "symbols_removed": [
+        "first_name",
+        "last_name"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+    "reasoning_effort": null,
+    "task_id": "refactor-shared-strip",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -20,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [
+        "possible_compression"
+      ],
+      "likely_move_or_copy": true,
+      "raw_added": 3,
+      "raw_net": -3,
+      "raw_removed": 6,
+      "similar_removed_lines": 3,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 2,
+      "symbols_added": [
+        "clean_name"
+      ],
+      "symbols_removed": [
+        "first_name",
+        "last_name"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+    "reasoning_effort": null,
+    "task_id": "refactor-shared-strip",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -20,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [
+        "possible_compression"
+      ],
+      "likely_move_or_copy": true,
+      "raw_added": 3,
+      "raw_net": -3,
+      "raw_removed": 6,
+      "similar_removed_lines": 3,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 2,
+      "symbols_added": [
+        "clean_name"
+      ],
+      "symbols_removed": [
+        "first_name",
+        "last_name"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+    "reasoning_effort": null,
+    "task_id": "refactor-shared-strip",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -20,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [
+        "possible_compression"
+      ],
+      "likely_move_or_copy": true,
+      "raw_added": 3,
+      "raw_net": -3,
+      "raw_removed": 6,
+      "similar_removed_lines": 3,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 2,
+      "symbols_added": [
+        "clean_name"
+      ],
+      "symbols_removed": [
+        "first_name",
+        "last_name"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+    "reasoning_effort": null,
+    "task_id": "refactor-shared-strip",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -20,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [
+        "possible_compression"
+      ],
+      "likely_move_or_copy": true,
+      "raw_added": 3,
+      "raw_net": -3,
+      "raw_removed": 6,
+      "similar_removed_lines": 3,
+      "structural_symbols_added": 1,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 2,
+      "symbols_added": [
+        "clean_name"
+      ],
+      "symbols_removed": [
+        "first_name",
+        "last_name"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Preserve display_name behavior while removing duplicated name normalization.",
+    "reasoning_effort": null,
+    "task_id": "refactor-shared-strip",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -3,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 1,
+      "raw_net": -1,
+      "raw_removed": 2,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Preserve greeting behavior while removing the unnecessary temporary variable.",
+    "reasoning_effort": null,
+    "task_id": "refactor-inline-default",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -3,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 1,
+      "raw_net": -1,
+      "raw_removed": 2,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: refactor. Follow the stated task without a prescribed diff direction.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Preserve greeting behavior while removing the unnecessary temporary variable.",
+    "reasoning_effort": null,
+    "task_id": "refactor-inline-default",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -3,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 1,
+      "raw_net": -1,
+      "raw_removed": 2,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Preserve greeting behavior while removing the unnecessary temporary variable.",
+    "reasoning_effort": null,
+    "task_id": "refactor-inline-default",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -3,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 1,
+      "raw_net": -1,
+      "raw_removed": 2,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Preserve greeting behavior while removing the unnecessary temporary variable.",
+    "reasoning_effort": null,
+    "task_id": "refactor-inline-default",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -3,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 1,
+      "raw_net": -1,
+      "raw_removed": 2,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Preserve greeting behavior while removing the unnecessary temporary variable.",
+    "reasoning_effort": null,
+    "task_id": "refactor-inline-default",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -3,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 1,
+      "raw_net": -1,
+      "raw_removed": 2,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "nonpositive",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Preserve greeting behavior while removing the unnecessary temporary variable.",
+    "reasoning_effort": null,
+    "task_id": "refactor-inline-default",
+    "task_type": "refactor",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -12,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -5,
+      "raw_removed": 5,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 1,
+      "symbols_added": [],
+      "symbols_removed": [
+        "obsolete_debug_message"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-legacy-flag",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -12,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -5,
+      "raw_removed": 5,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 1,
+      "symbols_added": [],
+      "symbols_removed": [
+        "obsolete_debug_message"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-legacy-flag",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -12,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -5,
+      "raw_removed": 5,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 1,
+      "symbols_added": [],
+      "symbols_removed": [
+        "obsolete_debug_message"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-legacy-flag",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -12,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -5,
+      "raw_removed": 5,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 1,
+      "symbols_added": [],
+      "symbols_removed": [
+        "obsolete_debug_message"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-legacy-flag",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -12,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -5,
+      "raw_removed": 5,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 1,
+      "symbols_added": [],
+      "symbols_removed": [
+        "obsolete_debug_message"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-legacy-flag",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -12,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -5,
+      "raw_removed": 5,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": -1,
+      "structural_symbols_removed": 1,
+      "symbols_added": [],
+      "symbols_removed": [
+        "obsolete_debug_message"
+      ]
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-legacy-flag",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -7,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -2,
+      "raw_removed": 2,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Remove the unreachable branch while preserving parse_enabled behavior.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-dead-branch",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -7,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -2,
+      "raw_removed": 2,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Remove the unreachable branch while preserving parse_enabled behavior.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-dead-branch",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -7,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -2,
+      "raw_removed": 2,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Remove the unreachable branch while preserving parse_enabled behavior.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-dead-branch",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -7,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -2,
+      "raw_removed": 2,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Remove the unreachable branch while preserving parse_enabled behavior.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-dead-branch",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -7,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -2,
+      "raw_removed": 2,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Remove the unreachable branch while preserving parse_enabled behavior.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-dead-branch",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": -7,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": false,
+      "raw_added": 0,
+      "raw_net": -2,
+      "raw_removed": 2,
+      "similar_removed_lines": 0,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "subtractive",
+    "expected_sign": "negative",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Remove the unreachable branch while preserving parse_enabled behavior.",
+    "reasoning_effort": null,
+    "task_id": "cleanup-dead-branch",
+    "task_type": "cleanup",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 0,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 2,
+      "raw_net": 0,
+      "raw_removed": 2,
+      "similar_removed_lines": 2,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: measurement_control. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Rename the local parameter for clarity without changing behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-rename",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 0,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 2,
+      "raw_net": 0,
+      "raw_removed": 2,
+      "similar_removed_lines": 2,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: measurement_control. Follow the stated task without a prescribed diff direction.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Rename the local parameter for clarity without changing behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-rename",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 0,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 2,
+      "raw_net": 0,
+      "raw_removed": 2,
+      "similar_removed_lines": 2,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Rename the local parameter for clarity without changing behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-rename",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 0,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 2,
+      "raw_net": 0,
+      "raw_removed": 2,
+      "similar_removed_lines": 2,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Rename the local parameter for clarity without changing behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-rename",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 0,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 2,
+      "raw_net": 0,
+      "raw_removed": 2,
+      "similar_removed_lines": 2,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Rename the local parameter for clarity without changing behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-rename",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 0,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 2,
+      "raw_net": 0,
+      "raw_removed": 2,
+      "similar_removed_lines": 2,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Rename the local parameter for clarity without changing behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-rename",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "neutral_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 1,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 4,
+      "raw_net": 3,
+      "raw_removed": 1,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: measurement_control. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Reformat the function without changing its behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-formatting",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "concise_control",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 1,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 4,
+      "raw_net": 3,
+      "raw_removed": 1,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Task type: measurement_control. Follow the stated task without a prescribed diff direction.\nMake the smallest clear change that completes the task; keep tests green.\nTask: Reformat the function without changing its behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-formatting",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "subtractive_rubric",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 1,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 4,
+      "raw_net": 3,
+      "raw_removed": 1,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Reformat the function without changing its behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-formatting",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "delete_first_gate",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 1,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 4,
+      "raw_net": 3,
+      "raw_removed": 1,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, first inventory callers and make a safe deletion before adding code; no safe deletion is an acceptable result. Feature work is exempt.\nTask: Reformat the function without changing its behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-formatting",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "semantic_net_loc_budget",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 1,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 4,
+      "raw_net": 3,
+      "raw_removed": 1,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nMatch the task type. Prefer structural symbol net <= 0 for refactors and cleanup, but never delete tests, API behavior, or comments merely to hit a number; explain exceptions and run tests.\nTask: Reformat the function without changing its behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-formatting",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  },
+  {
+    "arm": "post_hoc_cleanup_comparator",
+    "diff": {
+      "boilerplate_added": 0,
+      "changed_tokens": 1,
+      "dependencies_added": [],
+      "dependencies_removed": [],
+      "gaming_flags": [],
+      "likely_move_or_copy": true,
+      "raw_added": 4,
+      "raw_net": 3,
+      "raw_removed": 1,
+      "similar_removed_lines": 1,
+      "structural_symbols_added": 0,
+      "structural_symbols_net": 0,
+      "structural_symbols_removed": 0,
+      "symbols_added": [],
+      "symbols_removed": []
+    },
+    "dry_run": true,
+    "execution_source": "offline_fixture",
+    "expected_class": "raw_churn",
+    "expected_sign": "semantic_zero",
+    "failure_reasons": [],
+    "model": null,
+    "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nImplement the task neutrally, then perform one separate cleanup pass that preserves required behavior and tests.\nTask: Reformat the function without changing its behavior.",
+    "reasoning_effort": null,
+    "task_id": "control-formatting",
+    "task_type": "measurement_control",
+    "tests": {
+      "failure_reason": null,
+      "passed": true,
+      "tests_run": 1
+    },
+    "token_usage": {
+      "input_tokens": null,
+      "output_tokens": null
+    },
+    "tool_calls": 0,
+    "turns": 1
+  }
+]

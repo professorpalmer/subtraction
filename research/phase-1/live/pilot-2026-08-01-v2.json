@@ -1,0 +1,208 @@
+{
+  "protocol": "phase-1-pilot-v2",
+  "generated_at": "2026-08-01",
+  "task_id": "refactor-shared-strip",
+  "task_type": "refactor",
+  "task": "Preserve display_name behavior while removing duplicated name normalization.",
+  "initial_source_sha256": "50e347391158a7164579471658db25451a3ad4735d556b054de3a2fc5096c1c0",
+  "validity": {
+    "status": "corrected_directional_pilot",
+    "neutral_arm_prompt_confounded": false,
+    "trajectory_fields_reported": false,
+    "model_effort_equalized": false,
+    "repository_state_confounded": true,
+    "repository_state_note": "The v1 candidate files and artifact remained in the repository during v2; future replications should use isolated clean checkouts."
+  },
+  "measurement": {
+    "harness": "research.phase_1.harness.measure_candidate_patch",
+    "execution_source": "cursor_adapter",
+    "turns_reported": false,
+    "tool_calls_reported": false,
+    "tests": "fixture behavior oracle",
+    "warnings_are_not_failures": true
+  },
+  "records": [
+    {
+      "job_id": "job_6a400849d945",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "arm": "neutral_control",
+      "candidate_path": "research/phase-1/live/luna-neutral-v2-refactor-shared-strip.py",
+      "candidate_sha256": "6c36c64aa84654c1dc0f04235462fa0a50adbb7d326659371a413de248fa9831",
+      "receipt": {
+        "tokens_in": 176783,
+        "tokens_out": 1488,
+        "total_tokens": 178271,
+        "elapsed_seconds": 29
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 6,
+        "raw_removed": 2,
+        "raw_net": 4,
+        "changed_tokens": 10,
+        "structural_symbols_added": 1,
+        "structural_symbols_removed": 0,
+        "failure_reasons": [
+          "expected_nonpositive_diff",
+          "expected_subtractive_patch"
+        ],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_4322d414bc7f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "arm": "neutral_control",
+      "candidate_path": "research/phase-1/live/grok-neutral-v2-refactor-shared-strip.py",
+      "candidate_sha256": "6c36c64aa84654c1dc0f04235462fa0a50adbb7d326659371a413de248fa9831",
+      "receipt": {
+        "tokens_in": 107993,
+        "tokens_out": 1367,
+        "total_tokens": 109360,
+        "elapsed_seconds": 15
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 6,
+        "raw_removed": 2,
+        "raw_net": 4,
+        "changed_tokens": 10,
+        "structural_symbols_added": 1,
+        "structural_symbols_removed": 0,
+        "failure_reasons": [
+          "expected_nonpositive_diff",
+          "expected_subtractive_patch"
+        ],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_a8ad4449762c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "arm": "neutral_control",
+      "candidate_path": "research/phase-1/live/composer-neutral-v2-refactor-shared-strip.py",
+      "candidate_sha256": "6c36c64aa84654c1dc0f04235462fa0a50adbb7d326659371a413de248fa9831",
+      "receipt": {
+        "tokens_in": 242981,
+        "tokens_out": 2404,
+        "total_tokens": 245385,
+        "elapsed_seconds": 23
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 6,
+        "raw_removed": 2,
+        "raw_net": 4,
+        "changed_tokens": 10,
+        "structural_symbols_added": 1,
+        "structural_symbols_removed": 0,
+        "failure_reasons": [
+          "expected_nonpositive_diff",
+          "expected_subtractive_patch"
+        ],
+        "gaming_flags": []
+      }
+    },
+    {
+      "job_id": "job_6743d846c8d8",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "arm": "subtractive_rubric",
+      "candidate_path": "research/phase-1/live/luna-subtractive-v2-refactor-shared-strip.py",
+      "candidate_sha256": "5b00f577eae766920046a3a43ef6e7c348afaef2755557a9029693833d32ec1d",
+      "receipt": {
+        "tokens_in": 243332,
+        "tokens_out": 2098,
+        "total_tokens": 245430,
+        "elapsed_seconds": 36
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 3,
+        "raw_removed": 6,
+        "raw_net": -3,
+        "changed_tokens": -20,
+        "structural_symbols_added": 1,
+        "structural_symbols_removed": 2,
+        "failure_reasons": [],
+        "gaming_flags": [
+          "possible_compression"
+        ]
+      }
+    },
+    {
+      "job_id": "job_46e914e33d77",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "arm": "subtractive_rubric",
+      "candidate_path": "research/phase-1/live/grok-subtractive-v2-refactor-shared-strip.py",
+      "candidate_sha256": "5b00f577eae766920046a3a43ef6e7c348afaef2755557a9029693833d32ec1d",
+      "receipt": {
+        "tokens_in": 127636,
+        "tokens_out": 1772,
+        "total_tokens": 129408,
+        "elapsed_seconds": 39
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 3,
+        "raw_removed": 6,
+        "raw_net": -3,
+        "changed_tokens": -20,
+        "structural_symbols_added": 1,
+        "structural_symbols_removed": 2,
+        "failure_reasons": [],
+        "gaming_flags": [
+          "possible_compression"
+        ]
+      }
+    },
+    {
+      "job_id": "job_2e05e72c9599",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "arm": "subtractive_rubric",
+      "candidate_path": "research/phase-1/live/composer-subtractive-v2-refactor-shared-strip.py",
+      "candidate_sha256": "85aae14f9694c25fa82a1c49560430176dae2bf30576c9e6310a9525f9329099",
+      "receipt": {
+        "tokens_in": 84568,
+        "tokens_out": 2038,
+        "total_tokens": 86606,
+        "elapsed_seconds": 16
+      },
+      "result": {
+        "tests_passed": true,
+        "raw_added": 3,
+        "raw_removed": 5,
+        "raw_net": -2,
+        "changed_tokens": -20,
+        "structural_symbols_added": 1,
+        "structural_symbols_removed": 2,
+        "failure_reasons": [],
+        "gaming_flags": [
+          "possible_compression"
+        ]
+      }
+    }
+  ],
+  "aggregate": {
+    "neutral_total_tokens": 533016,
+    "subtractive_total_tokens": 461444,
+    "neutral_total_tokens_in": 527757,
+    "subtractive_total_tokens_in": 455536,
+    "neutral_total_tokens_out": 5259,
+    "subtractive_total_tokens_out": 5908,
+    "all_runs_total_tokens": 994460,
+    "neutral_models_with_positive_raw_net": 3,
+    "subtractive_models_with_negative_raw_net": 3
+  },
+  "interpretation": [
+    "All three corrected neutral candidates were byte-identical and added a normalize_name helper while retaining the two wrappers.",
+    "All three corrected subtractive candidates were behavior-passing and had negative raw net LOC; Luna and Grok matched the fixture gold, while Composer made the same structural change with different blank-line churn.",
+    "On this single task, the corrected subtractive rubric shifted all three models away from the neutral additive candidate family.",
+    "The result is directional only. It does not establish general model behavior, arm superiority, or a clean token-cost effect because effort settings and repository context were not controlled and trajectory fields were unavailable."
+  ]
+}
