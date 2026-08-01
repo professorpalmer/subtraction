@@ -95,10 +95,11 @@ within-cell raw-net or observed `total_tokens` sample variance exceeds 4.0.
 
 Only after the screening contrasts land, run a reduced confirmation wave:
 
-- Tasks: `refactor-shared-strip`, `refactor-inline-default`, corrected
-  `feature-format-total`, and `control-rename`
-- Arms: `neutral_control` + screening winners + optional legacy
-  `subtractive_rubric` bridge comparator
+- Tasks: `refactor-shared-strip`, `cleanup-legacy-flag` (the existing second
+  maintenance task), corrected `feature-format-total`, and `control-rename`
+- Arms: `neutral_control`, `delete_first_gate`,
+  `task_type_delete_first_net_loc_budget`, and `subtractive_rubric` (the legacy
+  bridge comparator)
 - Models/efforts: same three pairs
 - Repetitions: 5
 

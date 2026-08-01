@@ -11,7 +11,12 @@ from .design import (
     build_default_design,
 )
 from .harness import ingest_adapter_failure, ingest_candidate, prepare_run
-from .variance import analyze_result_files, analyze_variance_records, load_result_files
+from .variance import (
+    analyze_component_effects,
+    analyze_result_files,
+    analyze_variance_records,
+    load_result_files,
+)
 
 __all__ = [
     "DEFAULT_ARMS",
@@ -23,6 +28,7 @@ __all__ = [
     "ingest_adapter_failure",
     "ingest_candidate",
     "prepare_run",
+    "analyze_component_effects",
     "analyze_result_files",
     "analyze_variance_records",
     "load_result_files",

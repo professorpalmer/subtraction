@@ -64,3 +64,24 @@ The paired refactor raw-net deltas favored the subtractive rubric for Luna
 consistent arm effect, while the control task remained raw-net zero. The
 feature fixture's behavior contract is ambiguous, so its failures are not
 treated as quality evidence.
+
+## Atomic component-ablation screen
+
+The completed live screen crossed `refactor-shared-strip`, three models, eight
+atomic T/D/B arms, and five repetitions for 120 receipts. All 120 adapters
+completed and all 120 behavior oracles passed. Its control was
+`neutral_control`; T is the task-type gate, D is delete-first/reference-proof,
+and B is the semantic net-LOC budget.
+
+The findings memo is [`../ABLATION_FINDINGS.md`](../ABLATION_FINDINGS.md).
+The screen artifacts are:
+
+- `ablation-screen-r5-results.json`
+- `ablation-screen-r5-report.json`
+- `ablation-screen-r5-factor-effects.json`
+- `ablation-screen-r5-summary.json`
+- `ablation-screen-r5-token-analysis.json`
+
+The token analysis is descriptive only and follows the Phase 3 accounting
+boundary. The corrected feature-format-total cents contract is offline
+infrastructure, not part of this live screen.

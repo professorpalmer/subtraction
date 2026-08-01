@@ -71,4 +71,6 @@ notes/                  # scratch, session notes
 - [x] Phase 2 factorial ablation harness and fail-closed provenance
 - [x] Phase 2 one-repetition two-task successful-adapter pilot
 - [x] Phase 2 repeated variance study (r5, 120 preregistered cells)
+- [x] Phase 2 live atomic component-ablation screen (r5, 120 completed receipts; [findings](research/phase-2/ABLATION_FINDINGS.md))
+  - Artifacts: `research/phase-2/live/ablation-screen-r5-results.json`, `ablation-screen-r5-report.json`, `ablation-screen-r5-factor-effects.json`, `ablation-screen-r5-summary.json`, `ablation-screen-r5-token-analysis.json`
 - [x] Phase 3 token-usage analysis with optional cost and scenario reporting

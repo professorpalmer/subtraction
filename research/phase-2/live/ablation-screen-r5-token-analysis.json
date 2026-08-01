@@ -1,0 +1,1329 @@
+{
+  "excluded_by_adapter_status": {},
+  "excluded_record_count": 0,
+  "included_completed_record_count": 120,
+  "input_record_count": 120,
+  "matched_arm_comparisons": [
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 36135,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": 0.03796730199424213,
+          "treatment": 987875,
+          "treatment_mean": 197575.0,
+          "treatment_total": 987875
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 8770,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": 0.6455174444280878,
+          "treatment": 22356,
+          "treatment_mean": 4471.2,
+          "treatment_total": 22356
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 44905,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": 0.04651796387955986,
+          "treatment": 1010231,
+          "treatment_mean": 202046.2,
+          "treatment_total": 1010231
+        }
+      },
+      "treatment_arm": "delete_first_gate"
+    },
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 542836,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": 0.5703616533927333,
+          "treatment": 1494576,
+          "treatment_mean": 298915.2,
+          "treatment_total": 1494576
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 8321,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": 0.6124687177977329,
+          "treatment": 21907,
+          "treatment_mean": 4381.4,
+          "treatment_total": 21907
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 551157,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": 0.5709542682989995,
+          "treatment": 1516483,
+          "treatment_mean": 303296.6,
+          "treatment_total": 1516483
+        }
+      },
+      "treatment_arm": "delete_first_net_loc_budget"
+    },
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -287467,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": -0.3020436253598672,
+          "treatment": 664273,
+          "treatment_mean": 132854.6,
+          "treatment_total": 664273
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 3234,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": 0.23803915795672015,
+          "treatment": 16820,
+          "treatment_mean": 3364.0,
+          "treatment_total": 16820
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -284233,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": -0.2944424992178808,
+          "treatment": 681093,
+          "treatment_mean": 136218.6,
+          "treatment_total": 681093
+        }
+      },
+      "treatment_arm": "semantic_net_loc_budget"
+    },
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 673,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": 0.0007071258957278248,
+          "treatment": 952413,
+          "treatment_mean": 190482.6,
+          "treatment_total": 952413
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 3880,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": 0.28558810540262036,
+          "treatment": 17466,
+          "treatment_mean": 3493.2,
+          "treatment_total": 17466
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 4553,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": 0.004716541354941232,
+          "treatment": 969879,
+          "treatment_mean": 193975.8,
+          "treatment_total": 969879
+        }
+      },
+      "treatment_arm": "task_type_delete_first"
+    },
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 2095497,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": 2.20175363019312,
+          "treatment": 3047237,
+          "treatment_mean": 609447.4,
+          "treatment_total": 3047237
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 13702,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": 1.0085382010893567,
+          "treatment": 27288,
+          "treatment_mean": 5457.6,
+          "treatment_total": 27288
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 2109199,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": 2.184960313925037,
+          "treatment": 3074525,
+          "treatment_mean": 614905.0,
+          "treatment_total": 3074525
+        }
+      },
+      "treatment_arm": "task_type_delete_first_net_loc_budget"
+    },
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -82812,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": -0.08701115850967701,
+          "treatment": 868928,
+          "treatment_mean": 173785.6,
+          "treatment_total": 868928
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -901,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": -0.06631826880612395,
+          "treatment": 12685,
+          "treatment_mean": 2537.0,
+          "treatment_total": 12685
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -83713,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": -0.08671992673977495,
+          "treatment": 881613,
+          "treatment_mean": 176322.6,
+          "treatment_total": 881613
+        }
+      },
+      "treatment_arm": "task_type_gate"
+    },
+    {
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "default",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -315692,
+          "neutral": 951740,
+          "neutral_mean": 190348.0,
+          "neutral_total": 951740,
+          "relative_change": -0.33169983398827413,
+          "treatment": 636048,
+          "treatment_mean": 127209.6,
+          "treatment_total": 636048
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 1819,
+          "neutral": 13586,
+          "neutral_mean": 2717.2,
+          "neutral_total": 13586,
+          "relative_change": 0.13388782570292948,
+          "treatment": 15405,
+          "treatment_mean": 3081.0,
+          "treatment_total": 15405
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -313873,
+          "neutral": 965326,
+          "neutral_mean": 193065.2,
+          "neutral_total": 965326,
+          "relative_change": -0.3251471523609641,
+          "treatment": 651453,
+          "treatment_mean": 130290.6,
+          "treatment_total": 651453
+        }
+      },
+      "treatment_arm": "task_type_net_loc_budget"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -142813,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": -0.15128928475708522,
+          "treatment": 801160,
+          "treatment_mean": 160232.0,
+          "treatment_total": 801160
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -149,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": -0.014366984861633401,
+          "treatment": 10222,
+          "treatment_mean": 2044.4,
+          "treatment_total": 10222
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -142962,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": -0.14980132949963534,
+          "treatment": 811382,
+          "treatment_mean": 162276.4,
+          "treatment_total": 811382
+        }
+      },
+      "treatment_arm": "delete_first_gate"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 109661,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": 0.11616963620781527,
+          "treatment": 1053634,
+          "treatment_mean": 210726.8,
+          "treatment_total": 1053634
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 122,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": 0.011763571497444798,
+          "treatment": 10493,
+          "treatment_mean": 2098.6,
+          "treatment_total": 10493
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 109783,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": 0.11503503977601368,
+          "treatment": 1064127,
+          "treatment_mean": 212825.4,
+          "treatment_total": 1064127
+        }
+      },
+      "treatment_arm": "delete_first_net_loc_budget"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 182120,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": 0.19292924691701988,
+          "treatment": 1126093,
+          "treatment_mean": 225218.6,
+          "treatment_total": 1126093
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 2062,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": 0.19882364285025553,
+          "treatment": 12433,
+          "treatment_mean": 2486.6,
+          "treatment_total": 12433
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 184182,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": 0.19299330220549404,
+          "treatment": 1138526,
+          "treatment_mean": 227705.2,
+          "treatment_total": 1138526
+        }
+      },
+      "treatment_arm": "semantic_net_loc_budget"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 139485,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": 0.14776376019229365,
+          "treatment": 1083458,
+          "treatment_mean": 216691.6,
+          "treatment_total": 1083458
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -106,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": -0.01022080802237007,
+          "treatment": 10265,
+          "treatment_mean": 2053.0,
+          "treatment_total": 10265
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 139379,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": 0.1460469180924279,
+          "treatment": 1093723,
+          "treatment_mean": 218744.6,
+          "treatment_total": 1093723
+        }
+      },
+      "treatment_arm": "task_type_delete_first"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -17632,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": -0.01867850033846307,
+          "treatment": 926341,
+          "treatment_mean": 185268.2,
+          "treatment_total": 926341
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -71,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": -0.006846012920644104,
+          "treatment": 10300,
+          "treatment_mean": 2060.0,
+          "treatment_total": 10300
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -17703,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": -0.018549914915376425,
+          "treatment": 936641,
+          "treatment_mean": 187328.2,
+          "treatment_total": 936641
+        }
+      },
+      "treatment_arm": "task_type_delete_first_net_loc_budget"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -143500,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": -0.15201705980997338,
+          "treatment": 800473,
+          "treatment_mean": 160094.6,
+          "treatment_total": 800473
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -2062,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": -0.19882364285025553,
+          "treatment": 8309,
+          "treatment_mean": 1661.8,
+          "treatment_total": 8309
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -145562,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": -0.1525257139983067,
+          "treatment": 808782,
+          "treatment_mean": 161756.4,
+          "treatment_total": 808782
+        }
+      },
+      "treatment_arm": "task_type_gate"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "maximum",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -30110,
+          "neutral": 943973,
+          "neutral_mean": 188794.6,
+          "neutral_total": 943973,
+          "relative_change": -0.03189709875176515,
+          "treatment": 913863,
+          "treatment_mean": 182772.6,
+          "treatment_total": 913863
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 500,
+          "neutral": 10371,
+          "neutral_mean": 2074.2,
+          "neutral_total": 10371,
+          "relative_change": 0.04821135859608524,
+          "treatment": 10871,
+          "treatment_mean": 2174.2,
+          "treatment_total": 10871
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -29610,
+          "neutral": 954344,
+          "neutral_mean": 190868.8,
+          "neutral_total": 954344,
+          "relative_change": -0.03102654807909936,
+          "treatment": 924734,
+          "treatment_mean": 184946.8,
+          "treatment_total": 924734
+        }
+      },
+      "treatment_arm": "task_type_net_loc_budget"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -183485,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": -0.18078960773823072,
+          "treatment": 831424,
+          "treatment_mean": 166284.8,
+          "treatment_total": 831424
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -5567,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": -0.19646386222473178,
+          "treatment": 22769,
+          "treatment_mean": 4553.8,
+          "treatment_total": 22769
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -189052,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": -0.18121534251302426,
+          "treatment": 854193,
+          "treatment_mean": 170838.6,
+          "treatment_total": 854193
+        }
+      },
+      "treatment_arm": "delete_first_gate"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -307890,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": -0.3033670999074794,
+          "treatment": 707019,
+          "treatment_mean": 141403.8,
+          "treatment_total": 707019
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -6951,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": -0.24530632411067194,
+          "treatment": 21385,
+          "treatment_mean": 4277.0,
+          "treatment_total": 21385
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -314841,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": -0.3017900876591788,
+          "treatment": 728404,
+          "treatment_mean": 145680.8,
+          "treatment_total": 728404
+        }
+      },
+      "treatment_arm": "delete_first_net_loc_budget"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -125691,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": -0.12384460084598718,
+          "treatment": 889218,
+          "treatment_mean": 177843.6,
+          "treatment_total": 889218
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 1226,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": 0.04326651609260305,
+          "treatment": 29562,
+          "treatment_mean": 5912.4,
+          "treatment_total": 29562
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -124465,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": -0.11930562811228426,
+          "treatment": 918780,
+          "treatment_mean": 183756.0,
+          "treatment_total": 918780
+        }
+      },
+      "treatment_arm": "semantic_net_loc_budget"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -61586,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": -0.06068130246160001,
+          "treatment": 953323,
+          "treatment_mean": 190664.6,
+          "treatment_total": 953323
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -7490,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": -0.2643280632411067,
+          "treatment": 20846,
+          "treatment_mean": 4169.2,
+          "treatment_total": 20846
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -69076,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": -0.06621263461602979,
+          "treatment": 974169,
+          "treatment_mean": 194833.8,
+          "treatment_total": 974169
+        }
+      },
+      "treatment_arm": "task_type_delete_first"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -253640,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": -0.24991403170136436,
+          "treatment": 761269,
+          "treatment_mean": 152253.8,
+          "treatment_total": 761269
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -6045,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": -0.21333286278938454,
+          "treatment": 22291,
+          "treatment_mean": 4458.2,
+          "treatment_total": 22291
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -259685,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": -0.2489204357557429,
+          "treatment": 783560,
+          "treatment_mean": 156712.0,
+          "treatment_total": 783560
+        }
+      },
+      "treatment_arm": "task_type_delete_first_net_loc_budget"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": -72217,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": -0.07115613320997252,
+          "treatment": 942692,
+          "treatment_mean": 188538.4,
+          "treatment_total": 942692
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": -574,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": -0.020256916996047432,
+          "treatment": 27762,
+          "treatment_mean": 5552.4,
+          "treatment_total": 27762
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": -72791,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": -0.06977363898221414,
+          "treatment": 970454,
+          "treatment_mean": 194090.8,
+          "treatment_total": 970454
+        }
+      },
+      "treatment_arm": "task_type_gate"
+    },
+    {
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "reasoning_effort": "high",
+      "repetition_count": 5,
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "tokens": {
+        "input_tokens": {
+          "delta_treatment_minus_neutral": 131820,
+          "neutral": 1014909,
+          "neutral_mean": 202981.8,
+          "neutral_total": 1014909,
+          "relative_change": 0.12988356591576192,
+          "treatment": 1146729,
+          "treatment_mean": 229345.8,
+          "treatment_total": 1146729
+        },
+        "output_tokens": {
+          "delta_treatment_minus_neutral": 282,
+          "neutral": 28336,
+          "neutral_mean": 5667.2,
+          "neutral_total": 28336,
+          "relative_change": 0.009952004517221908,
+          "treatment": 28618,
+          "treatment_mean": 5723.6,
+          "treatment_total": 28618
+        },
+        "total_tokens": {
+          "delta_treatment_minus_neutral": 132102,
+          "neutral": 1043245,
+          "neutral_mean": 208649.0,
+          "neutral_total": 1043245,
+          "relative_change": 0.1266260561996463,
+          "treatment": 1175347,
+          "treatment_mean": 235069.4,
+          "treatment_total": 1175347
+        }
+      },
+      "treatment_arm": "task_type_net_loc_budget"
+    }
+  ],
+  "pricing_supplied": false,
+  "protocol": "phase-3-token-cost-analysis-v1",
+  "summaries": [
+    {
+      "arm": "delete_first_gate",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 197575.0,
+      "mean_output_tokens": 4471.2,
+      "mean_total_tokens": 202046.2,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 987875,
+      "reported_output_tokens": 22356,
+      "reported_total_tokens": 1010231,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 298915.2,
+      "mean_output_tokens": 4381.4,
+      "mean_total_tokens": 303296.6,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 1494576,
+      "reported_output_tokens": 21907,
+      "reported_total_tokens": 1516483,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "neutral_control",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 190348.0,
+      "mean_output_tokens": 2717.2,
+      "mean_total_tokens": 193065.2,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 951740,
+      "reported_output_tokens": 13586,
+      "reported_total_tokens": 965326,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 132854.6,
+      "mean_output_tokens": 3364.0,
+      "mean_total_tokens": 136218.6,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 664273,
+      "reported_output_tokens": 16820,
+      "reported_total_tokens": 681093,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_delete_first",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 190482.6,
+      "mean_output_tokens": 3493.2,
+      "mean_total_tokens": 193975.8,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 952413,
+      "reported_output_tokens": 17466,
+      "reported_total_tokens": 969879,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 609447.4,
+      "mean_output_tokens": 5457.6,
+      "mean_total_tokens": 614905.0,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 3047237,
+      "reported_output_tokens": 27288,
+      "reported_total_tokens": 3074525,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_gate",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 173785.6,
+      "mean_output_tokens": 2537.0,
+      "mean_total_tokens": 176322.6,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 868928,
+      "reported_output_tokens": 12685,
+      "reported_total_tokens": 881613,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 127209.6,
+      "mean_output_tokens": 3081.0,
+      "mean_total_tokens": 130290.6,
+      "model": "composer-2.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "default",
+      "reported_input_tokens": 636048,
+      "reported_output_tokens": 15405,
+      "reported_total_tokens": 651453,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "delete_first_gate",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 160232.0,
+      "mean_output_tokens": 2044.4,
+      "mean_total_tokens": 162276.4,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 801160,
+      "reported_output_tokens": 10222,
+      "reported_total_tokens": 811382,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 210726.8,
+      "mean_output_tokens": 2098.6,
+      "mean_total_tokens": 212825.4,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 1053634,
+      "reported_output_tokens": 10493,
+      "reported_total_tokens": 1064127,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "neutral_control",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 188794.6,
+      "mean_output_tokens": 2074.2,
+      "mean_total_tokens": 190868.8,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 943973,
+      "reported_output_tokens": 10371,
+      "reported_total_tokens": 954344,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 225218.6,
+      "mean_output_tokens": 2486.6,
+      "mean_total_tokens": 227705.2,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 1126093,
+      "reported_output_tokens": 12433,
+      "reported_total_tokens": 1138526,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_delete_first",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 216691.6,
+      "mean_output_tokens": 2053.0,
+      "mean_total_tokens": 218744.6,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 1083458,
+      "reported_output_tokens": 10265,
+      "reported_total_tokens": 1093723,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 185268.2,
+      "mean_output_tokens": 2060.0,
+      "mean_total_tokens": 187328.2,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 926341,
+      "reported_output_tokens": 10300,
+      "reported_total_tokens": 936641,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_gate",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 160094.6,
+      "mean_output_tokens": 1661.8,
+      "mean_total_tokens": 161756.4,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 800473,
+      "reported_output_tokens": 8309,
+      "reported_total_tokens": 808782,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 182772.6,
+      "mean_output_tokens": 2174.2,
+      "mean_total_tokens": 184946.8,
+      "model": "gpt-5.6-luna",
+      "output_tokens_cost": null,
+      "reasoning_effort": "maximum",
+      "reported_input_tokens": 913863,
+      "reported_output_tokens": 10871,
+      "reported_total_tokens": 924734,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "delete_first_gate",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 166284.8,
+      "mean_output_tokens": 4553.8,
+      "mean_total_tokens": 170838.6,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 831424,
+      "reported_output_tokens": 22769,
+      "reported_total_tokens": 854193,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 141403.8,
+      "mean_output_tokens": 4277.0,
+      "mean_total_tokens": 145680.8,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 707019,
+      "reported_output_tokens": 21385,
+      "reported_total_tokens": 728404,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "neutral_control",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 202981.8,
+      "mean_output_tokens": 5667.2,
+      "mean_total_tokens": 208649.0,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 1014909,
+      "reported_output_tokens": 28336,
+      "reported_total_tokens": 1043245,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 177843.6,
+      "mean_output_tokens": 5912.4,
+      "mean_total_tokens": 183756.0,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 889218,
+      "reported_output_tokens": 29562,
+      "reported_total_tokens": 918780,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_delete_first",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 190664.6,
+      "mean_output_tokens": 4169.2,
+      "mean_total_tokens": 194833.8,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 953323,
+      "reported_output_tokens": 20846,
+      "reported_total_tokens": 974169,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 152253.8,
+      "mean_output_tokens": 4458.2,
+      "mean_total_tokens": 156712.0,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 761269,
+      "reported_output_tokens": 22291,
+      "reported_total_tokens": 783560,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_gate",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 188538.4,
+      "mean_output_tokens": 5552.4,
+      "mean_total_tokens": 194090.8,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 942692,
+      "reported_output_tokens": 27762,
+      "reported_total_tokens": 970454,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "input_tokens_cost": null,
+      "mean_input_tokens": 229345.8,
+      "mean_output_tokens": 5723.6,
+      "mean_total_tokens": 235069.4,
+      "model": "grok-4.5",
+      "output_tokens_cost": null,
+      "reasoning_effort": "high",
+      "reported_input_tokens": 1146729,
+      "reported_output_tokens": 28618,
+      "reported_total_tokens": 1175347,
+      "run_count": 5,
+      "runs_with_input_tokens": 5,
+      "runs_with_output_tokens": 5,
+      "runs_with_total_tokens": 5,
+      "task_id": "refactor-shared-strip",
+      "total_tokens_cost": null
+    }
+  ]
+}

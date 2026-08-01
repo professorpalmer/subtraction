@@ -83,13 +83,15 @@ frozen Cursor model/effort pairs above; both arms; and repetitions 1..5, for
 within-cell raw-net variance or observed `total_tokens` variance exceeds 4.0.
 Live runs require clean git-backed checkouts for every cell.
 
-## Component-ablation screen (preregistered, offline)
+## Component-ablation screen (completed live wave)
 
-The next wave separates T/D/B prompt components on `refactor-shared-strip`
-only (genuine 2³ atomic arms × 3 models × 5 repetitions = 120 cells). The
-eighth cell is `task_type_delete_first_net_loc_budget`; legacy
-`subtractive_rubric` stays available as an optional bridge comparator outside
-this screen. See `ABLATION_PROTOCOL.md` and regenerate the frozen manifest with:
+The completed screen separated T/D/B prompt components on
+`refactor-shared-strip` only (genuine 2³ atomic arms × 3 models × 5
+repetitions = 120 cells). All 120 adapters completed and all 120 behavior
+oracles passed. The eighth cell is
+`task_type_delete_first_net_loc_budget`; legacy `subtractive_rubric` stays
+available as an optional bridge comparator outside this screen. See
+`ABLATION_PROTOCOL.md` and regenerate the frozen manifest with:
 
 ```sh
 python -m research.phase_2.cli plan \
@@ -102,6 +104,12 @@ python -m research.phase_2.cli plan \
 Planning accepts `--arms` for arbitrary validated arm lists while defaulting
 to the historical two-arm pair. Do not treat historical r5 feature receipts as
 quality evidence; they remain non-interpretable (`oracle_invalid`).
+
+The evidence-first interpretation is in
+[`ABLATION_FINDINGS.md`](ABLATION_FINDINGS.md). The completed live artifacts
+are recorded under `live/`: `ablation-screen-r5-results.json`,
+`ablation-screen-r5-report.json`, `ablation-screen-r5-factor-effects.json`,
+`ablation-screen-r5-summary.json`, and `ablation-screen-r5-token-analysis.json`.
 
 ## r5 wave result
 

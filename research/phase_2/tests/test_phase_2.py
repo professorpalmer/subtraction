@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from research.phase_1.arms import COMPONENT_SCREEN_ARMS
+from research.phase_1.arms import ARMS, COMPONENT_SCREEN_ARMS
 from research.phase_1.fixtures import build_fixture_corpus
 from research.phase_2.aggregation import aggregate_results
 from research.phase_2.design import (
@@ -21,7 +21,7 @@ from research.phase_2.harness import (
     ingest_candidate,
     prepare_run,
 )
-from research.phase_2.variance import analyze_variance_records
+from research.phase_2.variance import analyze_component_effects, analyze_variance_records
 
 
 class PhaseTwoTests(unittest.TestCase):
@@ -571,6 +571,128 @@ class PhaseTwoTests(unittest.TestCase):
             treatments["subtractive_rubric"]["both_behavior_pass_count"],
             1,
         )
+
+    def _component_screen_receipts(self, raw_net_by_arm_rep, *, behavior_pass=True):
+        task = next(
+            task for task in build_fixture_corpus()
+            if task.task_id == "refactor-shared-strip"
+        )
+        records = []
+        for arm in COMPONENT_SCREEN_ARMS:
+            for repetition, raw_net in raw_net_by_arm_rep[arm]:
+                cell = DesignCell.create(
+                    task.task_id, task.task_type, "gpt-5.6-luna", "maximum",
+                    arm, repetition,
+                )
+                passed = (
+                    behavior_pass(arm, repetition)
+                    if callable(behavior_pass) else bool(behavior_pass)
+                )
+                records.append({
+                    "cell": cell.to_dict(),
+                    "actual": {"adapter_status": "completed"},
+                    "record": {
+                        "diff": {"raw_net": raw_net},
+                        "tests": {"passed": passed},
+                    },
+                })
+        return records
+
+    def test_component_effects_exact_coverage_and_deterministic_deltas(self):
+        # raw_net = 100*T + 10*D + B, constant across repetitions 1..2
+        raw_net_by_arm_rep = {}
+        for arm in COMPONENT_SCREEN_ARMS:
+            components = ARMS[arm].components
+            value = (
+                (100 if "T" in components else 0)
+                + (10 if "D" in components else 0)
+                + (1 if "B" in components else 0)
+            )
+            raw_net_by_arm_rep[arm] = [(1, value), (2, value + 2)]
+        records = self._component_screen_receipts(
+            raw_net_by_arm_rep,
+            behavior_pass=lambda arm, repetition: not (
+                arm == "delete_first_gate" and repetition == 2
+            ),
+        )
+        report = analyze_component_effects(records)
+        self.assertEqual(report["protocol"], "phase-2-component-effects-v1")
+        effects = {
+            item["factor"]: item for item in report["effects"]
+        }
+        self.assertEqual(set(effects), {"T", "D", "B"})
+        self.assertEqual(
+            effects["T"]["on_arms"],
+            [
+                "task_type_gate",
+                "task_type_delete_first",
+                "task_type_net_loc_budget",
+                "task_type_delete_first_net_loc_budget",
+            ],
+        )
+        self.assertEqual(
+            effects["T"]["off_arms"],
+            [
+                "neutral_control",
+                "delete_first_gate",
+                "semantic_net_loc_budget",
+                "delete_first_net_loc_budget",
+            ],
+        )
+        # mean(on)-mean(off) = 100 for T, 10 for D, 1 for B at every repetition
+        self.assertEqual(effects["T"]["raw_net_deltas"], [100.0, 100.0])
+        self.assertEqual(effects["D"]["raw_net_deltas"], [10.0, 10.0])
+        self.assertEqual(effects["B"]["raw_net_deltas"], [1.0, 1.0])
+        self.assertEqual(effects["T"]["raw_net_delta_mean"], 100.0)
+        self.assertEqual(effects["T"]["raw_net_delta_sample_sd"], 0.0)
+        self.assertEqual(effects["T"]["on_behavior_pass_count"], 8)
+        self.assertEqual(effects["T"]["off_behavior_pass_count"], 7)
+
+        variance = analyze_variance_records(records)
+        self.assertIn("component_effects", variance)
+        self.assertEqual(variance["component_effects"], report)
+        # Historical two-arm fields remain present and unchanged in shape.
+        self.assertEqual(variance["protocol"], "phase-2-controlled-ablation-variance-v1")
+        self.assertTrue(variance["paired_comparisons"])
+
+    def test_component_effects_rejects_missing_arms(self):
+        raw_net_by_arm_rep = {
+            arm: [(1, 0)] for arm in COMPONENT_SCREEN_ARMS
+        }
+        records = self._component_screen_receipts(raw_net_by_arm_rep)
+        incomplete = [
+            receipt for receipt in records
+            if receipt["cell"]["arm"] != "semantic_net_loc_budget"
+        ]
+        with self.assertRaisesRegex(ValueError, "exact coverage"):
+            analyze_component_effects(incomplete)
+        two_arm = analyze_variance_records([
+            receipt for receipt in records
+            if receipt["cell"]["arm"] in {"neutral_control", "task_type_gate"}
+        ])
+        self.assertNotIn("component_effects", two_arm)
+
+    def test_component_effects_rejects_duplicate_repetitions(self):
+        raw_net_by_arm_rep = {
+            arm: [(1, 0)] for arm in COMPONENT_SCREEN_ARMS
+        }
+        records = self._component_screen_receipts(raw_net_by_arm_rep)
+        duplicate = dict(records[0])
+        with self.assertRaisesRegex(ValueError, "duplicate completed repetition"):
+            analyze_component_effects(records + [duplicate])
+
+    def test_component_effects_fail_closed_through_variance_on_unmatched_reps(self):
+        # Full COMPONENT_SCREEN_ARMS set enters the variance branch, but mismatched
+        # repetition IDs must propagate from analyze_component_effects (not be swallowed).
+        raw_net_by_arm_rep = {
+            arm: [(1, 0)] for arm in COMPONENT_SCREEN_ARMS
+        }
+        raw_net_by_arm_rep["semantic_net_loc_budget"] = [(2, 0)]
+        records = self._component_screen_receipts(raw_net_by_arm_rep)
+        with self.assertRaisesRegex(ValueError, "matched unique repetition"):
+            analyze_component_effects(records)
+        with self.assertRaisesRegex(ValueError, "matched unique repetition"):
+            analyze_variance_records(records)
 
 
 if __name__ == "__main__":

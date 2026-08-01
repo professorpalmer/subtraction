@@ -8,12 +8,18 @@ from pathlib import Path
 from statistics import mean, stdev
 from typing import Iterable, Mapping, Optional
 
+from research.phase_1.arms import ARMS, COMPONENT_SCREEN_ARMS
+
 
 PROTOCOL = "phase-2-controlled-ablation-variance-v1"
+COMPONENT_EFFECTS_PROTOCOL = "phase-2-component-effects-v1"
 DEFAULT_NEUTRAL_ARM = "neutral_control"
 DEFAULT_TREATMENT_ARM = "subtractive_rubric"
 _GROUP_FIELDS = ("task_id", "model", "reasoning_effort", "arm")
+_COMPARISON_FIELDS = ("task_id", "model", "reasoning_effort")
 _TOKEN_FIELDS = ("input_tokens", "output_tokens", "total_tokens")
+_COMPONENT_FACTORS = ("T", "D", "B")
+_COMPONENT_SCREEN_ARM_SET = frozenset(COMPONENT_SCREEN_ARMS)
 
 
 def _sample_sd(values: list[float]) -> Optional[float]:
@@ -181,6 +187,148 @@ def _pair_comparison(
     return comparison
 
 
+def _factor_arms(factor: str) -> tuple[tuple[str, ...], tuple[str, ...]]:
+    if factor not in _COMPONENT_FACTORS:
+        raise ValueError(f"unknown component factor: {factor}")
+    on_arms = tuple(
+        name for name in COMPONENT_SCREEN_ARMS if factor in ARMS[name].components
+    )
+    off_arms = tuple(
+        name for name in COMPONENT_SCREEN_ARMS if factor not in ARMS[name].components
+    )
+    return on_arms, off_arms
+
+
+def _collect_component_screen_receipts(records: Iterable[Mapping]) -> list[Mapping]:
+    """Fail-closed ingest for a complete atomic component screen."""
+    completed: list[Mapping] = []
+    seen_repetitions = set()
+    for receipt in records:
+        receipt = _require_mapping(receipt, "receipt")
+        for field in ("cell", "actual", "record"):
+            _require_mapping(receipt.get(field), f"receipt.{field}")
+        key = _receipt_group_key(receipt)
+        status = _status(receipt["actual"])
+        if status != "completed":
+            raise ValueError(
+                "component effects require completed receipts; "
+                f"got adapter_status={status!r} for {key}"
+            )
+        _validate_completed_receipt(receipt)
+        repetition = receipt["cell"]["repetition"]
+        duplicate_key = (*key, repetition)
+        if duplicate_key in seen_repetitions:
+            raise ValueError(f"duplicate completed repetition ID: {duplicate_key}")
+        seen_repetitions.add(duplicate_key)
+        completed.append(receipt)
+
+    if not completed:
+        raise ValueError("component effects require at least one completed receipt")
+
+    arms_present = {receipt["cell"]["arm"] for receipt in completed}
+    if arms_present != _COMPONENT_SCREEN_ARM_SET:
+        missing = sorted(_COMPONENT_SCREEN_ARM_SET - arms_present)
+        extra = sorted(arms_present - _COMPONENT_SCREEN_ARM_SET)
+        raise ValueError(
+            "component effects require exact coverage of COMPONENT_SCREEN_ARMS; "
+            f"missing={missing}, extra={extra}"
+        )
+    return completed
+
+
+def _factor_effect_for_group(
+    key: tuple[str, str, str],
+    arms: Mapping[str, list[Mapping]],
+    factor: str,
+) -> dict:
+    task_id, model, reasoning_effort = key
+    on_arms, off_arms = _factor_arms(factor)
+    repetition_sets = [
+        {receipt["cell"]["repetition"] for receipt in arms[arm_name]}
+        for arm_name in COMPONENT_SCREEN_ARMS
+    ]
+    shared_repetitions = set.intersection(*repetition_sets) if repetition_sets else set()
+    if not shared_repetitions or any(
+        repetitions != shared_repetitions for repetitions in repetition_sets
+    ):
+        raise ValueError(
+            "component effects require matched unique repetition IDs across all "
+            f"COMPONENT_SCREEN_ARMS for {key}"
+        )
+
+    by_arm_rep = {
+        arm_name: {
+            receipt["cell"]["repetition"]: receipt for receipt in arms[arm_name]
+        }
+        for arm_name in COMPONENT_SCREEN_ARMS
+    }
+    deltas = []
+    on_behavior_pass_count = 0
+    off_behavior_pass_count = 0
+    for repetition in sorted(shared_repetitions):
+        on_values = []
+        off_values = []
+        for arm_name in on_arms:
+            receipt = by_arm_rep[arm_name][repetition]
+            on_values.append(receipt["record"]["diff"]["raw_net"])
+            on_behavior_pass_count += int(_behavior_pass(receipt["record"]))
+        for arm_name in off_arms:
+            receipt = by_arm_rep[arm_name][repetition]
+            off_values.append(receipt["record"]["diff"]["raw_net"])
+            off_behavior_pass_count += int(_behavior_pass(receipt["record"]))
+        deltas.append(mean(on_values) - mean(off_values))
+
+    return {
+        "task_id": task_id,
+        "model": model,
+        "reasoning_effort": reasoning_effort,
+        "factor": factor,
+        "on_arms": list(on_arms),
+        "off_arms": list(off_arms),
+        "raw_net_deltas": deltas,
+        "raw_net_delta_mean": mean(deltas),
+        "raw_net_delta_sample_sd": _sample_sd(deltas),
+        "on_behavior_pass_count": on_behavior_pass_count,
+        "off_behavior_pass_count": off_behavior_pass_count,
+    }
+
+
+def analyze_component_effects(records: Iterable[Mapping]) -> dict:
+    """Report T/D/B on-minus-off raw_net effects for a complete component screen.
+
+    Fail-closed: every receipt must be completed with numeric raw_net, the arm
+    set must be exactly COMPONENT_SCREEN_ARMS, and repetition IDs must be unique
+    and matched across those arms within each task/model/effort group.
+    Factor membership comes from ARMS component metadata.
+    """
+    completed = _collect_component_screen_receipts(records)
+    arms_by_group: dict[tuple[str, str, str], dict[str, list[Mapping]]] = defaultdict(
+        dict
+    )
+    for receipt in completed:
+        cell = receipt["cell"]
+        group_key = tuple(cell[field] for field in _COMPARISON_FIELDS)
+        arm = cell["arm"]
+        arms_by_group[group_key].setdefault(arm, []).append(receipt)
+
+    effects = []
+    for key in sorted(arms_by_group):
+        arms = arms_by_group[key]
+        present = set(arms)
+        if present != _COMPONENT_SCREEN_ARM_SET:
+            missing = sorted(_COMPONENT_SCREEN_ARM_SET - present)
+            raise ValueError(
+                "component effects require exact COMPONENT_SCREEN_ARMS coverage "
+                f"for {key}; missing={missing}"
+            )
+        for factor in _COMPONENT_FACTORS:
+            effects.append(_factor_effect_for_group(key, arms, factor))
+    return {
+        "protocol": COMPONENT_EFFECTS_PROTOCOL,
+        "effects": effects,
+    }
+
+
 def analyze_variance_records(
     records: Iterable[Mapping],
     *,
@@ -192,6 +340,7 @@ def analyze_variance_records(
     )
     seen_repetitions = set()
     status_counts = defaultdict(int)
+    completed_receipts: list[Mapping] = []
     for receipt in records:
         receipt = _require_mapping(receipt, "receipt")
         for field in ("cell", "actual", "record"):
@@ -210,6 +359,7 @@ def analyze_variance_records(
             raise ValueError(f"duplicate completed repetition ID: {duplicate_key}")
         seen_repetitions.add(duplicate_key)
         grouped[key]["completed"].append(receipt)
+        completed_receipts.append(receipt)
 
     groups = []
     for key in sorted(grouped):
@@ -267,7 +417,7 @@ def analyze_variance_records(
                     neutral_arm=neutral_arm,
                 )
             )
-    return {
+    result = {
         "protocol": PROTOCOL,
         "groups": groups,
         "paired_comparisons": comparisons,
@@ -275,6 +425,13 @@ def analyze_variance_records(
             status: status_counts[status] for status in sorted(status_counts)
         },
     }
+    completed_arms = {receipt["cell"]["arm"] for receipt in completed_receipts}
+    if completed_arms == _COMPONENT_SCREEN_ARM_SET:
+        # Fail-closed when the completed arm set is exactly COMPONENT_SCREEN_ARMS.
+        # Historical two-arm inputs never enter this branch.
+        result["component_effects"] = analyze_component_effects(completed_receipts)
+    return result
+
 
 
 def load_result_files(paths: Iterable[str]) -> list[Mapping]:

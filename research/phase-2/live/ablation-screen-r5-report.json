@@ -1,0 +1,3294 @@
+{
+  "component_effects": {
+    "effects": [
+      {
+        "factor": "T",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.7,
+        "raw_net_delta_sample_sd": 1.4512925273699993,
+        "raw_net_deltas": [
+          -0.75,
+          3,
+          1.0,
+          -0.25,
+          0.5
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "D",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -5.4,
+        "raw_net_delta_sample_sd": 1.6639561292293736,
+        "raw_net_deltas": [
+          -4.75,
+          -3,
+          -6,
+          -5.75,
+          -7.5
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "B",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -0.2,
+        "raw_net_delta_sample_sd": 4.392465139303897,
+        "raw_net_deltas": [
+          2.25,
+          -3,
+          -2,
+          6.25,
+          -4.5
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "T",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.65,
+        "raw_net_delta_sample_sd": 3.0238634228417127,
+        "raw_net_deltas": [
+          -3.75,
+          2.5,
+          4.25,
+          -0.25,
+          0.5
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "D",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -4.05,
+        "raw_net_delta_sample_sd": 3.854380624691858,
+        "raw_net_deltas": [
+          -5.25,
+          -1.0,
+          0.25,
+          -4.75,
+          -9.5
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "B",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.95,
+        "raw_net_delta_sample_sd": 2.2178255116216876,
+        "raw_net_deltas": [
+          -0.75,
+          1.0,
+          -0.25,
+          4.75,
+          0.0
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "T",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.05,
+        "raw_net_delta_sample_sd": 0.4472135954999579,
+        "raw_net_deltas": [
+          -0.5,
+          0.75,
+          0.0,
+          0.0,
+          0
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "D",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -2.95,
+        "raw_net_delta_sample_sd": 0.873212459828649,
+        "raw_net_deltas": [
+          -3.5,
+          -3.75,
+          -1.5,
+          -3.0,
+          -3.0
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-shared-strip"
+      },
+      {
+        "factor": "B",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 2.05,
+        "raw_net_delta_sample_sd": 2.5273503912200224,
+        "raw_net_deltas": [
+          3.5,
+          5.25,
+          1.5,
+          1.5,
+          -1.5
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-shared-strip"
+      }
+    ],
+    "protocol": "phase-2-component-effects-v1"
+  },
+  "groups": [
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 2,
+      "raw_net_mean": -1.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 3.1304951684997055,
+      "raw_net_values": [
+        1,
+        -2,
+        -2,
+        -6,
+        2
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 197575,
+          "sample_sd": 104822.15515815347,
+          "values": [
+            134384,
+            310174,
+            124582,
+            313466,
+            105269
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4471.2,
+          "sample_sd": 1320.6205738212623,
+          "values": [
+            5978,
+            5016,
+            3331,
+            5176,
+            2855
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 202046.2,
+          "sample_sd": 105496.62504175193,
+          "values": [
+            140362,
+            315190,
+            127913,
+            318642,
+            108124
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -2,
+      "raw_net_mean": -5.2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.7888543819998317,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -2,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 298915.2,
+          "sample_sd": 230042.45567546875,
+          "values": [
+            570600,
+            236788,
+            88690,
+            511158,
+            87340
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4381.4,
+          "sample_sd": 2309.3932752998135,
+          "values": [
+            5903,
+            4451,
+            2195,
+            7330,
+            2028
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 303296.6,
+          "sample_sd": 232209.14875667583,
+          "values": [
+            576503,
+            241239,
+            90885,
+            518488,
+            89368
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 6,
+      "raw_net_mean": -1.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.979959839195493,
+      "raw_net_values": [
+        0,
+        -6,
+        -2,
+        -6,
+        6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 190348,
+          "sample_sd": 107284.03323887484,
+          "values": [
+            72334,
+            205429,
+            295123,
+            291665,
+            87189
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2717.2,
+          "sample_sd": 764.0636099173943,
+          "values": [
+            2308,
+            2894,
+            3908,
+            2598,
+            1878
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 193065.2,
+          "sample_sd": 107868.23658612391,
+          "values": [
+            74642,
+            208323,
+            299031,
+            294263,
+            89067
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 6,
+      "raw_net_mean": 1.2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 5.019960159204453,
+      "raw_net_values": [
+        6,
+        -6,
+        0,
+        6,
+        0
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 132854.6,
+          "sample_sd": 53359.00902659269,
+          "values": [
+            91371,
+            166816,
+            108465,
+            87940,
+            209681
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3364,
+          "sample_sd": 726.2241389543589,
+          "values": [
+            3365,
+            3548,
+            3746,
+            2140,
+            4021
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 136218.6,
+          "sample_sd": 53841.26434993889,
+          "values": [
+            94736,
+            170364,
+            112211,
+            90080,
+            213702
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -2,
+      "raw_net_mean": -4.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.949358868961793,
+      "raw_net_values": [
+        -3,
+        -6,
+        -6,
+        -6,
+        -2
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 190482.6,
+          "sample_sd": 147894.13586515188,
+          "values": [
+            445966,
+            87505,
+            189787,
+            121319,
+            107836
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3493.2,
+          "sample_sd": 1135.0542718302063,
+          "values": [
+            4839,
+            2019,
+            4317,
+            2793,
+            3498
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 193975.8,
+          "sample_sd": 148813.68434119222,
+          "values": [
+            450805,
+            89524,
+            194104,
+            124112,
+            111334
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -2,
+      "raw_net_mean": -5.2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.7888543819998317,
+      "raw_net_values": [
+        -2,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 609447.4,
+          "sample_sd": 214914.46516067736,
+          "values": [
+            349743,
+            632386,
+            795080,
+            836277,
+            433751
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 5457.6,
+          "sample_sd": 767.5365137894092,
+          "values": [
+            5763,
+            5874,
+            5995,
+            5538,
+            4118
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 614905,
+          "sample_sd": 215245.47586534775,
+          "values": [
+            355506,
+            638260,
+            801075,
+            841815,
+            437869
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 6,
+      "raw_net_mean": 2.4,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 4.929503017546495,
+      "raw_net_values": [
+        -3,
+        6,
+        6,
+        -3,
+        6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 173785.6,
+          "sample_sd": 137699.57514386164,
+          "values": [
+            388882,
+            87221,
+            70651,
+            235671,
+            86503
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2537,
+          "sample_sd": 1060.8093608184272,
+          "values": [
+            3892,
+            1975,
+            1553,
+            3458,
+            1807
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 176322.6,
+          "sample_sd": 138720.76042827909,
+          "values": [
+            392774,
+            89196,
+            72204,
+            239129,
+            88310
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 6,
+      "raw_net_mean": 3.2,
+      "raw_net_min": -2,
+      "raw_net_sample_sd": 3.898717737923586,
+      "raw_net_values": [
+        6,
+        -2,
+        0,
+        6,
+        6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 127209.6,
+          "sample_sd": 103754.06042078546,
+          "values": [
+            86147,
+            312309,
+            73877,
+            73091,
+            90624
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3081,
+          "sample_sd": 1430.8911558885252,
+          "values": [
+            1849,
+            5491,
+            3074,
+            2197,
+            2794
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 130290.6,
+          "sample_sd": 105093.5248281263,
+          "values": [
+            87996,
+            317800,
+            76951,
+            75288,
+            93418
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 4,
+      "raw_net_mean": -4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.47213595499958,
+      "raw_net_values": [
+        -6,
+        -6,
+        4,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 160232,
+          "sample_sd": 46793.79805593899,
+          "values": [
+            194894,
+            194620,
+            117485,
+            192914,
+            101247
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2044.4,
+          "sample_sd": 255.58227638081635,
+          "values": [
+            2210,
+            2374,
+            1717,
+            2005,
+            1916
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 162276.4,
+          "sample_sd": 46993.64531827681,
+          "values": [
+            197104,
+            196994,
+            119202,
+            194919,
+            103163
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 0,
+      "raw_net_mean": -4.8,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 2.6832815729997477,
+      "raw_net_values": [
+        0,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 210726.8,
+          "sample_sd": 49263.47030204023,
+          "values": [
+            175527,
+            152043,
+            244594,
+            272959,
+            208511
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2098.6,
+          "sample_sd": 574.4874237091705,
+          "values": [
+            2916,
+            1430,
+            1836,
+            2410,
+            1901
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 212825.4,
+          "sample_sd": 49375.227486058226,
+          "values": [
+            178443,
+            153473,
+            246430,
+            275369,
+            210412
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 3,
+      "raw_net_mean": -0.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.929503017546495,
+      "raw_net_values": [
+        3,
+        3,
+        -6,
+        -6,
+        3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 188794.6,
+          "sample_sd": 73430.64566854904,
+          "values": [
+            80698,
+            246783,
+            255361,
+            211824,
+            149307
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2074.2,
+          "sample_sd": 769.2825878700232,
+          "values": [
+            1116,
+            2353,
+            3161,
+            2102,
+            1639
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 190868.8,
+          "sample_sd": 74145.86283266249,
+          "values": [
+            81814,
+            249136,
+            258522,
+            213926,
+            150946
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 4,
+      "raw_net_mean": 0.8,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.08656334834051,
+      "raw_net_values": [
+        3,
+        0,
+        -6,
+        4,
+        3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 225218.6,
+          "sample_sd": 69499.63538969107,
+          "values": [
+            170733,
+            288580,
+            305203,
+            212347,
+            149230
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2486.6,
+          "sample_sd": 700.5061027571423,
+          "values": [
+            2253,
+            2993,
+            3245,
+            2493,
+            1449
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 227705.2,
+          "sample_sd": 70162.73108780758,
+          "values": [
+            172986,
+            291573,
+            308448,
+            214840,
+            150679
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 3,
+      "raw_net_mean": -4.2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.024922359499621,
+      "raw_net_values": [
+        -6,
+        3,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 216691.6,
+          "sample_sd": 39992.040874403996,
+          "values": [
+            190341,
+            265164,
+            168028,
+            247755,
+            212170
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2053,
+          "sample_sd": 319.02742828791384,
+          "values": [
+            2023,
+            2278,
+            1537,
+            2351,
+            2076
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 218744.6,
+          "sample_sd": 40279.58754505811,
+          "values": [
+            192364,
+            267442,
+            169565,
+            250106,
+            214246
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 3,
+      "raw_net_mean": -2.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.929503017546495,
+      "raw_net_values": [
+        -6,
+        3,
+        3,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 185268.2,
+          "sample_sd": 76125.18435905427,
+          "values": [
+            251350,
+            83079,
+            195509,
+            261175,
+            135228
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2060,
+          "sample_sd": 443.9814185301002,
+          "values": [
+            2459,
+            1832,
+            2527,
+            2020,
+            1462
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 187328.2,
+          "sample_sd": 76393.12018565547,
+          "values": [
+            253809,
+            84911,
+            198036,
+            263195,
+            136690
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 4,
+      "raw_net_mean": -0.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 5.128352561983234,
+      "raw_net_values": [
+        3,
+        -6,
+        3,
+        -6,
+        4
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 160094.6,
+          "sample_sd": 51673.489090635245,
+          "values": [
+            132800,
+            231258,
+            96876,
+            188311,
+            151228
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1661.8,
+          "sample_sd": 724.679722360161,
+          "values": [
+            1368,
+            2872,
+            937,
+            1621,
+            1511
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 161756.4,
+          "sample_sd": 52352.15882177162,
+          "values": [
+            134168,
+            234130,
+            97813,
+            189932,
+            152739
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 4,
+      "raw_net_mean": 1,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.06201920231798,
+      "raw_net_values": [
+        -6,
+        1,
+        3,
+        3,
+        4
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 182772.6,
+          "sample_sd": 47325.79749248818,
+          "values": [
+            226047,
+            230440,
+            189460,
+            132613,
+            135303
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2174.2,
+          "sample_sd": 576.5493907723778,
+          "values": [
+            2806,
+            2749,
+            2048,
+            1618,
+            1650
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 184946.8,
+          "sample_sd": 47889.484265337414,
+          "values": [
+            228853,
+            233189,
+            191508,
+            134231,
+            136953
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -4.2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.6431676725154984,
+      "raw_net_values": [
+        -3,
+        -6,
+        -6,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 166284.8,
+          "sample_sd": 55439.009413047774,
+          "values": [
+            134440,
+            235456,
+            133871,
+            215946,
+            111711
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4553.8,
+          "sample_sd": 817.6849637849531,
+          "values": [
+            4571,
+            4528,
+            4380,
+            5791,
+            3499
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 170838.6,
+          "sample_sd": 55993.79965049702,
+          "values": [
+            139011,
+            239984,
+            138251,
+            221737,
+            115210
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 141403.8,
+          "sample_sd": 59704.45620889617,
+          "values": [
+            233515,
+            81423,
+            113303,
+            113135,
+            165643
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4277,
+          "sample_sd": 852.9322950856065,
+          "values": [
+            5475,
+            3202,
+            4617,
+            4265,
+            3826
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 145680.8,
+          "sample_sd": 60354.704959099916,
+          "values": [
+            238990,
+            84625,
+            117920,
+            117400,
+            169469
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.3416407864998738,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -6,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 202981.8,
+          "sample_sd": 30890.571477394198,
+          "values": [
+            191522,
+            163518,
+            239130,
+            191497,
+            229242
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 5667.2,
+          "sample_sd": 1249.9548791856448,
+          "values": [
+            5037,
+            7795,
+            5513,
+            4549,
+            5442
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 208649,
+          "sample_sd": 30300.040701292797,
+          "values": [
+            196559,
+            171313,
+            244643,
+            196046,
+            234684
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 3,
+      "raw_net_mean": 0.4,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 3.1304951684997055,
+      "raw_net_values": [
+        2,
+        3,
+        -3,
+        3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 177843.6,
+          "sample_sd": 92702.53380733452,
+          "values": [
+            112373,
+            120074,
+            151992,
+            338902,
+            165877
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 5912.4,
+          "sample_sd": 1758.2456597415505,
+          "values": [
+            4542,
+            5287,
+            5873,
+            8933,
+            4927
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 183756,
+          "sample_sd": 94389.76603954477,
+          "values": [
+            116915,
+            125361,
+            157865,
+            347835,
+            170804
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -6,
+      "raw_net_mean": -6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 190664.6,
+          "sample_sd": 77346.62965378647,
+          "values": [
+            132381,
+            185438,
+            315756,
+            198356,
+            121392
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4169.2,
+          "sample_sd": 976.8790610920064,
+          "values": [
+            3705,
+            4668,
+            5316,
+            4397,
+            2760
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 194833.8,
+          "sample_sd": 78211.84343946894,
+          "values": [
+            136086,
+            190106,
+            321072,
+            202753,
+            124152
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 0,
+      "raw_net_mean": -3,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 2.1213203435596424,
+      "raw_net_values": [
+        -3,
+        0,
+        -3,
+        -3,
+        -6
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 152253.8,
+          "sample_sd": 29397.847943344423,
+          "values": [
+            139121,
+            175366,
+            150540,
+            184953,
+            111289
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4458.2,
+          "sample_sd": 1325.4043533955967,
+          "values": [
+            4313,
+            6314,
+            3757,
+            5085,
+            2822
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 156712,
+          "sample_sd": 30540.98070625762,
+          "values": [
+            143434,
+            181680,
+            154297,
+            190038,
+            114111
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 3,
+      "raw_net_mean": -0.6,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 3.286335345030997,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        3,
+        3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 188538.4,
+          "sample_sd": 49455.813872587314,
+          "values": [
+            223845,
+            182244,
+            248095,
+            166927,
+            121581
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 5552.4,
+          "sample_sd": 1642.4370003138629,
+          "values": [
+            4587,
+            8400,
+            4345,
+            5036,
+            5394
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 194090.8,
+          "sample_sd": 48964.26689638067,
+          "values": [
+            228432,
+            190644,
+            252440,
+            171963,
+            126975
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 3,
+      "raw_net_mean": -0.6,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 3.286335345030997,
+      "raw_net_values": [
+        3,
+        3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 229345.8,
+          "sample_sd": 141688.5128537243,
+          "values": [
+            117407,
+            239553,
+            111389,
+            217488,
+            460892
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 5723.6,
+          "sample_sd": 2547.5855824682317,
+          "values": [
+            3282,
+            8827,
+            3474,
+            5095,
+            7940
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 235069.4,
+          "sample_sd": 143623.19617770662,
+          "values": [
+            120689,
+            248380,
+            114863,
+            222583,
+            468832
+          ]
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.2,
+      "raw_net_delta_sample_sd": 2.8635642126552705,
+      "raw_net_deltas": [
+        1,
+        4,
+        0,
+        0,
+        -4
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 4,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.6,
+      "raw_net_delta_sample_sd": 6.06630035524124,
+      "raw_net_deltas": [
+        -6,
+        0,
+        -4,
+        4,
+        -12
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -6,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 4,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 2.8,
+      "raw_net_delta_sample_sd": 6.723094525588644,
+      "raw_net_deltas": [
+        6,
+        0,
+        2,
+        12,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 6,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 12,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -6,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3,
+      "raw_net_delta_sample_sd": 3.3166247903554,
+      "raw_net_deltas": [
+        -3,
+        0,
+        -4,
+        0,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -8,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.6,
+      "raw_net_delta_sample_sd": 4.979959839195493,
+      "raw_net_deltas": [
+        -2,
+        0,
+        -4,
+        0,
+        -12
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 4,
+      "raw_net_delta_sample_sd": 6.041522986797286,
+      "raw_net_deltas": [
+        -3,
+        12,
+        8,
+        3,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 8,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 4.8,
+      "raw_net_delta_sample_sd": 4.604345773288535,
+      "raw_net_deltas": [
+        6,
+        4,
+        2,
+        12,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 6,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 4,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 12,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.4,
+      "raw_net_delta_sample_sd": 8.44393273303382,
+      "raw_net_deltas": [
+        -9,
+        -9,
+        10,
+        0,
+        -9
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 10,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -4.2,
+      "raw_net_delta_sample_sd": 4.54972526643093,
+      "raw_net_deltas": [
+        -3,
+        -9,
+        0,
+        0,
+        -9
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 1.4,
+      "raw_net_delta_sample_sd": 4.979959839195493,
+      "raw_net_deltas": [
+        0,
+        -3,
+        0,
+        10,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 10,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.6,
+      "raw_net_delta_sample_sd": 4.929503017546495,
+      "raw_net_deltas": [
+        -9,
+        0,
+        0,
+        0,
+        -9
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -1.8,
+      "raw_net_delta_sample_sd": 7.52994023880668,
+      "raw_net_deltas": [
+        -9,
+        0,
+        9,
+        0,
+        -9
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 9,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.2,
+      "raw_net_delta_sample_sd": 6.3796551630946325,
+      "raw_net_deltas": [
+        0,
+        -9,
+        9,
+        0,
+        1
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 9,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 1.6,
+      "raw_net_delta_sample_sd": 7.6681158050723255,
+      "raw_net_deltas": [
+        -9,
+        -2,
+        9,
+        9,
+        1
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 9,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 9,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -0.6,
+      "raw_net_delta_sample_sd": 2.5099800796022267,
+      "raw_net_deltas": [
+        0,
+        -3,
+        -3,
+        3,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.6,
+      "raw_net_delta_sample_sd": 1.3416407864998738,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 4,
+      "raw_net_delta_sample_sd": 3.9370039370059056,
+      "raw_net_deltas": [
+        5,
+        6,
+        0,
+        9,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 5,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 6,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 9,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -2.4,
+      "raw_net_delta_sample_sd": 1.3416407864998738,
+      "raw_net_deltas": [
+        -3,
+        -3,
+        -3,
+        0,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.6,
+      "raw_net_delta_sample_sd": 2.5099800796022267,
+      "raw_net_deltas": [
+        0,
+        3,
+        0,
+        3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 3,
+      "raw_net_delta_sample_sd": 4.242640687119285,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        9,
+        6
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 9,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 6,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 3,
+      "raw_net_delta_sample_sd": 3.0,
+      "raw_net_deltas": [
+        6,
+        6,
+        0,
+        3,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 6,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 6,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "protocol": "phase-2-controlled-ablation-variance-v1",
+  "status_counts": {
+    "completed": 120
+  }
+}
