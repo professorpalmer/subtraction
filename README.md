@@ -68,3 +68,5 @@ notes/                  # scratch, session notes
 - [x] Phase 1 measurement protocol and offline benchmark
 - [x] Phase 1 three-model live pilot
 - [x] Phase 1 cleanup-task replication
+- [x] Phase 2 factorial ablation harness and fail-closed provenance
+- [ ] Phase 2 balanced successful-adapter repetitions

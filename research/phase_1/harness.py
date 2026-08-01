@@ -38,8 +38,8 @@ class RunRecord:
     expected_class: str
     arm: str
     prompt: str
-    turns: int
-    tool_calls: int
+    turns: Optional[int]
+    tool_calls: Optional[int]
     token_usage: TokenUsage
     diff: DiffMetrics
     tests: TestResult
@@ -86,8 +86,8 @@ def measure_candidate_patch(
     model: Optional[str] = None,
     reasoning_effort: Optional[str] = None,
     execution_source: str,
-    turns: int,
-    tool_calls: int,
+    turns: Optional[int],
+    tool_calls: Optional[int],
     token_usage: Optional[TokenUsage] = None,
     dry_run: bool = False,
 ) -> RunRecord:
