@@ -10,6 +10,8 @@ from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
 TOKEN_FIELDS = ("input_tokens", "output_tokens", "total_tokens")
 ARMS = ("neutral_control", "subtractive_rubric")
+DEFAULT_NEUTRAL_ARM = ARMS[0]
+DEFAULT_TREATMENT_ARM = ARMS[1]
 CURRENT_PROTOCOL = "phase-2-controlled-ablation-v1"
 LEGACY_PROTOCOL = "phase-2-controlled-ablation-v0"
 
@@ -147,28 +149,41 @@ def _token_summary(records: Sequence[Mapping[str, Any]], pricing: Optional[Mappi
 
 
 def _comparison_value(
-    neutral: Mapping[str, Any], subtractive: Mapping[str, Any], field: str
+    neutral: Mapping[str, Any],
+    treatment: Mapping[str, Any],
+    field: str,
+    *,
+    treatment_arm: str = DEFAULT_TREATMENT_ARM,
 ) -> dict:
     neutral_value = neutral.get(f"reported_{field}")
-    subtractive_value = subtractive.get(f"reported_{field}")
+    treatment_value = treatment.get(f"reported_{field}")
     neutral_mean = neutral.get(f"mean_{field}")
-    subtractive_mean = subtractive.get(f"mean_{field}")
+    treatment_mean = treatment.get(f"mean_{field}")
     delta = (
         None
-        if neutral_value is None or subtractive_value is None
-        else subtractive_value - neutral_value
+        if neutral_value is None or treatment_value is None
+        else treatment_value - neutral_value
     )
     relative = None if delta is None or neutral_value == 0 else delta / neutral_value
-    return {
+    result = {
         "neutral": neutral_value,
-        "subtractive": subtractive_value,
+        "treatment": treatment_value,
         "neutral_total": neutral_value,
-        "subtractive_total": subtractive_value,
+        "treatment_total": treatment_value,
         "neutral_mean": neutral_mean,
-        "subtractive_mean": subtractive_mean,
-        "delta_subtractive_minus_neutral": delta,
+        "treatment_mean": treatment_mean,
+        "delta_treatment_minus_neutral": delta,
         "relative_change": relative,
     }
+    # Preserve historical subtractive_* keys for the classic r5 contrast.
+    if treatment_arm == DEFAULT_TREATMENT_ARM:
+        result.update({
+            "subtractive": treatment_value,
+            "subtractive_total": treatment_value,
+            "subtractive_mean": treatment_mean,
+            "delta_subtractive_minus_neutral": delta,
+        })
+    return result
 
 
 GroupKey = Tuple[str, str, Optional[str], str]
@@ -204,23 +219,23 @@ def _repetition_ids(records: Sequence[Mapping[str, Any]]) -> Optional[List[int]]
 
 def _unmatched_reason(
     neutral_records: Sequence[Mapping[str, Any]],
-    subtractive_records: Sequence[Mapping[str, Any]],
+    treatment_records: Sequence[Mapping[str, Any]],
     neutral: Mapping[str, Any],
-    subtractive: Mapping[str, Any],
+    treatment: Mapping[str, Any],
 ) -> Optional[str]:
-    if neutral["run_count"] != subtractive["run_count"]:
+    if neutral["run_count"] != treatment["run_count"]:
         return "unequal repetition counts"
     neutral_ids = _repetition_ids(neutral_records)
-    subtractive_ids = _repetition_ids(subtractive_records)
-    if neutral_ids is not None or subtractive_ids is not None:
-        if neutral_ids is None or subtractive_ids is None:
+    treatment_ids = _repetition_ids(treatment_records)
+    if neutral_ids is not None or treatment_ids is not None:
+        if neutral_ids is None or treatment_ids is None:
             return "incomplete repetition ids"
-        if neutral_ids != subtractive_ids:
+        if neutral_ids != treatment_ids:
             return "misaligned repetition ids"
     for field in TOKEN_FIELDS:
         neutral_coverage = neutral[f"runs_with_{field}"]
-        subtractive_coverage = subtractive[f"runs_with_{field}"]
-        if neutral_coverage != subtractive_coverage:
+        treatment_coverage = treatment[f"runs_with_{field}"]
+        if neutral_coverage != treatment_coverage:
             return f"unequal token coverage for {field}"
     return None
 
@@ -228,47 +243,69 @@ def _unmatched_reason(
 def _compare_groups(
     groups: Mapping[GroupKey, dict],
     grouped_records: Mapping[GroupKey, List[Mapping[str, Any]]],
+    *,
+    neutral_arm: str = DEFAULT_NEUTRAL_ARM,
+    treatment_arms: Optional[Sequence[str]] = None,
 ) -> List[dict]:
     identities = sorted({_comparison_identity(key) for key in groups})
+    present_arms = {key[3] for key in groups}
+    if treatment_arms is None:
+        discovered = sorted(arm for arm in present_arms if arm != neutral_arm)
+        selected_treatments: Sequence[str] = discovered or (DEFAULT_TREATMENT_ARM,)
+    else:
+        selected_treatments = tuple(treatment_arms)
     comparisons = []
     for task_id, model, effort in identities:
-        neutral_key = (task_id, model, effort, ARMS[0])
-        subtractive_key = (task_id, model, effort, ARMS[1])
+        neutral_key = (task_id, model, effort, neutral_arm)
         neutral = groups.get(neutral_key)
-        subtractive = groups.get(subtractive_key)
-        item: Dict[str, Any] = {"task_id": task_id, "model": model}
-        if effort is not None:
-            item["reasoning_effort"] = effort
-        if neutral is None or subtractive is None:
-            item.update({"status": "unmatched", "reason": "missing arm"})
+        for treatment_arm in selected_treatments:
+            treatment_key = (task_id, model, effort, treatment_arm)
+            treatment = groups.get(treatment_key)
+            item: Dict[str, Any] = {
+                "task_id": task_id,
+                "model": model,
+                "neutral_arm": neutral_arm,
+                "treatment_arm": treatment_arm,
+            }
+            if effort is not None:
+                item["reasoning_effort"] = effort
+            if neutral is None or treatment is None:
+                item.update({"status": "unmatched", "reason": "missing arm"})
+                comparisons.append(item)
+                continue
+            reason = _unmatched_reason(
+                grouped_records[neutral_key],
+                grouped_records[treatment_key],
+                neutral,
+                treatment,
+            )
+            if reason is not None:
+                update: Dict[str, Any] = {"status": "unmatched", "reason": reason}
+                if reason == "unequal repetition counts":
+                    update["neutral_run_count"] = neutral["run_count"]
+                    update["treatment_run_count"] = treatment["run_count"]
+                    if treatment_arm == DEFAULT_TREATMENT_ARM:
+                        update["subtractive_run_count"] = treatment["run_count"]
+                comparisons.append({**item, **update})
+                continue
+            item["status"] = "matched"
+            item["repetition_count"] = neutral["run_count"]
+            item["tokens"] = {
+                field: _comparison_value(
+                    neutral, treatment, field, treatment_arm=treatment_arm,
+                )
+                for field in TOKEN_FIELDS
+            }
             comparisons.append(item)
-            continue
-        reason = _unmatched_reason(
-            grouped_records[neutral_key],
-            grouped_records[subtractive_key],
-            neutral,
-            subtractive,
-        )
-        if reason is not None:
-            update: Dict[str, Any] = {"status": "unmatched", "reason": reason}
-            if reason == "unequal repetition counts":
-                update["neutral_run_count"] = neutral["run_count"]
-                update["subtractive_run_count"] = subtractive["run_count"]
-            comparisons.append({**item, **update})
-            continue
-        item["status"] = "matched"
-        item["repetition_count"] = neutral["run_count"]
-        item["tokens"] = {
-            field: _comparison_value(neutral, subtractive, field)
-            for field in TOKEN_FIELDS
-        }
-        comparisons.append(item)
     return comparisons
 
 
 def analyze_records(
     records: Iterable[Mapping[str, Any]],
     pricing: Optional[Mapping[str, Any]] = None,
+    *,
+    neutral_arm: str = DEFAULT_NEUTRAL_ARM,
+    treatment_arms: Optional[Sequence[str]] = None,
 ) -> dict:
     """Analyze completed adapter receipts without synthesizing token fields."""
     included: List[Mapping[str, Any]] = []
@@ -314,7 +351,12 @@ def analyze_records(
         "excluded_by_adapter_status": dict(sorted(excluded_statuses.items())),
         "pricing_supplied": pricing is not None,
         "summaries": summaries,
-        "matched_arm_comparisons": _compare_groups(summary_map, grouped),
+        "matched_arm_comparisons": _compare_groups(
+            summary_map,
+            grouped,
+            neutral_arm=neutral_arm,
+            treatment_arms=treatment_arms,
+        ),
     }
 
 

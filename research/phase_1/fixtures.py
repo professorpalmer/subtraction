@@ -34,7 +34,11 @@ class FixtureTask:
 
 
 def _feature_oracle(namespace: dict) -> bool:
-    return namespace["format_total"](1250) == "$1,250"
+    """Cents contract: 1250 → $12.50 and 125000 → $1,250.00."""
+    return (
+        namespace["format_total"](1250) == "$12.50"
+        and namespace["format_total"](125000) == "$1,250.00"
+    )
 
 
 def _refactor_oracle(namespace: dict) -> bool:
@@ -91,13 +95,17 @@ def obsolete_debug_message():
         FixtureTask(
             "feature-format-total",
             "feature",
-            "Add format_total(cents), returning a currency string such as $1,250.",
+            (
+                "Add format_total(cents) that formats integer cents as a USD currency "
+                "string with dollars and cents (for example, 1250 → \"$12.50\" and "
+                "125000 → \"$1,250.00\")."
+            ),
             feature,
             """def summarize_total(cents):
     return f"{cents / 100:.2f}"
 
 def format_total(cents):
-    return f"${cents:,}"
+    return f"${cents / 100:,.2f}"
 """,
             "positive",
             "additive",

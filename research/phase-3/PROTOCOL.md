@@ -11,12 +11,14 @@
 3. Group included records by `task_id`, `model`, `reasoning_effort` when
    present, and `arm`. Report sums, available-value means, and observed-value
    counts separately for input, output, and total tokens.
-4. Compare neutral-control and subtractive-rubric groups only when both arms
+4. Compare each treatment arm against `neutral_control` only when both arms
    exist with equal included repetition counts, aligned repetition IDs when IDs
-   are present, and equal non-null coverage for each token field. Unmatched
-   groups report a precise reason and omit token deltas. Matched groups report
-   token totals, means, deltas, and relative changes; missing values remain
-   null.
+   are present, and equal non-null coverage for each token field. The default
+   two-arm API still treats `subtractive_rubric` as the classic treatment and
+   preserves historical `subtractive_*` comparison fields for that contrast.
+   Multi-arm receipts emit one comparison per non-neutral arm. Unmatched groups
+   report a precise reason and omit token deltas. Matched groups report token
+   totals, means, deltas, and relative changes; missing values remain null.
 5. Apply caller-supplied per-million-token rates only where both a rate and the
    corresponding reported usage exist. A lone scalar rate does not populate
    input, output, and total costs. Object pricing may price input and output

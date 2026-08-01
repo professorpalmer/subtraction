@@ -27,13 +27,15 @@ excluded from completed-run statistics.
    produced raw-net `0` and passed the behavior oracle. The intervention did
    not create a spurious deletion signal on a semantic-zero task.
 
-4. The feature task is not interpretable as quality evidence in this wave.
-   Models consistently produced additive patches, but the fixture's expected
-   behavior contract is semantically confusing about whether the formatter
-   input is a dollar value or cents. Behavior failures therefore cannot be
-   cleanly attributed to the prompt arm. Composer's feature runs passed the
-   oracle; Luna and Grok had behavior failures, and Grok also had the adapter
-   failure noted above.
+4. The feature task is not interpretable as quality evidence in this wave
+   (`oracle_invalid` for cross-wave memos). Models consistently produced
+   additive patches, but the historical fixture's expected behavior contract
+   was semantically confusing about whether the formatter input is a dollar
+   value or cents. Behavior failures therefore cannot be cleanly attributed to
+   the prompt arm. Composer's feature runs passed the ambiguous oracle; Luna
+   and Grok had behavior failures, and Grok also had the adapter failure noted
+   above. Historical r5 feature receipts are retained unchanged and must not
+   be reinterpreted after the later cents-contract fixture correction.
 
 5. The preregistered variance trigger was met. For example, the Luna neutral
    refactor group had raw-net sample SD `4.80`, implying sample variance about

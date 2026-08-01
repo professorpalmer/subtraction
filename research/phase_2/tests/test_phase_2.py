@@ -6,12 +6,14 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from research.phase_1.arms import COMPONENT_SCREEN_ARMS
 from research.phase_1.fixtures import build_fixture_corpus
 from research.phase_2.aggregation import aggregate_results
 from research.phase_2.design import (
     DEFAULT_MODEL_EFFORTS,
     DesignCell,
     FactorialDesign,
+    build_ablation_screen_design,
     build_default_design,
 )
 from research.phase_2.harness import (
@@ -471,6 +473,7 @@ class PhaseTwoTests(unittest.TestCase):
             subprocess.run(command, check=True, capture_output=True, text=True)
             planned = json.loads(manifest.read_text(encoding="utf-8"))
             self.assertEqual(len(planned["cells"]), 6)
+            self.assertEqual(planned["arms"], ["neutral_control", "subtractive_rubric"])
             receipt_path = root / "receipt.json"
             receipt_path.write_text(json.dumps({
                 "cell": planned["cells"][0],
@@ -489,6 +492,85 @@ class PhaseTwoTests(unittest.TestCase):
                 json.loads(output.read_text(encoding="utf-8"))["protocol"],
                 "phase-2-controlled-ablation-variance-v1",
             )
+
+    def test_explicit_arms_list_is_validated_and_complete(self):
+        design = build_default_design(
+            1,
+            task_ids=["refactor-shared-strip"],
+            arms=["neutral_control", "task_type_gate", "delete_first_gate"],
+        )
+        self.assertEqual(len(design.cells), 9)
+        self.assertEqual(
+            design.to_dict()["arms"],
+            ["neutral_control", "task_type_gate", "delete_first_gate"],
+        )
+        with self.assertRaisesRegex(ValueError, "unknown arms"):
+            build_default_design(1, arms=["not-an-arm"])
+        with self.assertRaisesRegex(ValueError, "unique"):
+            build_default_design(1, arms=["neutral_control", "neutral_control"])
+
+    def test_ablation_screen_design_has_120_cells(self):
+        design = build_ablation_screen_design(5)
+        self.assertEqual(len(design.cells), 120)
+        payload = design.to_dict()
+        self.assertEqual(payload["protocol"], "phase-2-component-ablation-v1")
+        self.assertEqual(payload["arms"], list(COMPONENT_SCREEN_ARMS))
+        self.assertEqual(
+            payload["arms"][-1],
+            "task_type_delete_first_net_loc_budget",
+        )
+        self.assertNotIn("subtractive_rubric", payload["arms"])
+        self.assertEqual(
+            {task["task_id"] for task in payload["tasks"]},
+            {"refactor-shared-strip"},
+        )
+        self.assertEqual(len({cell.cell_id for cell in design.cells}), 120)
+        with tempfile.TemporaryDirectory() as directory:
+            manifest = Path(directory) / "design.json"
+            design.write_manifest(manifest)
+            self.assertEqual(
+                json.loads(manifest.read_text(encoding="utf-8")),
+                payload,
+            )
+
+    def test_variance_compares_each_treatment_arm_to_neutral(self):
+        task = next(
+            task for task in build_fixture_corpus()
+            if task.task_id == "refactor-shared-strip"
+        )
+        records = []
+        for arm, raw_net in (
+            ("neutral_control", 4),
+            ("task_type_gate", 2),
+            ("subtractive_rubric", -2),
+        ):
+            cell = DesignCell.create(
+                task.task_id, task.task_type, "gpt-5.6-luna", "maximum", arm, 1,
+            )
+            records.append({
+                "cell": cell.to_dict(),
+                "actual": {"adapter_status": "completed", "input_tokens": 10},
+                "record": {
+                    "diff": {"raw_net": raw_net},
+                    "tests": {"passed": True},
+                },
+            })
+        result = analyze_variance_records(records)
+        treatments = {
+            item["treatment_arm"]: item for item in result["paired_comparisons"]
+        }
+        self.assertEqual(set(treatments), {"task_type_gate", "subtractive_rubric"})
+        self.assertEqual(treatments["task_type_gate"]["status"], "matched")
+        self.assertEqual(treatments["task_type_gate"]["raw_net_deltas"], [-2])
+        self.assertEqual(treatments["subtractive_rubric"]["status"], "matched")
+        self.assertEqual(
+            treatments["subtractive_rubric"]["subtractive_only_behavior_pass_count"],
+            0,
+        )
+        self.assertEqual(
+            treatments["subtractive_rubric"]["both_behavior_pass_count"],
+            1,
+        )
 
 
 if __name__ == "__main__":

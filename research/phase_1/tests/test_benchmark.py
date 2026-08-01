@@ -4,7 +4,17 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from research.phase_1.arms import ARM_NAMES, choose_arm, prompt_for
+from research.phase_1.arms import (
+    ARM_NAMES,
+    COMPONENT_B,
+    COMPONENT_D,
+    COMPONENT_SCREEN_ARMS,
+    COMPONENT_T,
+    ARMS,
+    choose_arm,
+    compose_components,
+    prompt_for,
+)
 from research.phase_1.fixtures import build_fixture_corpus
 from research.phase_1.harness import (
     TokenUsage,
@@ -23,6 +33,32 @@ class BenchmarkTests(unittest.TestCase):
         self.assertEqual({task.task_type for task in tasks}, {"feature", "refactor", "cleanup", "measurement_control"})
         self.assertTrue(all(task.is_valid() for task in tasks))
 
+    def test_feature_format_total_uses_cents_contract(self):
+        tasks = {task.task_id: task for task in build_fixture_corpus()}
+        task = tasks["feature-format-total"]
+        self.assertTrue(task.is_valid())
+        self.assertIn("$12.50", task.instruction)
+        self.assertIn("$1,250.00", task.instruction)
+        whole_dollar = """def summarize_total(cents):
+    return f"{cents / 100:.2f}"
+
+def format_total(cents):
+    return f"${cents:,}"
+"""
+        self.assertFalse(task.is_source_valid(whole_dollar))
+        record = measure_candidate_patch(
+            task,
+            "neutral_control",
+            task.after,
+            execution_source="offline_fixture",
+            turns=None,
+            tool_calls=None,
+            dry_run=True,
+        )
+        self.assertTrue(record.tests.passed)
+        self.assertEqual(record.failure_reasons, ())
+        self.assertGreater(record.diff.raw_net, 0)
+
     def test_arm_routing_is_explicit_and_feature_safe(self):
         for arm in ARM_NAMES:
             self.assertIn("Feature task", prompt_for(arm, "feature", "add a feature"))
@@ -33,6 +69,101 @@ class BenchmarkTests(unittest.TestCase):
         self.assertIn("prove semantic deletions", subtractive_prompt)
         with self.assertRaises(ValueError):
             choose_arm("missing", "cleanup")
+
+    def test_atomic_components_compose_in_canonical_order(self):
+        self.assertEqual(compose_components(("T",)), COMPONENT_T)
+        self.assertEqual(compose_components(("D",)), COMPONENT_D)
+        self.assertEqual(compose_components(("B",)), COMPONENT_B)
+        self.assertEqual(
+            compose_components(("B", "T", "D")),
+            f"{COMPONENT_T} {COMPONENT_D} {COMPONENT_B}",
+        )
+        self.assertEqual(
+            compose_components(name for name in ("B", "T", "D")),
+            f"{COMPONENT_T} {COMPONENT_D} {COMPONENT_B}",
+        )
+        with self.assertRaises(ValueError):
+            compose_components(())
+        with self.assertRaises(ValueError):
+            compose_components(("T", "X"))
+
+    def test_component_screen_covers_all_eight_combinations(self):
+        self.assertEqual(len(COMPONENT_SCREEN_ARMS), 8)
+        self.assertEqual(
+            COMPONENT_SCREEN_ARMS[-1],
+            "task_type_delete_first_net_loc_budget",
+        )
+        self.assertNotIn("subtractive_rubric", COMPONENT_SCREEN_ARMS)
+        self.assertIn("subtractive_rubric", ARMS)
+        expected = {
+            frozenset(),
+            frozenset({"T"}),
+            frozenset({"D"}),
+            frozenset({"B"}),
+            frozenset({"T", "D"}),
+            frozenset({"T", "B"}),
+            frozenset({"D", "B"}),
+            frozenset({"T", "D", "B"}),
+        }
+        actual = {ARMS[name].components for name in COMPONENT_SCREEN_ARMS}
+        self.assertEqual(actual, expected)
+        atomic_tdb = ARMS["task_type_delete_first_net_loc_budget"]
+        self.assertEqual(atomic_tdb.components, frozenset({"T", "D", "B"}))
+        self.assertEqual(
+            atomic_tdb.prompt,
+            compose_components(("T", "D", "B")),
+        )
+        self.assertNotEqual(
+            atomic_tdb.prompt,
+            ARMS["subtractive_rubric"].prompt,
+        )
+        for name in COMPONENT_SCREEN_ARMS:
+            prompt = prompt_for(name, "feature", "add a feature")
+            self.assertIn("Feature task", prompt)
+
+    def test_atomic_component_presence_and_legacy_routing(self):
+        common_routing = "Task type: cleanup. Preserve behavior and keep tests green."
+        legacy_routing = (
+            "Maintenance task: do not force additions; prove semantic deletions."
+        )
+        for name in COMPONENT_SCREEN_ARMS:
+            if name == "neutral_control":
+                continue
+            prompt = prompt_for(name, "cleanup", "remove dead code")
+            self.assertTrue(prompt.startswith(common_routing))
+            self.assertNotIn(legacy_routing, prompt)
+            components = ARMS[name].components
+            if "T" in components:
+                self.assertIn(COMPONENT_T, prompt)
+            else:
+                self.assertNotIn(COMPONENT_T, prompt)
+            if "D" in components:
+                self.assertIn(COMPONENT_D, prompt)
+                self.assertIn("prove semantic deletions", prompt)
+            else:
+                self.assertNotIn(COMPONENT_D, prompt)
+                self.assertNotIn("prove semantic deletions", prompt)
+                self.assertNotIn("inventory callers", prompt.lower())
+            if "B" in components:
+                self.assertIn(COMPONENT_B, prompt)
+            else:
+                self.assertNotIn(COMPONENT_B, prompt)
+            self.assertEqual(ARMS[name].requires_delete, "D" in components)
+        # Legacy composite keeps historical routing + bundled prompt semantics.
+        subtractive_prompt = prompt_for(
+            "subtractive_rubric", "cleanup", "remove dead code"
+        )
+        self.assertTrue(subtractive_prompt.startswith(legacy_routing))
+        self.assertIn("prove semantic deletions", subtractive_prompt)
+        self.assertEqual(
+            ARMS["subtractive_rubric"].prompt,
+            (
+                "For refactor or cleanup work, add no capability: inventory references, "
+                "identify safe deletions, preserve behavior, and run tests. "
+                "Feature work remains sign-matched."
+            ),
+        )
+        self.assertFalse(ARMS["subtractive_rubric"].requires_delete)
 
     def test_diff_distinguishes_churn_and_move_like_changes(self):
         metrics = measure_diff("def old():\n    return 1\n", "def new():\n    return 1\n")

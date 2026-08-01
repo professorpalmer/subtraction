@@ -7,6 +7,7 @@ from .design import (
     DEFAULT_MODEL_EFFORTS,
     DesignCell,
     FactorialDesign,
+    build_ablation_screen_design,
     build_default_design,
 )
 from .harness import ingest_adapter_failure, ingest_candidate, prepare_run
@@ -17,6 +18,7 @@ __all__ = [
     "DEFAULT_MODEL_EFFORTS",
     "DesignCell",
     "FactorialDesign",
+    "build_ablation_screen_design",
     "build_default_design",
     "ingest_adapter_failure",
     "ingest_candidate",

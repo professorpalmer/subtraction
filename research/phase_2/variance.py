@@ -10,6 +10,8 @@ from typing import Iterable, Mapping, Optional
 
 
 PROTOCOL = "phase-2-controlled-ablation-variance-v1"
+DEFAULT_NEUTRAL_ARM = "neutral_control"
+DEFAULT_TREATMENT_ARM = "subtractive_rubric"
 _GROUP_FIELDS = ("task_id", "model", "reasoning_effort", "arm")
 _TOKEN_FIELDS = ("input_tokens", "output_tokens", "total_tokens")
 
@@ -99,43 +101,59 @@ def _validate_completed_receipt(receipt: Mapping) -> None:
 def _pair_comparison(
     key: tuple[str, str, str, str],
     neutral: list[Mapping],
-    subtractive: list[Mapping],
+    treatment: list[Mapping],
+    *,
+    treatment_arm: str,
+    neutral_arm: str = DEFAULT_NEUTRAL_ARM,
 ) -> dict:
     task_id, model, reasoning_effort, _ = key
     neutral_ids = {record["cell"]["repetition"] for record in neutral}
-    subtractive_ids = {record["cell"]["repetition"] for record in subtractive}
+    treatment_ids = {record["cell"]["repetition"] for record in treatment}
     comparison = {
         "task_id": task_id,
         "model": model,
         "reasoning_effort": reasoning_effort,
+        "neutral_arm": neutral_arm,
+        "treatment_arm": treatment_arm,
         "neutral_repetition_ids": sorted(neutral_ids),
-        "subtractive_repetition_ids": sorted(subtractive_ids),
+        "treatment_repetition_ids": sorted(treatment_ids),
     }
-    if not neutral_ids or neutral_ids != subtractive_ids:
-        if not neutral_ids or not subtractive_ids:
+    # Historical r5 field names remain for the classic subtractive contrast.
+    if treatment_arm == DEFAULT_TREATMENT_ARM:
+        comparison["subtractive_repetition_ids"] = sorted(treatment_ids)
+    if not neutral_ids or neutral_ids != treatment_ids:
+        if not neutral_ids or not treatment_ids:
             reason = "one or both arms have no completed repetitions"
         else:
-            reason = "completed repetition ID sets differ between neutral and subtractive arms"
+            reason = (
+                "completed repetition ID sets differ between neutral and "
+                f"{treatment_arm} arms"
+            )
+            if treatment_arm == DEFAULT_TREATMENT_ARM:
+                reason = "completed repetition ID sets differ between neutral and subtractive arms"
         comparison.update({"status": "unmatched", "reason": reason})
         return comparison
 
     neutral_by_id = {record["cell"]["repetition"]: record for record in neutral}
-    subtractive_by_id = {record["cell"]["repetition"]: record for record in subtractive}
+    treatment_by_id = {record["cell"]["repetition"]: record for record in treatment}
     paired = []
     for repetition in sorted(neutral_ids):
         neutral_record = neutral_by_id[repetition]
-        subtractive_record = subtractive_by_id[repetition]
+        treatment_record = treatment_by_id[repetition]
         neutral_passed = _behavior_pass(neutral_record["record"])
-        subtractive_passed = _behavior_pass(subtractive_record["record"])
-        paired.append({
+        treatment_passed = _behavior_pass(treatment_record["record"])
+        pair = {
             "repetition": repetition,
             "raw_net_delta": (
-                subtractive_record["record"]["diff"]["raw_net"]
+                treatment_record["record"]["diff"]["raw_net"]
                 - neutral_record["record"]["diff"]["raw_net"]
             ),
             "neutral_behavior_pass": neutral_passed,
-            "subtractive_behavior_pass": subtractive_passed,
-        })
+            "treatment_behavior_pass": treatment_passed,
+        }
+        if treatment_arm == DEFAULT_TREATMENT_ARM:
+            pair["subtractive_behavior_pass"] = treatment_passed
+        paired.append(pair)
     deltas = [pair["raw_net_delta"] for pair in paired]
     comparison.update({
         "status": "matched",
@@ -144,22 +162,30 @@ def _pair_comparison(
         "raw_net_delta_mean": mean(deltas),
         "raw_net_delta_sample_sd": _sample_sd(deltas),
         "both_behavior_pass_count": sum(
-            pair["neutral_behavior_pass"] and pair["subtractive_behavior_pass"]
+            pair["neutral_behavior_pass"] and pair["treatment_behavior_pass"]
             for pair in paired
         ),
         "neutral_only_behavior_pass_count": sum(
-            pair["neutral_behavior_pass"] and not pair["subtractive_behavior_pass"]
+            pair["neutral_behavior_pass"] and not pair["treatment_behavior_pass"]
             for pair in paired
         ),
-        "subtractive_only_behavior_pass_count": sum(
-            not pair["neutral_behavior_pass"] and pair["subtractive_behavior_pass"]
+        "treatment_only_behavior_pass_count": sum(
+            not pair["neutral_behavior_pass"] and pair["treatment_behavior_pass"]
             for pair in paired
         ),
     })
+    if treatment_arm == DEFAULT_TREATMENT_ARM:
+        comparison["subtractive_only_behavior_pass_count"] = comparison[
+            "treatment_only_behavior_pass_count"
+        ]
     return comparison
 
 
-def analyze_variance_records(records: Iterable[Mapping]) -> dict:
+def analyze_variance_records(
+    records: Iterable[Mapping],
+    *,
+    neutral_arm: str = DEFAULT_NEUTRAL_ARM,
+) -> dict:
     """Analyze completed receipts while retaining non-completed status counts."""
     grouped: dict[tuple[str, str, str, str], dict[str, list[Mapping]]] = defaultdict(
         lambda: defaultdict(list)
@@ -218,20 +244,29 @@ def analyze_variance_records(records: Iterable[Mapping]) -> dict:
             })
         groups.append(group)
 
-    arms_by_comparison = defaultdict(dict)
+    arms_by_comparison: dict[tuple[str, str, str], dict[str, list[Mapping]]] = defaultdict(dict)
     for group_key, arms in grouped.items():
         comparison_key = group_key[:3]
         arm = group_key[3]
-        if arm in ("neutral_control", "subtractive_rubric"):
-            arms_by_comparison[comparison_key][arm] = arms.get("completed", [])
-    comparisons = [
-        _pair_comparison(
-            (*key, "neutral_control"),
-            arms.get("neutral_control", []),
-            arms.get("subtractive_rubric", []),
-        )
-        for key, arms in sorted(arms_by_comparison.items())
-    ]
+        arms_by_comparison[comparison_key][arm] = arms.get("completed", [])
+
+    comparisons = []
+    for key, arms in sorted(arms_by_comparison.items()):
+        treatment_arms = sorted(arm for arm in arms if arm != neutral_arm)
+        # Classic two-arm reports still emit a subtractive slot when only
+        # neutral (or only subtractive) receipts are present.
+        if not treatment_arms:
+            treatment_arms = [DEFAULT_TREATMENT_ARM]
+        for treatment_arm in treatment_arms:
+            comparisons.append(
+                _pair_comparison(
+                    (*key, neutral_arm),
+                    arms.get(neutral_arm, []),
+                    arms.get(treatment_arm, []),
+                    treatment_arm=treatment_arm,
+                    neutral_arm=neutral_arm,
+                )
+            )
     return {
         "protocol": PROTOCOL,
         "groups": groups,

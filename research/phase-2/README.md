@@ -83,6 +83,26 @@ frozen Cursor model/effort pairs above; both arms; and repetitions 1..5, for
 within-cell raw-net variance or observed `total_tokens` variance exceeds 4.0.
 Live runs require clean git-backed checkouts for every cell.
 
+## Component-ablation screen (preregistered, offline)
+
+The next wave separates T/D/B prompt components on `refactor-shared-strip`
+only (genuine 2³ atomic arms × 3 models × 5 repetitions = 120 cells). The
+eighth cell is `task_type_delete_first_net_loc_budget`; legacy
+`subtractive_rubric` stays available as an optional bridge comparator outside
+this screen. See `ABLATION_PROTOCOL.md` and regenerate the frozen manifest with:
+
+```sh
+python -m research.phase_2.cli plan \
+  --ablation-screen \
+  --repetitions 5 \
+  --output research/phase-2/design-ablation-screen-r5.json \
+  --runs-root /tmp/subtraction-ablation-screen-r5-runs
+```
+
+Planning accepts `--arms` for arbitrary validated arm lists while defaulting
+to the historical two-arm pair. Do not treat historical r5 feature receipts as
+quality evidence; they remain non-interpretable (`oracle_invalid`).
+
 ## r5 wave result
 
 The completed r5 evidence contains 120 cell receipts: 119 completed adapter

@@ -212,6 +212,33 @@ class PhaseThreeTests(unittest.TestCase):
             -10,
         )
 
+    def test_multi_arm_comparisons_vs_neutral(self):
+        records = [
+            result(arm="neutral_control", input_tokens=100, output_tokens=10, total_tokens=110),
+            result(arm="task_type_gate", input_tokens=90, output_tokens=10, total_tokens=100),
+            result(arm="subtractive_rubric", input_tokens=80, output_tokens=10, total_tokens=90),
+        ]
+        comparisons = {
+            item["treatment_arm"]: item
+            for item in analyze_records(records)["matched_arm_comparisons"]
+        }
+        self.assertEqual(set(comparisons), {"subtractive_rubric", "task_type_gate"})
+        self.assertEqual(comparisons["task_type_gate"]["status"], "matched")
+        self.assertEqual(
+            comparisons["task_type_gate"]["tokens"]["input_tokens"]["delta_treatment_minus_neutral"],
+            -10,
+        )
+        self.assertNotIn(
+            "delta_subtractive_minus_neutral",
+            comparisons["task_type_gate"]["tokens"]["input_tokens"],
+        )
+        self.assertEqual(
+            comparisons["subtractive_rubric"]["tokens"]["input_tokens"][
+                "delta_subtractive_minus_neutral"
+            ],
+            -20,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

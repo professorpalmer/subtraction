@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from .aggregation import aggregate_result_files
-from .design import build_default_design
+from .design import build_ablation_screen_design, build_default_design
 from .harness import prepare_run
 from .variance import analyze_result_files
 
@@ -20,6 +20,12 @@ def main() -> None:
     plan.add_argument("--runs-root", required=True)
     plan.add_argument("--repetitions", type=int, default=10)
     plan.add_argument("--tasks", nargs="+")
+    plan.add_argument("--arms", nargs="+")
+    plan.add_argument(
+        "--ablation-screen",
+        action="store_true",
+        help="Materialize the preregistered 8-arm component screen (120 cells at R=5).",
+    )
     summary = subparsers.add_parser("summary")
     summary.add_argument("--output", required=True)
     summary.add_argument("results", nargs="+")
@@ -28,7 +34,14 @@ def main() -> None:
     variance.add_argument("results", nargs="+")
     args = parser.parse_args()
     if args.mode == "plan":
-        design = build_default_design(args.repetitions, task_ids=args.tasks)
+        if args.ablation_screen:
+            if args.tasks or args.arms:
+                raise SystemExit("--ablation-screen is mutually exclusive with --tasks/--arms")
+            design = build_ablation_screen_design(args.repetitions)
+        else:
+            design = build_default_design(
+                args.repetitions, task_ids=args.tasks, arms=args.arms,
+            )
         design.write_manifest(args.output)
         for cell in design.cells:
             prepare_run(cell, args.runs_root)
