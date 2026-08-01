@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -14,6 +15,7 @@ from research.phase_2.design import (
     build_default_design,
 )
 from research.phase_2.harness import ingest_candidate, prepare_run
+from research.phase_2.variance import analyze_variance_records
 
 
 class PhaseTwoTests(unittest.TestCase):
@@ -235,6 +237,144 @@ class PhaseTwoTests(unittest.TestCase):
         first = build_default_design(1).to_dict()
         second = build_default_design(1).to_dict()
         self.assertEqual(first, second)
+
+    def test_task_subset_is_canonical_and_validated(self):
+        selected = [
+            "control-rename",
+            "refactor-shared-strip",
+            "feature-format-total",
+            "cleanup-legacy-flag",
+        ]
+        design = build_default_design(5, task_ids=selected)
+        self.assertEqual(len(design.cells), 4 * 3 * 2 * 5)
+        self.assertEqual(
+            [task["task_id"] for task in design.to_dict()["tasks"]],
+            ["feature-format-total", "refactor-shared-strip",
+             "cleanup-legacy-flag", "control-rename"],
+        )
+        self.assertEqual(
+            design.to_dict(),
+            build_default_design(5, task_ids=reversed(selected)).to_dict(),
+        )
+        with self.assertRaisesRegex(ValueError, "unknown task IDs"):
+            build_default_design(1, task_ids=["not-a-fixture"])
+
+    def test_variance_reports_sample_sd_and_observed_token_missingness(self):
+        task = build_fixture_corpus()[0]
+        records = []
+        for arm, raw_values in (
+            ("neutral_control", [1, 3]),
+            ("subtractive_rubric", [2, 6]),
+        ):
+            for repetition, raw_net in enumerate(raw_values, start=1):
+                cell = next(
+                    cell for cell in build_default_design(2).cells
+                    if cell.task_id == task.task_id and cell.arm == arm
+                    and cell.model == "gpt-5.6-luna"
+                )
+                records.append({
+                    "cell": DesignCell.create(
+                        cell.task_id, cell.task_class, cell.model,
+                        cell.reasoning_effort, cell.arm, repetition,
+                    ).to_dict(),
+                    "actual": {
+                        "adapter_status": "completed",
+                        "input_tokens": 10 if repetition == 1 else None,
+                        "output_tokens": 5 + repetition,
+                        "total_tokens": None,
+                    },
+                    "record": {
+                        "diff": {"raw_net": raw_net},
+                        "tests": {
+                            "passed": repetition == 1 or arm == "subtractive_rubric"
+                        },
+                    },
+                })
+        result = analyze_variance_records(records)
+        neutral = next(group for group in result["groups"] if group["arm"] == "neutral_control")
+        self.assertEqual(neutral["raw_net_sample_sd"], 2**0.5)
+        self.assertEqual(neutral["token_stats"]["input_tokens"]["count"], 1)
+        self.assertIsNone(neutral["token_stats"]["total_tokens"]["mean"])
+        pair = result["paired_comparisons"][0]
+        self.assertEqual(pair["status"], "matched")
+        self.assertEqual(pair["raw_net_deltas"], [1, 3])
+        self.assertEqual(pair["both_behavior_pass_count"], 1)
+        self.assertEqual(pair["neutral_only_behavior_pass_count"], 0)
+        self.assertEqual(pair["subtractive_only_behavior_pass_count"], 1)
+
+    def test_variance_excludes_adapter_failures_and_retains_status_counts(self):
+        cell = build_default_design(1).cells[0].to_dict()
+        records = []
+        for status in ("failed", "timed_out", None):
+            records.append({
+                "cell": cell,
+                "actual": {} if status is None else {"adapter_status": status},
+                "record": {},
+            })
+        result = analyze_variance_records(records)
+        group = result["groups"][0]
+        self.assertEqual(group["completed_count"], 0)
+        self.assertEqual(group["status_counts"], {"failed": 1, "missing": 1, "timed_out": 1})
+        self.assertEqual(result["status_counts"], {"failed": 1, "missing": 1, "timed_out": 1})
+
+    def test_variance_rejects_duplicate_and_misaligned_repetitions(self):
+        cell = build_default_design(1).cells[0].to_dict()
+        receipt = {
+            "cell": cell,
+            "actual": {"adapter_status": "completed"},
+            "record": {"diff": {"raw_net": 0}, "tests": {"passed": True}},
+        }
+        with self.assertRaisesRegex(ValueError, "duplicate completed repetition"):
+            analyze_variance_records([receipt, receipt])
+        subtractive_cell = dict(cell, arm="subtractive_rubric")
+        subtractive_cell["cell_id"] = DesignCell.create(
+            subtractive_cell["task_id"], subtractive_cell["task_class"],
+            subtractive_cell["model"], subtractive_cell["reasoning_effort"],
+            subtractive_cell["arm"], subtractive_cell["repetition"],
+        ).cell_id
+        result = analyze_variance_records([
+            receipt,
+            dict(receipt, cell=subtractive_cell),
+        ])
+        self.assertEqual(result["paired_comparisons"][0]["status"], "matched")
+        extra = dict(receipt, cell=DesignCell.create(
+            cell["task_id"], cell["task_class"], cell["model"],
+            cell["reasoning_effort"], cell["arm"], 2,
+        ).to_dict())
+        result = analyze_variance_records([receipt, extra, dict(receipt, cell=subtractive_cell)])
+        self.assertEqual(result["paired_comparisons"][0]["status"], "unmatched")
+
+    def test_cli_subset_plan_and_variance_smoke(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = root / "design.json"
+            runs_root = root / "runs"
+            command = [
+                "python", "-m", "research.phase_2.cli", "plan",
+                "--output", str(manifest), "--runs-root", str(runs_root),
+                "--repetitions", "1", "--tasks", "control-rename",
+            ]
+            subprocess.run(command, check=True, capture_output=True, text=True)
+            planned = json.loads(manifest.read_text(encoding="utf-8"))
+            self.assertEqual(len(planned["cells"]), 6)
+            receipt_path = root / "receipt.json"
+            receipt_path.write_text(json.dumps({
+                "cell": planned["cells"][0],
+                "actual": {"adapter_status": "completed"},
+                "record": {
+                    "diff": {"raw_net": 0},
+                    "tests": {"passed": True},
+                },
+            }), encoding="utf-8")
+            output = root / "variance.json"
+            subprocess.run([
+                "python", "-m", "research.phase_2.cli", "variance",
+                "--output", str(output), str(receipt_path),
+            ], check=True, capture_output=True, text=True)
+            self.assertEqual(
+                json.loads(output.read_text(encoding="utf-8"))["protocol"],
+                "phase-2-controlled-ablation-variance-v1",
+            )
 
 
 if __name__ == "__main__":

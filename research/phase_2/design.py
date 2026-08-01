@@ -124,18 +124,36 @@ class FactorialDesign:
         from pathlib import Path
         output = Path(path)
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(json.dumps(self.to_dict(), indent=2, sort_keys=True) + "\n")
+        output.write_text(
+            json.dumps(self.to_dict(), indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
 
 
-def build_default_design(repetitions: int = 10) -> FactorialDesign:
+def build_default_design(
+    repetitions: int = 10,
+    task_ids: Optional[Iterable[str]] = None,
+) -> FactorialDesign:
     if repetitions < 1:
         raise ValueError("repetitions must be positive")
+    fixture_tasks = build_fixture_corpus()
+    if task_ids is not None:
+        requested_task_ids = set(task_ids)
+        available_task_ids = {task.task_id for task in fixture_tasks}
+        unknown_task_ids = sorted(requested_task_ids - available_task_ids)
+        if unknown_task_ids:
+            raise ValueError(f"unknown task IDs: {unknown_task_ids}")
+        fixture_tasks = tuple(
+            task for task in fixture_tasks if task.task_id in requested_task_ids
+        )
+        if not fixture_tasks:
+            raise ValueError("task_ids must contain at least one known task")
     cells = []
-    for task in build_fixture_corpus():
+    for task in fixture_tasks:
         for model, effort in DEFAULT_MODEL_EFFORTS:
             for arm in DEFAULT_ARMS:
                 for repetition in range(1, repetitions + 1):
                     cells.append(DesignCell.create(
                         task.task_id, task.task_type, model, effort, arm, repetition,
                     ))
-    return FactorialDesign(cells)
+    return FactorialDesign(cells, tasks=fixture_tasks)
