@@ -14,7 +14,11 @@ from research.phase_2.design import (
     FactorialDesign,
     build_default_design,
 )
-from research.phase_2.harness import ingest_candidate, prepare_run
+from research.phase_2.harness import (
+    ingest_adapter_failure,
+    ingest_candidate,
+    prepare_run,
+)
 from research.phase_2.variance import analyze_variance_records
 
 
@@ -124,6 +128,75 @@ class PhaseTwoTests(unittest.TestCase):
             self.assertEqual(result["actual"]["adapter_job_id"], "job-123")
             self.assertEqual(result["actual"]["execution_source"], "cursor_adapter")
 
+    def test_adapter_failure_receipt_persists_provenance_without_candidate(self):
+        cell = build_default_design(1).cells[0]
+        with tempfile.TemporaryDirectory() as directory:
+            run_dir = prepare_run(cell, directory)
+            result = ingest_adapter_failure(
+                cell,
+                run_dir,
+                model=cell.model,
+                reasoning_effort=cell.reasoning_effort,
+                execution_source="cursor_adapter",
+                adapter_status="timed_out",
+                failure_reason="adapter exceeded timeout",
+                adapter_job_id="job-456",
+            )
+            self.assertEqual(
+                json.loads((run_dir / "candidate" / "result.json").read_text()),
+                result,
+            )
+            self.assertEqual(result["protocol"], "phase-2-controlled-ablation-v1")
+            self.assertEqual(result["actual"]["adapter_job_id"], "job-456")
+            self.assertIsNone(result["actual"]["input_tokens"])
+            self.assertIsNone(result["actual"]["output_tokens"])
+            self.assertIsNone(result["actual"]["total_tokens"])
+            self.assertEqual(result["record"]["tests"]["tests_run"], 0)
+            self.assertFalse(result["record"]["tests"]["passed"])
+            self.assertIsNone(result["record"]["diff"])
+            self.assertEqual(result["record"]["failure_reasons"], ["adapter exceeded timeout"])
+            self.assertFalse((run_dir / "candidate" / "source.py").exists())
+
+    def test_adapter_failure_receipt_refuses_overwrite(self):
+        cell = build_default_design(1).cells[0]
+        with tempfile.TemporaryDirectory() as directory:
+            run_dir = prepare_run(cell, directory)
+            ingest_adapter_failure(
+                cell,
+                run_dir,
+                model=cell.model,
+                reasoning_effort=cell.reasoning_effort,
+                execution_source="cursor_adapter",
+                adapter_status="failed",
+                failure_reason="adapter crashed",
+            )
+            with self.assertRaises(FileExistsError):
+                ingest_adapter_failure(
+                    cell,
+                    run_dir,
+                    model=cell.model,
+                    reasoning_effort=cell.reasoning_effort,
+                    execution_source="cursor_adapter",
+                    adapter_status="failed",
+                    failure_reason="different failure",
+                )
+
+    def test_adapter_failure_receipt_rejects_completed_status(self):
+        cell = build_default_design(1).cells[0]
+        with tempfile.TemporaryDirectory() as directory:
+            run_dir = prepare_run(cell, directory)
+            with self.assertRaises(ValueError):
+                ingest_adapter_failure(
+                    cell,
+                    run_dir,
+                    model=cell.model,
+                    reasoning_effort=cell.reasoning_effort,
+                    execution_source="cursor_adapter",
+                    adapter_status="completed",
+                    failure_reason="should not be accepted",
+                )
+            self.assertFalse((run_dir / "candidate" / "result.json").exists())
+
     def test_actual_metadata_mismatch_is_rejected_before_artifacts(self):
         task = build_fixture_corpus()[0]
         cell = build_default_design(1).cells[0]
@@ -199,6 +272,7 @@ class PhaseTwoTests(unittest.TestCase):
             record = {
                 "cell": cell.to_dict(),
                 "actual": {
+                    "adapter_status": "completed",
                     "input_tokens": input_tokens, "output_tokens": output_tokens,
                     "total_tokens": total_tokens,
                 },
@@ -215,7 +289,7 @@ class PhaseTwoTests(unittest.TestCase):
         self.assertEqual(group["reported_total_tokens"], 15)
         self.assertEqual(group["runs_with_input_tokens"], 1)
 
-    def test_aggregation_counts_non_completed_adapters_and_defaults_missing_status(self):
+    def test_aggregation_counts_non_completed_adapters_and_missing_status(self):
         cell = build_default_design(1).cells[0]
         records = []
         for status in ("completed", "failed", None):
@@ -231,7 +305,47 @@ class PhaseTwoTests(unittest.TestCase):
                 },
             })
         group = aggregate_results(records)["groups"][0]
+        self.assertEqual(group["adapter_failure_count"], 2)
+        self.assertEqual(group["completed_count"], 1)
+
+    def test_aggregation_excludes_adapter_failure_receipts(self):
+        cell = build_default_design(1).cells[0]
+        completed = {
+            "cell": cell.to_dict(),
+            "actual": {
+                "adapter_status": "completed",
+                "input_tokens": 10,
+                "output_tokens": 5,
+                "total_tokens": 15,
+            },
+            "record": {
+                "diff": {"raw_net": 4},
+                "tests": {"passed": True},
+                "failure_reasons": [],
+            },
+        }
+        failure = {
+            "cell": cell.to_dict(),
+            "actual": {
+                "adapter_status": "failed",
+                "input_tokens": None,
+                "output_tokens": None,
+                "total_tokens": None,
+            },
+            "record": {
+                "diff": None,
+                "tests": {"passed": False, "tests_run": 0},
+                "failure_reasons": ["adapter crashed"],
+            },
+        }
+        group = aggregate_results([completed, failure])["groups"][0]
+        self.assertEqual(group["run_count"], 2)
+        self.assertEqual(group["completed_count"], 1)
         self.assertEqual(group["adapter_failure_count"], 1)
+        self.assertEqual(group["passed_tests"], 1)
+        self.assertEqual(group["failure_count"], 0)
+        self.assertEqual(group["raw_loc_total"], 4)
+        self.assertEqual(group["reported_total_tokens"], 15)
 
     def test_design_manifest_is_deterministic(self):
         first = build_default_design(1).to_dict()

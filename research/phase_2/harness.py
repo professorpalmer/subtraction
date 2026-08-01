@@ -153,3 +153,61 @@ def ingest_candidate(
     _write_json(result_path, result)
     candidate_source_path.write_text(candidate_source)
     return result
+
+
+def ingest_adapter_failure(
+    cell: DesignCell,
+    run_dir: Union[str, Path],
+    *,
+    model: str,
+    reasoning_effort: str,
+    execution_source: str,
+    adapter_status: str,
+    failure_reason: str,
+    adapter_job_id: Optional[str] = None,
+) -> dict:
+    """Persist an adapter failure that produced no candidate source."""
+    run_path = Path(run_dir).resolve()
+    _validate_manifest(run_path, cell)
+    if model != cell.model or reasoning_effort != cell.reasoning_effort:
+        raise ValueError(
+            "actual model/reasoning_effort does not match prepared design cell"
+        )
+    if not adapter_status or adapter_status == "completed":
+        raise ValueError("adapter failure status must be non-completed and non-empty")
+    if not isinstance(failure_reason, str) or not failure_reason.strip():
+        raise ValueError("adapter failure reason must be non-empty")
+    result_path = run_path / "candidate" / "result.json"
+    candidate_source_path = run_path / "candidate" / "source.py"
+    if result_path.exists() or candidate_source_path.exists():
+        raise FileExistsError(f"candidate artifacts already exist under {run_path / 'candidate'}")
+
+    result = {
+        "protocol": "phase-2-controlled-ablation-v1",
+        "cell": cell.to_dict(),
+        "actual": {
+            "model": model,
+            "reasoning_effort": reasoning_effort,
+            "execution_source": execution_source,
+            "turns": None,
+            "tool_calls": None,
+            "input_tokens": None,
+            "output_tokens": None,
+            "total_tokens": None,
+            "adapter_status": adapter_status,
+            "adapter_job_id": adapter_job_id,
+        },
+        "candidate_sha256": None,
+        "record": {
+            "diff": None,
+            "tests": {
+                "passed": False,
+                "tests_run": 0,
+                "failure_reason": failure_reason,
+            },
+            "failure_reasons": [failure_reason],
+        },
+    }
+    result = json.loads(json.dumps(result, sort_keys=True))
+    _write_json(result_path, result)
+    return result

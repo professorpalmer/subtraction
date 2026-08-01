@@ -9,7 +9,7 @@ from .design import (
     FactorialDesign,
     build_default_design,
 )
-from .harness import ingest_candidate, prepare_run
+from .harness import ingest_adapter_failure, ingest_candidate, prepare_run
 from .variance import analyze_result_files, analyze_variance_records, load_result_files
 
 __all__ = [
@@ -18,6 +18,7 @@ __all__ = [
     "DesignCell",
     "FactorialDesign",
     "build_default_design",
+    "ingest_adapter_failure",
     "ingest_candidate",
     "prepare_run",
     "analyze_result_files",

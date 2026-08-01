@@ -1,0 +1,1112 @@
+{
+  "cells": [
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-d123067ad06e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-c785c71fef76",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e0b06d8f888b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-fa70419bed67",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-1397d605a528",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-3d96fd7130e9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-ac0287cd6c2c",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-0ae5714c57ff",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-9307974a91fb",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-8478ab737407",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-6ae421d43ee8",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-fd7845fb110b",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-ee4e20ce15d1",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-61640916215a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-53f5102334a1",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-aee504627a57",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-be2319805e75",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a1dac140c152",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a411eacfe79c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-9be59c5d686a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e7093fadc4d0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e61aab62bf53",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a84ac08cb72c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-bce530d7a450",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-eda8e65864f6",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-f0243f28e8d0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d27a50d1bd04",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d43b14b91982",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-6db6b715e670",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-bc78bf3610cc",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a03fe8b753b4",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a32f85141f70",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-06e710e74461",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-f61a2ed2156a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-33b9dfe50119",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-cc7a1705ea44",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-11250dea5c3e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-8e3de711f2b7",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-8a7e8a638db0",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-66d5280a0517",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-0a589f65f94c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-76f788ca9981",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-64fe913732e4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-94265ce5c7a4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-6a19478238a1",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a7a1f5578f8d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-ff462d844295",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-f833768e766b",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-7cc0fb819825",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-6429f5c9c267",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-66d9bbf5b97e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-c3fac2bec6ff",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-bcbbf5bce65d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-2f7ec3ed99ed",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-d56948d24ddd",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d89964d38d22",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-ae97d6169a29",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b02e9c811f7f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b38e5aaa044d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-833031089955",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-56776aa3c08f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-c2f3869a2102",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-1a8072bae84a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-93ba9e464df7",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-203e285ed19e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-2c0d3d529520",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a598a5bf92b2",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-85dcc60fd899",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-034235dace08",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-c1f8b091b66d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-403feb6d90e4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a82fbd844494",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-ea0b3e20d3b3",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-2303f73b733a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-6a787f235b16",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-bfdcaba60d19",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-51e3123e3e49",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b210136bae40",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-32ca5c9eecde",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d0e94ab3dd76",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-98df1a43e13f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-adf33d971fbb",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-5df6017c0b95",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a9e91c7ba059",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a22d2ff74a65",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-cfb9d6c6781f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b741ae51708b",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-30cc2da46b74",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-0376fdf5740e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a0d66f231b2f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-d0f293586c51",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a0a333eaf4cb",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-79615f130508",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-da0e4a5a8139",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-f71840f93c09",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-e8b0cb7068bf",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-76d7950e523a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-57317c31897e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-45946480933d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-7069f71aa24e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-fe660becfe45",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-0d2864f39778",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-f8d36e16b22a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e5ba26eb4014",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-8358d3c6fa03",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-852b4528c68c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-efad875be242",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-4999f5129353",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-77f043dbef33",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-5876264bd284",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-5918de6e93d8",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-bf911d4580be",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-4e65f4f19cc1",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-1656ef2f9b4d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-9222fd118a5d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-63a2591333c5",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-5ede3bccd10a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-83a866e70232",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-f88516eaee66",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d0a9011b3b73",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    }
+  ],
+  "protocol": "phase-2-controlled-ablation-v1",
+  "supported_models": [
+    "composer-2.5",
+    "gpt-5.6-luna",
+    "grok-4.5"
+  ],
+  "tasks": [
+    {
+      "instruction": "Add format_total(cents), returning a currency string such as $1,250.",
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    {
+      "instruction": "Preserve display_name behavior while removing duplicated name normalization.",
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    {
+      "instruction": "Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    {
+      "instruction": "Rename the local parameter for clarity without changing behavior.",
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    }
+  ]
+}

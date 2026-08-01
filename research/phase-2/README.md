@@ -82,3 +82,20 @@ frozen Cursor model/effort pairs above; both arms; and repetitions 1..5, for
 120 cells. Expand to 10 repetitions only if the `refactor-shared-strip`
 within-cell raw-net variance or observed `total_tokens` variance exceeds 4.0.
 Live runs require clean git-backed checkouts for every cell.
+
+## r5 wave result
+
+The completed r5 evidence contains 120 cell receipts: 119 completed adapter
+runs and one recorded no-diff adapter failure. The failed receipt remains in
+the combined artifact and is excluded from completed-run statistics.
+
+The paired refactor comparison favored the subtractive rubric for all three
+models. Subtractive-minus-neutral raw-net means were `-6.2` for GPT-5.6 Luna,
+`-7.2` for Grok 4.5, and `-1.2` for Composer 2.5; all repetitions passed the
+behavior oracle. The cleanup replication showed no consistent arm effect, and
+the measurement control produced raw-net `0` in every run.
+
+The feature task is not valid quality evidence for this wave: its formatter
+contract is ambiguous about value units, so model behavior failures are
+confounded with the fixture oracle. The full interpretation and artifact list
+are in `VARIANCE_FINDINGS.md`.

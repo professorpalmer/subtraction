@@ -70,5 +70,5 @@ notes/                  # scratch, session notes
 - [x] Phase 1 cleanup-task replication
 - [x] Phase 2 factorial ablation harness and fail-closed provenance
 - [x] Phase 2 one-repetition two-task successful-adapter pilot
+- [x] Phase 2 repeated variance study (r5, 120 preregistered cells)
 - [x] Phase 3 token-usage analysis with optional cost and scenario reporting
-- [ ] Phase 2 repeated variance study

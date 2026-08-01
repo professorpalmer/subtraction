@@ -47,3 +47,20 @@ receipt totals were `361,412` tokens for neutral and `309,400` for
 subtractive; the exact per-cell values are preserved in the JSON artifacts.
 This task contrast is the stronger result: when the task itself explicitly
 requires deletion, the rubric adds no directional change.
+
+## r5 repeated wave
+
+The five-repetition wave combines the twelve successful repetition-1
+git-backed pilot receipts with 108 newly executed cells. The final artifact
+contains all 120 preregistered cells: 119 completed adapter runs and one
+recorded no-diff failure for Grok's subtractive feature repetition 4.
+
+- `variance-r5-results.json` — combined per-cell receipts.
+- `variance-r5-report.json` — sample-SD summaries and paired comparisons.
+- `variance-r5-summary.json` — aggregate model-by-arm totals.
+
+The paired refactor raw-net deltas favored the subtractive rubric for Luna
+(`-6.2` mean), Grok (`-7.2`), and Composer (`-1.2`). Cleanup showed no
+consistent arm effect, while the control task remained raw-net zero. The
+feature fixture's behavior contract is ambiguous, so its failures are not
+treated as quality evidence.

@@ -18,14 +18,19 @@ def aggregate_results(results: Iterable[Mapping]) -> dict:
         groups[(cell["model"], cell["arm"])].append(result)
     summaries = []
     for (model, arm), records in sorted(groups.items()):
-        records_by_pass = [record["record"] for record in records]
+        completed_records = [
+            record for record in records
+            if record.get("actual", {}).get("adapter_status") == "completed"
+        ]
+        records_by_pass = [record["record"] for record in completed_records]
         raw_loc = [record["diff"]["raw_net"] for record in records_by_pass]
         summaries.append({
             "model": model,
             "arm": arm,
             "run_count": len(records),
+            "completed_count": len(completed_records),
             "adapter_failure_count": sum(
-                record["actual"].get("adapter_status", "completed") != "completed"
+                record.get("actual", {}).get("adapter_status") != "completed"
                 for record in records
             ),
             "passed_tests": sum(record["tests"]["passed"] for record in records_by_pass),
@@ -33,22 +38,25 @@ def aggregate_results(results: Iterable[Mapping]) -> dict:
             "raw_loc_total": sum(raw_loc),
             "raw_loc_mean": sum(raw_loc) / len(raw_loc) if raw_loc else None,
             "reported_input_tokens": _sum_reported(
-                record["actual"].get("input_tokens") for record in records
+                record["actual"].get("input_tokens") for record in completed_records
             ),
             "reported_output_tokens": _sum_reported(
-                record["actual"].get("output_tokens") for record in records
+                record["actual"].get("output_tokens") for record in completed_records
             ),
             "reported_total_tokens": _sum_reported(
-                record["actual"].get("total_tokens") for record in records
+                record["actual"].get("total_tokens") for record in completed_records
             ),
             "runs_with_input_tokens": sum(
-                record["actual"].get("input_tokens") is not None for record in records
+                record["actual"].get("input_tokens") is not None
+                for record in completed_records
             ),
             "runs_with_output_tokens": sum(
-                record["actual"].get("output_tokens") is not None for record in records
+                record["actual"].get("output_tokens") is not None
+                for record in completed_records
             ),
             "runs_with_total_tokens": sum(
-                record["actual"].get("total_tokens") is not None for record in records
+                record["actual"].get("total_tokens") is not None
+                for record in completed_records
             ),
         })
     return {"protocol": "phase-2-controlled-ablation-v1", "groups": summaries}
