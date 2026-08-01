@@ -1,0 +1,6374 @@
+[
+  {
+    "actual": {
+      "adapter_job_id": "job_50e0b0b9b8d7",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-034235dace08",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2fe73f3d7b6f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-0376fdf5740e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_08fb51ae2b2b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-06e710e74461",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_cd0c3ae609b6",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-072730c0e667",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_14f228dc4cfb",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-09770d2f08b9",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e9457999860a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-09ac3ad3e4ee",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9a7c5dfc408d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-0a589f65f94c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_820cbc68cdf7",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-0ae5714c57ff",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_a17f4a91086c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-0d2864f39778",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_411ac72b673f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-0e941fe3bfb2",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_fa292815be93",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-11250dea5c3e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7eebe6ad62c3",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-15dc49fdee6a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e641d5a2d602",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-1621894da6b6",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f4e3a407ac16",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-1656ef2f9b4d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f32b3415c738",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-1989f1f30356",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_06d634321d99",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-1a8072bae84a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_801b3ebfd7ab",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-203e285ed19e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9aeca63f9070",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-22cc5d292c7a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_bc5dc363b1af",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-2303f73b733a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_1da347155fd9",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-28b181b219c6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_90ada0d008f8",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-2c0d3d529520",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9cf5cca7a57f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-2d6e51d19ad2",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_dad21187090f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-2d864f0038f7",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_91ae3c9a8b3a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-2dd00adf588d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_fa0d1cdb6be3",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-2e05f9233b3d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_b62127d39179",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-2edd432e5579",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_09d7b46a6d4d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-2f7ec3ed99ed",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_88a8e267cbe1",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-30cc2da46b74",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4a6057ec17d0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-33b9dfe50119",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_ab9a2c50283c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-353279a27a90",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_402090cb0004",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-3636223d50fa",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_95f2f30192e0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-38e6b849a24f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2e486bfdaede",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-38f230afa4d9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7b5a45731540",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-39523678db70",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2406debaccb7",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-3cbf0121f5eb",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_67dc671ee04b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-3d96fd7130e9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_96268d0df9f7",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-403feb6d90e4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_496e155af32c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-40b11c2b49e0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_1db7f12e9fd9",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-43c07f9ff1a5",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_8b0de34caa28",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-44a10852643b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f16b1f7e7ecc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-44cdb642508c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_b2faefcc82c0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-4503449ceff1",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4a2749e67a81",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-45946480933d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_951e2a8646dd",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-4999f5129353",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_65b320152b80",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-4b60aaf495c4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c0f8c91cfc27",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-4e65f4f19cc1",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c8eee7ad57a1",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-4f64bd2ee65a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f214c9245b30",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-5019600bf816",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_458023f17e4b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-51d13a55721c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_3751cfdd69b6",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-53d86b1d049c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_b32b13e41024",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-56776aa3c08f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_95f099f9509f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-57317c31897e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f52bc2b56caa",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-5876264bd284",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_6dd8617c74c6",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-5918de6e93d8",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_90a58bc09a2c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-5df6017c0b95",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_6bac18adbe36",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-5ede3bccd10a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_925375a8e2fc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-63a2591333c5",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_fd1dc04f6994",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-6429f5c9c267",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9e1b1be883cc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-64fe913732e4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_26b1b3de73b6",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-6504a4cde75f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_3981ae97ab02",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-66d5280a0517",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e9cf98236c52",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-66d9bbf5b97e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_14f6c3612fb2",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-6a19478238a1",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_cdcde7f706e1",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-6a787f235b16",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_db8c96701ce7",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-6ae421d43ee8",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2b8214ae232c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-6d1efbd2742b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_19afc76b9a70",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-6fcfca2841d4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f25574f090e0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-7069f71aa24e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c84ca0f9f43b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-74e934639e85",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e696844b1fc3",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-75765365be25",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7d46768983e8",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-75c976de8575",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_441cd8a4ece0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-76d7950e523a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_15194941f6b0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-76f788ca9981",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_49b813bf5bdc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-77f043dbef33",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c3dc304ab928",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-79615f130508",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9bf8f9a08aeb",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-7cc0fb819825",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_11ffb362d0d2",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-7e4fe6b364ae",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_3aad23ec2e05",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-7e98d5b7086a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_40e66c3c6375",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-8249a3c85981",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_a254f5370a6c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-833031089955",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_0d236ef14b6a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-8358d3c6fa03",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e72c37843809",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-8478ab737407",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c3ba8f849883",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-852b4528c68c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4d63234b6143",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-85dcc60fd899",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_6ce426548733",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-874c691bfe0d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4b1d3177cdef",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-87a179d556e8",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2d59660a5792",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-8a59c54ace48",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7a392f9a0070",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-8a7e8a638db0",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_40998b7ca2dc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-8c157f0a1d10",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_d28246bba6be",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-8e3de711f2b7",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4fa4d3659f33",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-8fbe443cf333",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_da5aeb35692a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-9222fd118a5d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_8b94cdc0ef01",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-92ecb5fa402d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_41100f5ddc13",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-9307974a91fb",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_b87677287f72",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-936be069e2a9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_1ed5f63c2296",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-93ba9e464df7",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_cd287219d7cf",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-93cb0665c4ae",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_a5ef6dcc4233",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-93d59874e20b",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_378ed8835240",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-94265ce5c7a4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c46362a72e45",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-98df1a43e13f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4ce3cc900e5d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-99a43e30767a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_4f0016ba854b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-9be59c5d686a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_a7052f552e2a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a0a333eaf4cb",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_d71842a85f74",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a0d66f231b2f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_91390519aacc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a1dac140c152",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_744bb8f01c2f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a22d2ff74a65",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_ad20cebd5f20",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-a2dd5a853ef6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_234ada690588",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a32f85141f70",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_794007564a36",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a411eacfe79c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c6da71387eed",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-a58a21d4f41a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_5d1fe3ffb989",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a598a5bf92b2",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e4fd2e24fd7e",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-a64a882471a5",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c7db5c09285d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-a6d9a5a6000d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9cbeda7fca04",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-a70edd86b646",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_ffa75e957783",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-a7a1f5578f8d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_d5e1a3c32d11",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a82fbd844494",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_b319028c8cde",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a84ac08cb72c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_6cffa014bd4a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-a8712fc18ed6",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_5e434045dbbd",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-a9c735c5776d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_00e58af46000",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-a9e91c7ba059",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e6984808aa0b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-aa104c0c35f4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_89f7003b17be",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-ab5e01b3a696",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7c4d1d6d075f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-ac0287cd6c2c",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e0f8fca26be3",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-ad44e069dcb7",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2b84e0629ca7",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-adf33d971fbb",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_eb5d5d92158b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-ae97d6169a29",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9977548d5522",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b02e9c811f7f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_021c4c498b5e",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-b2dc669f78bd",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_501f6fd1630f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b38e5aaa044d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_33f43a53d183",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-b4f73c77a20d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_3904c706a207",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-b577a511ab96",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e3361a410c04",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-b741ae51708b",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_5b1fc2daf0d6",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-b9e16e7b48da",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_11ccd6bbf545",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-bacaf8b941cd",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7bd649b8bb7b",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-bc78bf3610cc",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c5bc64a87b93",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-bcbbf5bce65d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_fc0d1744978a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-bce530d7a450",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_5e2d8b78372e",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-bf911d4580be",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e779e928f4e3",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-c1f8b091b66d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_60e565aa1893",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-c2f3869a2102",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_92056c288d72",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-c3fac2bec6ff",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_37ccbaf45339",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-c4d6cb9153e1",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_8009cc3021b3",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-c5196be9356c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_bc9c8bf42431",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-cc08b906a1fb",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f59ddc4d8b0f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-cc7a1705ea44",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_da0964d3536c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-cca255ba0313",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c774fa54ec20",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-ce4104a2eccd",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_93ffd07e0ebc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-cfb9d6c6781f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_bbc53b8a2f85",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-d0f293586c51",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c9fe7c4bc932",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-d184300b594b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e12e6eab3197",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-d56948d24ddd",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_af639241b04f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-d75023a20679",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e14127598c59",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-d89964d38d22",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_fa572367591a",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-d97ca8acf543",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7739bcadeadb",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-da0e4a5a8139",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c056628f5cdd",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-da19b2968338",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_589012d8360f",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-db4c837a0446",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_b6f1bf06081d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-dee358ad3a6f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e37f6e434ddc",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-e030f43f2917",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_9c4fc37e46bd",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-e452669c0fb5",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c51847f204d0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-e5ba26eb4014",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_f21853dbe899",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-e61aab62bf53",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_57d58691d4d0",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-e7093fadc4d0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_5a7896e20caf",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-e8b0cb7068bf",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_020778229cc1",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-ea0b3e20d3b3",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c6a83cd5e065",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-efad875be242",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_63da41070196",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-f61a2ed2156a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_ac9b684baf1e",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-f71840f93c09",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_85b1dccb2bf9",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-f833768e766b",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_cab4cbe1f78d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-f8d36e16b22a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_086988a265e4",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-f988fd4a65f3",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_d533f1e35d59",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-fb8662300067",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_13d26e2f2398",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-fc489dd25e78",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_45664a86851d",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-fd7845fb110b",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "feature",
+      "task_id": "feature-format-total"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_ba0cbf1c55ba",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-fe660becfe45",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "measurement_control",
+      "task_id": "control-rename"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_88b3be832289",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "composer-2.5",
+      "output_tokens": null,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-fe856bdd2cdb",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_682e24baf75c",
+      "adapter_status": "adapter_failed",
+      "execution_source": "cursor_adapter_cli",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-ff462d844295",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-strip"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "Puppetmaster receipt status: failed"
+      ],
+      "tests": {
+        "failure_reason": "Puppetmaster receipt status: failed",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  }
+]

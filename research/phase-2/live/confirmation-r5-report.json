@@ -1,0 +1,5806 @@
+{
+  "groups": [
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 98215.8,
+          "sample_sd": 30530.75548033491,
+          "values": [
+            140247,
+            115458,
+            96596,
+            69402,
+            69376
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1332.8,
+          "sample_sd": 188.6178676583955,
+          "values": [
+            1523,
+            1507,
+            1076,
+            1324,
+            1234
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 99548.6,
+          "sample_sd": 30649.97583685834,
+          "values": [
+            141770,
+            116965,
+            97672,
+            70726,
+            70610
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 158771.8,
+          "sample_sd": 56452.28812634613,
+          "values": [
+            178165,
+            69154,
+            224551,
+            162262,
+            159727
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1529.2,
+          "sample_sd": 265.8208043024473,
+          "values": [
+            1594,
+            1148,
+            1891,
+            1531,
+            1482
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 160301,
+          "sample_sd": 56714.38127582809,
+          "values": [
+            179759,
+            70302,
+            226442,
+            163793,
+            161209
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 157386.2,
+          "sample_sd": 69174.28475018733,
+          "values": [
+            227631,
+            205396,
+            185025,
+            100167,
+            68712
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1594,
+          "sample_sd": 386.4459858764223,
+          "values": [
+            2063,
+            1642,
+            1722,
+            1546,
+            997
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 158980.2,
+          "sample_sd": 69515.94813206534,
+          "values": [
+            229694,
+            207038,
+            186747,
+            101713,
+            69709
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 194542.2,
+          "sample_sd": 21197.423704308974,
+          "values": [
+            171753,
+            206410,
+            224767,
+            189208,
+            180573
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1824.4,
+          "sample_sd": 139.12692047192016,
+          "values": [
+            1630,
+            1738,
+            1912,
+            1975,
+            1867
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 196366.6,
+          "sample_sd": 21252.6983298592,
+          "values": [
+            173383,
+            208148,
+            226679,
+            191183,
+            182440
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -4,
+      "raw_net_mean": -4.8,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.4472135954999579,
+      "raw_net_values": [
+        -5,
+        -5,
+        -4,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 234563,
+          "sample_sd": 31372.077497354236,
+          "values": [
+            261785,
+            223353,
+            185942,
+            260207,
+            241528
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1754.4,
+          "sample_sd": 217.37939184752543,
+          "values": [
+            2025,
+            1885,
+            1467,
+            1767,
+            1628
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 236317.4,
+          "sample_sd": 31526.39895072065,
+          "values": [
+            263810,
+            225238,
+            187409,
+            261974,
+            243156
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 137950.4,
+          "sample_sd": 39777.9607358145,
+          "values": [
+            200422,
+            96353,
+            114548,
+            147736,
+            130693
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1103.4,
+          "sample_sd": 274.1045421002724,
+          "values": [
+            1546,
+            841,
+            987,
+            1172,
+            971
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 139053.8,
+          "sample_sd": 40047.745794239156,
+          "values": [
+            201968,
+            97194,
+            115535,
+            148908,
+            131664
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 163713.4,
+          "sample_sd": 64134.97697668566,
+          "values": [
+            131546,
+            149448,
+            275095,
+            149946,
+            112532
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1260,
+          "sample_sd": 293.16548227920697,
+          "values": [
+            1158,
+            1353,
+            1635,
+            1319,
+            835
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 164973.4,
+          "sample_sd": 64387.206596497104,
+          "values": [
+            132704,
+            150801,
+            276730,
+            151265,
+            113367
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -4,
+      "raw_net_mean": -4.8,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.4472135954999579,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -4,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 196386.2,
+          "sample_sd": 50575.16097057922,
+          "values": [
+            279789,
+            168129,
+            148307,
+            184477,
+            201229
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1442.4,
+          "sample_sd": 331.06993218956023,
+          "values": [
+            1986,
+            1481,
+            1122,
+            1359,
+            1264
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 197828.6,
+          "sample_sd": 50870.88514366543,
+          "values": [
+            281775,
+            169610,
+            149429,
+            185836,
+            202493
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 78426,
+          "sample_sd": 7203.9693572363285,
+          "values": [
+            83330,
+            70658,
+            70433,
+            83423,
+            84286
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1002,
+          "sample_sd": 60.062467481781,
+          "values": [
+            959,
+            1100,
+            948,
+            996,
+            1007
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 79428,
+          "sample_sd": 7185.414671402062,
+          "values": [
+            84289,
+            71758,
+            71381,
+            84419,
+            85293
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 89698.4,
+          "sample_sd": 7677.95117853715,
+          "values": [
+            84489,
+            98162,
+            98040,
+            84232,
+            83569
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1024.8,
+          "sample_sd": 74.26102611733829,
+          "values": [
+            1123,
+            1000,
+            959,
+            960,
+            1082
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 90723.2,
+          "sample_sd": 7636.955591071615,
+          "values": [
+            85612,
+            99162,
+            98999,
+            85192,
+            84651
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 84074.4,
+          "sample_sd": 9731.139722560765,
+          "values": [
+            83568,
+            70535,
+            83512,
+            98019,
+            84738
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1080.4,
+          "sample_sd": 100.3110163441683,
+          "values": [
+            1074,
+            1020,
+            1255,
+            1015,
+            1038
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 85154.8,
+          "sample_sd": 9726.073138733844,
+          "values": [
+            84642,
+            71555,
+            84767,
+            99034,
+            85776
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -5,
+      "raw_net_mean": -5,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "cleanup-legacy-flag",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 83916,
+          "sample_sd": 666.0138887440712,
+          "values": [
+            83517,
+            83611,
+            83574,
+            83784,
+            85094
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1017.6,
+          "sample_sd": 51.81988035493714,
+          "values": [
+            1056,
+            1001,
+            936,
+            1031,
+            1064
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 84933.6,
+          "sample_sd": 693.9231225431244,
+          "values": [
+            84573,
+            84612,
+            84510,
+            84815,
+            86158
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 189739,
+          "sample_sd": 50180.45177656335,
+          "values": [
+            140981,
+            162701,
+            263472,
+            218386,
+            163155
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1627.4,
+          "sample_sd": 203.4411462806873,
+          "values": [
+            1305,
+            1598,
+            1809,
+            1794,
+            1631
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 191366.4,
+          "sample_sd": 50352.85272256181,
+          "values": [
+            142286,
+            164299,
+            265281,
+            220180,
+            164786
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 175701,
+          "sample_sd": 16622.867968554645,
+          "values": [
+            194279,
+            149844,
+            171379,
+            183172,
+            179831
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1531.2,
+          "sample_sd": 143.03216421490657,
+          "values": [
+            1709,
+            1449,
+            1341,
+            1616,
+            1541
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 177232.2,
+          "sample_sd": 16727.299070680838,
+          "values": [
+            195988,
+            151293,
+            172720,
+            184788,
+            181372
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 161303.6,
+          "sample_sd": 54111.94323160091,
+          "values": [
+            195019,
+            158415,
+            197866,
+            68618,
+            186600
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1485,
+          "sample_sd": 218.8012797037531,
+          "values": [
+            1607,
+            1412,
+            1698,
+            1140,
+            1568
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 162788.6,
+          "sample_sd": 54325.35604853409,
+          "values": [
+            196626,
+            159827,
+            199564,
+            69758,
+            188168
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 171484.6,
+          "sample_sd": 71188.21745415458,
+          "values": [
+            136295,
+            69061,
+            178802,
+            236862,
+            236403
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1610.4,
+          "sample_sd": 312.80872749972946,
+          "values": [
+            1392,
+            1219,
+            1604,
+            1936,
+            1901
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 173095,
+          "sample_sd": 71496.85185377045,
+          "values": [
+            137687,
+            70280,
+            180406,
+            238798,
+            238304
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 156302.6,
+          "sample_sd": 45963.5161002724,
+          "values": [
+            223717,
+            183012,
+            131256,
+            112295,
+            131233
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1274.6,
+          "sample_sd": 381.0456665545483,
+          "values": [
+            1870,
+            1390,
+            1172,
+            877,
+            1064
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 157577.2,
+          "sample_sd": 46336.528114436886,
+          "values": [
+            225587,
+            184402,
+            132428,
+            113172,
+            132297
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 151379.6,
+          "sample_sd": 22326.216423747217,
+          "values": [
+            149783,
+            130839,
+            129839,
+            181922,
+            164515
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1202.8,
+          "sample_sd": 229.979781720046,
+          "values": [
+            1489,
+            1098,
+            876,
+            1301,
+            1250
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 152582.4,
+          "sample_sd": 22465.307605283306,
+          "values": [
+            151272,
+            131937,
+            130715,
+            183223,
+            165765
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 131126,
+          "sample_sd": 54955.23818982136,
+          "values": [
+            147370,
+            96207,
+            218702,
+            113317,
+            80034
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1015.4,
+          "sample_sd": 251.71074669151494,
+          "values": [
+            1022,
+            886,
+            1449,
+            873,
+            847
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 132141.4,
+          "sample_sd": 55199.73597128885,
+          "values": [
+            148392,
+            97093,
+            220151,
+            114190,
+            80881
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 138934.6,
+          "sample_sd": 57054.60252074323,
+          "values": [
+            181563,
+            203128,
+            80064,
+            150084,
+            79834
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1029.2,
+          "sample_sd": 328.82168419981065,
+          "values": [
+            1056,
+            1435,
+            716,
+            1254,
+            685
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 139963.8,
+          "sample_sd": 57354.82016099431,
+          "values": [
+            182619,
+            204563,
+            80780,
+            151338,
+            80519
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 128122.2,
+          "sample_sd": 55112.59072752795,
+          "values": [
+            217211,
+            99064,
+            134151,
+            119073,
+            71112
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1797.8,
+          "sample_sd": 615.7781256264304,
+          "values": [
+            2772,
+            1287,
+            1699,
+            1955,
+            1276
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 129920,
+          "sample_sd": 55699.71570394233,
+          "values": [
+            219983,
+            100351,
+            135850,
+            121028,
+            72388
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 99863.2,
+          "sample_sd": 20038.65926652779,
+          "values": [
+            98615,
+            83329,
+            84674,
+            99661,
+            133037
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1282.4,
+          "sample_sd": 192.21940588816727,
+          "values": [
+            1142,
+            1092,
+            1320,
+            1275,
+            1583
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 101145.6,
+          "sample_sd": 20197.715373279225,
+          "values": [
+            99757,
+            84421,
+            85994,
+            100936,
+            134620
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 99935.8,
+          "sample_sd": 11854.223496290257,
+          "values": [
+            117271,
+            98649,
+            83815,
+            100118,
+            99826
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1455.6,
+          "sample_sd": 332.97267155128515,
+          "values": [
+            1696,
+            1181,
+            1221,
+            1921,
+            1259
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 101391.4,
+          "sample_sd": 12034.866650694556,
+          "values": [
+            118967,
+            99830,
+            85036,
+            102039,
+            101085
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 0,
+      "raw_net_mean": 0,
+      "raw_net_min": 0,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "control-rename",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 154381.6,
+          "sample_sd": 46304.750202328054,
+          "values": [
+            172924,
+            159836,
+            121384,
+            218353,
+            99411
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1736,
+          "sample_sd": 415.83830992346054,
+          "values": [
+            1882,
+            1781,
+            1384,
+            2332,
+            1301
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 156117.6,
+          "sample_sd": 46718.37210669909,
+          "values": [
+            174806,
+            161617,
+            122768,
+            220685,
+            100712
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 4,
+      "raw_net_mean": 4,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 78813.2,
+          "sample_sd": 6269.3822422946905,
+          "values": [
+            81604,
+            81763,
+            81650,
+            81449,
+            67600
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1093,
+          "sample_sd": 24.423349483639626,
+          "values": [
+            1087,
+            1128,
+            1103,
+            1085,
+            1062
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 79906.2,
+          "sample_sd": 6287.006020356589,
+          "values": [
+            82691,
+            82891,
+            82753,
+            82534,
+            68662
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 4,
+      "raw_net_mean": 4,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 259506.2,
+          "sample_sd": 125099.43178807807,
+          "values": [
+            242806,
+            184767,
+            169779,
+            223060,
+            477119
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1847.8,
+          "sample_sd": 251.04919836557934,
+          "values": [
+            1710,
+            1573,
+            1928,
+            1795,
+            2233
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 261354,
+          "sample_sd": 125302.14289268959,
+          "values": [
+            244516,
+            186340,
+            171707,
+            224855,
+            479352
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 4,
+      "raw_net_mean": 4,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 77755.6,
+          "sample_sd": 14154.121601145018,
+          "values": [
+            68255,
+            100236,
+            68635,
+            68240,
+            83412
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1259.4,
+          "sample_sd": 162.65392709676578,
+          "values": [
+            1115,
+            1494,
+            1258,
+            1101,
+            1329
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 79015,
+          "sample_sd": 14305.431538405264,
+          "values": [
+            69370,
+            101730,
+            69893,
+            69341,
+            84741
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 4,
+      "raw_net_mean": 4,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 76529.4,
+          "sample_sd": 7510.540846037654,
+          "values": [
+            82290,
+            69074,
+            81924,
+            67576,
+            81783
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1129,
+          "sample_sd": 125.28966437819203,
+          "values": [
+            1124,
+            1327,
+            1121,
+            980,
+            1093
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 77658.4,
+          "sample_sd": 7498.154459598709,
+          "values": [
+            83414,
+            70401,
+            83045,
+            68556,
+            82876
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 7,
+      "raw_net_mean": 6.6,
+      "raw_net_min": 6,
+      "raw_net_sample_sd": 0.5477225575051661,
+      "raw_net_values": [
+        6,
+        7,
+        7,
+        6,
+        7
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 145733,
+          "sample_sd": 34779.69926551982,
+          "values": [
+            131544,
+            204132,
+            148408,
+            130052,
+            114529
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1244.8,
+          "sample_sd": 248.2281208888308,
+          "values": [
+            1333,
+            1614,
+            1237,
+            1045,
+            995
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 146977.8,
+          "sample_sd": 35004.24685234636,
+          "values": [
+            132877,
+            205746,
+            149645,
+            131097,
+            115524
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 7,
+      "raw_net_mean": 5.6,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 1.51657508881031,
+      "raw_net_values": [
+        7,
+        4,
+        4,
+        6,
+        7
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 142571.4,
+          "sample_sd": 42339.82403482565,
+          "values": [
+            167505,
+            112757,
+            97517,
+            202060,
+            133018
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1279.6,
+          "sample_sd": 416.3799947163648,
+          "values": [
+            1484,
+            864,
+            877,
+            1840,
+            1333
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 143851,
+          "sample_sd": 42744.13174343351,
+          "values": [
+            168989,
+            113621,
+            98394,
+            203900,
+            134351
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 6,
+      "raw_net_mean": 4.4,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        6,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 146065.4,
+          "sample_sd": 39985.55745891259,
+          "values": [
+            149205,
+            185236,
+            79593,
+            166534,
+            149759
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1233.2,
+          "sample_sd": 281.82565532612534,
+          "values": [
+            1270,
+            1482,
+            758,
+            1255,
+            1401
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 147298.6,
+          "sample_sd": 40251.48028706522,
+          "values": [
+            150475,
+            186718,
+            80351,
+            167789,
+            151160
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 7,
+      "raw_net_mean": 5.6,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 1.51657508881031,
+      "raw_net_values": [
+        7,
+        4,
+        6,
+        4,
+        7
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 177486.2,
+          "sample_sd": 32096.907416447462,
+          "values": [
+            151126,
+            164968,
+            218519,
+            204545,
+            148273
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1374.6,
+          "sample_sd": 269.25694048622034,
+          "values": [
+            1347,
+            1225,
+            1771,
+            1472,
+            1058
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 178860.8,
+          "sample_sd": 32336.651205713926,
+          "values": [
+            152473,
+            166193,
+            220290,
+            206017,
+            149331
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 6,
+      "raw_net_mean": 5,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 0.7071067811865476,
+      "raw_net_values": [
+        5,
+        5,
+        5,
+        4,
+        6
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 101614.6,
+          "sample_sd": 25221.275667578753,
+          "values": [
+            84087,
+            117199,
+            84126,
+            138714,
+            83947
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1531.2,
+          "sample_sd": 344.63705546560135,
+          "values": [
+            1317,
+            2066,
+            1336,
+            1689,
+            1248
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 103145.8,
+          "sample_sd": 25483.55857607018,
+          "values": [
+            85404,
+            119265,
+            85462,
+            140403,
+            85195
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 8,
+      "raw_net_mean": 6,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 1.8708286933869707,
+      "raw_net_values": [
+        8,
+        5,
+        4,
+        8,
+        5
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 105143.4,
+          "sample_sd": 15112.065222860838,
+          "values": [
+            101061,
+            120932,
+            85039,
+            99142,
+            119543
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1557.4,
+          "sample_sd": 188.20812947372917,
+          "values": [
+            1785,
+            1343,
+            1559,
+            1698,
+            1402
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 106700.8,
+          "sample_sd": 14989.862964683833,
+          "values": [
+            102846,
+            122275,
+            86598,
+            100840,
+            120945
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 7,
+      "raw_net_mean": 4.8,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 1.3038404810405297,
+      "raw_net_values": [
+        4,
+        7,
+        4,
+        5,
+        4
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 96999.8,
+          "sample_sd": 7338.967073096867,
+          "values": [
+            83916,
+            100482,
+            100361,
+            99295,
+            100945
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1477.2,
+          "sample_sd": 183.7190790310032,
+          "values": [
+            1382,
+            1695,
+            1550,
+            1215,
+            1544
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 98477,
+          "sample_sd": 7406.038583480375,
+          "values": [
+            85298,
+            102177,
+            101911,
+            100510,
+            102489
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 7,
+      "raw_net_mean": 5,
+      "raw_net_min": 4,
+      "raw_net_sample_sd": 1.224744871391589,
+      "raw_net_values": [
+        5,
+        4,
+        4,
+        5,
+        7
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "feature-format-total",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 94293.2,
+          "sample_sd": 21107.335992493227,
+          "values": [
+            84579,
+            84920,
+            85579,
+            132042,
+            84346
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1571.6,
+          "sample_sd": 528.7048325861983,
+          "values": [
+            1167,
+            1317,
+            1605,
+            2473,
+            1296
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 95864.8,
+          "sample_sd": 21614.72030122065,
+          "values": [
+            85746,
+            86237,
+            87184,
+            134515,
+            85642
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -6,
+      "raw_net_mean": -6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 189394.2,
+          "sample_sd": 45337.80150382239,
+          "values": [
+            143994,
+            210122,
+            144758,
+            198193,
+            249904
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2701,
+          "sample_sd": 456.5287504637578,
+          "values": [
+            1899,
+            2810,
+            2859,
+            2896,
+            3041
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 192095.2,
+          "sample_sd": 45636.36815304215,
+          "values": [
+            145893,
+            212932,
+            147617,
+            201089,
+            252945
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 6,
+      "raw_net_mean": -2.8,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 5.215361924162119,
+      "raw_net_values": [
+        -2,
+        6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 288880.8,
+          "sample_sd": 108160.0922415472,
+          "values": [
+            279360,
+            467609,
+            290910,
+            196374,
+            210151
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3164.4,
+          "sample_sd": 715.5894772842877,
+          "values": [
+            3318,
+            4052,
+            3367,
+            3002,
+            2083
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 292045.2,
+          "sample_sd": 108756.5736528142,
+          "values": [
+            282678,
+            471661,
+            294277,
+            199376,
+            212234
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -6,
+      "raw_net_mean": -6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 205400.8,
+          "sample_sd": 44187.156665710005,
+          "values": [
+            174549,
+            147821,
+            249997,
+            244540,
+            210097
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2124.2,
+          "sample_sd": 336.9899108282027,
+          "values": [
+            2065,
+            1794,
+            2662,
+            1906,
+            2194
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 207525,
+          "sample_sd": 44395.086929749334,
+          "values": [
+            176614,
+            149615,
+            252659,
+            246446,
+            212291
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -6,
+      "raw_net_mean": -6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 259715.6,
+          "sample_sd": 44095.15288895141,
+          "values": [
+            215992,
+            289109,
+            318908,
+            252965,
+            221604
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3201.6,
+          "sample_sd": 865.2001502542635,
+          "values": [
+            2150,
+            3466,
+            3683,
+            4232,
+            2477
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 262917.2,
+          "sample_sd": 44683.15443430555,
+          "values": [
+            218142,
+            292575,
+            322591,
+            257197,
+            224081
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 3,
+      "raw_net_mean": -2.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.929503017546495,
+      "raw_net_values": [
+        3,
+        -6,
+        -6,
+        -6,
+        3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 178307.8,
+          "sample_sd": 49074.11020283506,
+          "values": [
+            190636,
+            219844,
+            117154,
+            226615,
+            137290
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1794.6,
+          "sample_sd": 303.1737125807579,
+          "values": [
+            2051,
+            1461,
+            1466,
+            2010,
+            1985
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 180102.4,
+          "sample_sd": 49136.115066211736,
+          "values": [
+            192687,
+            221305,
+            118620,
+            228625,
+            139275
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 6,
+      "raw_net_mean": 3.8,
+      "raw_net_min": 3,
+      "raw_net_sample_sd": 1.3038404810405297,
+      "raw_net_values": [
+        3,
+        3,
+        3,
+        6,
+        4
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 156616,
+          "sample_sd": 38100.35104168989,
+          "values": [
+            131166,
+            135523,
+            130260,
+            219163,
+            166968
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1403.8,
+          "sample_sd": 262.9015024681297,
+          "values": [
+            1256,
+            1820,
+            1152,
+            1490,
+            1301
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 158019.8,
+          "sample_sd": 38140.25526527058,
+          "values": [
+            132422,
+            137343,
+            131412,
+            220653,
+            168269
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -5,
+      "raw_net_mean": -5.8,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.4472135954999579,
+      "raw_net_values": [
+        -6,
+        -6,
+        -5,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 181373.6,
+          "sample_sd": 78950.14061292101,
+          "values": [
+            115786,
+            257975,
+            208889,
+            243545,
+            80673
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1823.4,
+          "sample_sd": 514.3109954103645,
+          "values": [
+            1544,
+            1932,
+            2149,
+            2398,
+            1094
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 183197,
+          "sample_sd": 79408.9297340041,
+          "values": [
+            117330,
+            259907,
+            211038,
+            245943,
+            81767
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 3,
+      "raw_net_mean": -1.8,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 4.54972526643093,
+      "raw_net_values": [
+        -6,
+        3,
+        3,
+        -6,
+        -3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 158884.2,
+          "sample_sd": 41017.15627880607,
+          "values": [
+            152996,
+            188758,
+            98978,
+            204850,
+            148839
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1730,
+          "sample_sd": 301.65709008740373,
+          "values": [
+            1673,
+            2173,
+            1845,
+            1593,
+            1366
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 160614.2,
+          "sample_sd": 41042.879153392736,
+          "values": [
+            154669,
+            190931,
+            100823,
+            206443,
+            150205
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 3,
+      "raw_net_mean": -3,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 3.6742346141747673,
+      "raw_net_values": [
+        -6,
+        -6,
+        -3,
+        3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 347891,
+          "sample_sd": 227816.76009789095,
+          "values": [
+            289667,
+            301823,
+            739317,
+            142468,
+            266180
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 5952.8,
+          "sample_sd": 1764.9629457866813,
+          "values": [
+            7149,
+            5173,
+            7892,
+            3381,
+            6169
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 353843.8,
+          "sample_sd": 229175.86378303453,
+          "values": [
+            296816,
+            306996,
+            747209,
+            145849,
+            272349
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 3,
+      "raw_net_mean": -3,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 3.6742346141747673,
+      "raw_net_values": [
+        -6,
+        -3,
+        -6,
+        3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 265646.4,
+          "sample_sd": 122841.7861999735,
+          "values": [
+            245683,
+            443815,
+            286747,
+            99517,
+            252470
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4904.2,
+          "sample_sd": 2354.467816726319,
+          "values": [
+            4576,
+            8125,
+            5356,
+            1515,
+            4949
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 270550.6,
+          "sample_sd": 125187.22386210183,
+          "values": [
+            250259,
+            451940,
+            292103,
+            101032,
+            257419
+          ]
+        }
+      }
+    },
+    {
+      "arm": "subtractive_rubric",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -6,
+      "raw_net_mean": -6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 116219.8,
+          "sample_sd": 44297.06218475442,
+          "values": [
+            85352,
+            99996,
+            99676,
+            194591,
+            101484
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2448.2,
+          "sample_sd": 902.4046764063227,
+          "values": [
+            2233,
+            2040,
+            1958,
+            4050,
+            1960
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 118668,
+          "sample_sd": 45167.422922943035,
+          "values": [
+            87585,
+            102036,
+            101634,
+            198641,
+            103444
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -5.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.3416407864998738,
+      "raw_net_values": [
+        -6,
+        -6,
+        -6,
+        -6,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-strip",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 149520.6,
+          "sample_sd": 52388.92707242629,
+          "values": [
+            230138,
+            129720,
+            107419,
+            107456,
+            172870
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 4472.4,
+          "sample_sd": 1140.1595502384744,
+          "values": [
+            4746,
+            6337,
+            3537,
+            4029,
+            3713
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 153993,
+          "sample_sd": 52522.55589268291,
+          "values": [
+            234884,
+            136057,
+            110956,
+            111485,
+            176583
+          ]
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.2,
+      "raw_net_delta_sample_sd": 0.4472135954999579,
+      "raw_net_deltas": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.2,
+      "raw_net_delta_sample_sd": 0.4472135954999579,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "cleanup-legacy-flag",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "control-rename",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "control-rename",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "control-rename",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "control-rename",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "control-rename",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "control-rename",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "control-rename",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "control-rename",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "control-rename",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "feature-format-total",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "feature-format-total",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "feature-format-total",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 1,
+      "raw_net_delta_sample_sd": 1.8708286933869707,
+      "raw_net_deltas": [
+        -1,
+        3,
+        3,
+        0,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -1,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "feature-format-total",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -1.2,
+      "raw_net_delta_sample_sd": 1.3038404810405297,
+      "raw_net_deltas": [
+        -1,
+        0,
+        0,
+        -2,
+        -3
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -1,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "feature-format-total",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 1.4142135623730951,
+      "raw_net_deltas": [
+        0,
+        0,
+        2,
+        -2,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "feature-format-total",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -1,
+      "raw_net_delta_sample_sd": 2.345207879911715,
+      "raw_net_deltas": [
+        -3,
+        0,
+        1,
+        -4,
+        1
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "feature-format-total",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -1.2,
+      "raw_net_delta_sample_sd": 2.3874672772626644,
+      "raw_net_deltas": [
+        -4,
+        2,
+        0,
+        -3,
+        -1
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -1,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "feature-format-total",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -1,
+      "raw_net_delta_sample_sd": 2.1213203435596424,
+      "raw_net_deltas": [
+        -3,
+        -1,
+        0,
+        -3,
+        2
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -1,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "feature-format-total",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.2,
+      "raw_net_delta_sample_sd": 5.215361924162119,
+      "raw_net_deltas": [
+        -4,
+        -12,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.2,
+      "raw_net_delta_sample_sd": 5.215361924162119,
+      "raw_net_deltas": [
+        -4,
+        -12,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.2,
+      "raw_net_delta_sample_sd": 5.215361924162119,
+      "raw_net_deltas": [
+        -4,
+        -12,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -4,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -6.2,
+      "raw_net_delta_sample_sd": 5.357238094391549,
+      "raw_net_deltas": [
+        0,
+        -9,
+        -9,
+        -12,
+        -1
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -1,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -9.6,
+      "raw_net_delta_sample_sd": 1.51657508881031,
+      "raw_net_deltas": [
+        -9,
+        -9,
+        -8,
+        -12,
+        -10
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -8,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -5.6,
+      "raw_net_delta_sample_sd": 5.412947441089743,
+      "raw_net_deltas": [
+        -9,
+        0,
+        0,
+        -12,
+        -7
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -7,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 2.1213203435596424,
+      "raw_net_deltas": [
+        0,
+        -3,
+        3,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3,
+      "raw_net_delta_sample_sd": 3.6742346141747673,
+      "raw_net_deltas": [
+        0,
+        -3,
+        0,
+        -9,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 2,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 4,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 5,
+          "subtractive_behavior_pass": true,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "subtractive_only_behavior_pass_count": 0,
+      "subtractive_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "subtractive_rubric",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -2.4,
+      "raw_net_delta_sample_sd": 3.9115214431215892,
+      "raw_net_deltas": [
+        0,
+        -3,
+        0,
+        -9,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-strip",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "protocol": "phase-2-controlled-ablation-variance-v1",
+  "status_counts": {
+    "completed": 240
+  }
+}

@@ -127,3 +127,29 @@ The feature task is not valid quality evidence for this wave: its formatter
 contract is ambiguous about value units, so model behavior failures are
 confounded with the fixture oracle. The full interpretation and artifact list
 are in `VARIANCE_FINDINGS.md`.
+
+## Confirmation wave (completed)
+
+The completed confirmation crossed four tasks
+(`refactor-shared-strip`, `cleanup-legacy-flag`, corrected
+`feature-format-total`, and `control-rename`) × three models × four arms
+(`neutral_control`, `delete_first_gate`,
+`task_type_delete_first_net_loc_budget`, and `subtractive_rubric`) × five
+repetitions: **240 cells**. The first dispatch completed 63 cells and had 177
+provider rate-limit failures. All 177 were retried from fresh cells at lower
+concurrency. The final selected dataset has 240/240 completed adapter receipts
+and 240/240 behavior-oracle passes.
+
+The evidence-first results and interpretation are in
+[`CONFIRMATION_FINDINGS.md`](CONFIRMATION_FINDINGS.md). The findings are
+task- and model-conditional: effects concentrate on refactor, are absent on
+the measurement control, are nearly absent on cleanup, and vary by model on
+the corrected feature task. They do not establish statistical significance,
+broad generalization, or causal mechanism. Token analysis is descriptive
+matched-receipt telemetry only; no pricing was supplied.
+
+Confirmation artifacts are in `live/`:
+`confirmation-r5-results.json`, `confirmation-r5-report.json`,
+`confirmation-r5-summary.json`, `confirmation-r5-token-analysis.json`,
+`confirmation-r5-initial-rate-limit-failures.json`, and
+`confirmation-r5-retry-provenance.json`.

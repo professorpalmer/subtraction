@@ -85,3 +85,30 @@ The screen artifacts are:
 The token analysis is descriptive only and follows the Phase 3 accounting
 boundary. The corrected feature-format-total cents contract is offline
 infrastructure, not part of this live screen.
+
+## Confirmation wave
+
+The completed confirmation crossed four tasks
+(`refactor-shared-strip`, `cleanup-legacy-flag`, corrected
+`feature-format-total`, and `control-rename`), three models, four arms
+(`neutral_control`, `delete_first_gate`,
+`task_type_delete_first_net_loc_budget`, and `subtractive_rubric`), and five
+repetitions: `240` cells. The first dispatch completed 63 cells and had 177
+provider rate-limit failures. All 177 were retried from fresh cells at lower
+concurrency. The final selected dataset contains 240/240 completed adapter
+receipts and 240/240 behavior-oracle passes.
+
+Results and provenance:
+
+- `confirmation-r5-results.json`
+- `confirmation-r5-report.json`
+- `confirmation-r5-summary.json`
+- `confirmation-r5-token-analysis.json`
+- `confirmation-r5-initial-rate-limit-failures.json`
+- `confirmation-r5-retry-provenance.json`
+
+The evidence-first interpretation is in
+[`../CONFIRMATION_FINDINGS.md`](../CONFIRMATION_FINDINGS.md). Its raw-net
+comparisons are descriptive, task- and model-conditional, and do not establish
+statistical significance, broad generalization, causal mechanism, or cost
+savings. No pricing was supplied.

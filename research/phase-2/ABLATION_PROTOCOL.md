@@ -91,9 +91,9 @@ Before interpreting LOC effects:
 Variance trigger reuse: expand R to 10 only if a `refactor-shared-strip`
 within-cell raw-net or observed `total_tokens` sample variance exceeds 4.0.
 
-## Confirmation wave (later; not this screen)
+## Confirmation wave (completed)
 
-Only after the screening contrasts land, run a reduced confirmation wave:
+The reduced confirmation wave is complete:
 
 - Tasks: `refactor-shared-strip`, `cleanup-legacy-flag` (the existing second
   maintenance task), corrected `feature-format-total`, and `control-rename`
@@ -103,5 +103,18 @@ Only after the screening contrasts land, run a reduced confirmation wave:
 - Models/efforts: same three pairs
 - Repetitions: 5
 
-That confirmation wave tests generalization and feature sign-matching; it is
-not part of the 120-cell atomic screen materialized here.
+This produced `4 × 3 × 4 × 5 = 240` cells. The first dispatch completed 63
+cells and had 177 provider rate-limit failures; all 177 were retried from
+fresh cells at lower concurrency. The final selected dataset contains
+240/240 completed adapter receipts and 240/240 behavior-oracle passes.
+Transport provenance is retained in
+`live/confirmation-r5-initial-rate-limit-failures.json` and
+`live/confirmation-r5-retry-provenance.json`.
+
+The confirmation tests task and model conditionality and feature sign-matching;
+its evidence-first interpretation is in
+[`CONFIRMATION_FINDINGS.md`](CONFIRMATION_FINDINGS.md). The results are
+descriptive and do not establish statistical significance, broad
+generalization, causal mechanism, or cost savings. Next work is a
+pre-registered larger-task replication or interaction-focused factorial
+follow-up.

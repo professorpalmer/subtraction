@@ -1,0 +1,15 @@
+{
+  "final_selection": "For retried cell IDs, the fresh retry receipt replaces the initial rate-limited failure; the other 63 first-attempt receipts are retained.",
+  "initial_attempt": {
+    "artifact": "confirmation-r5-initial-rate-limit-failures.json",
+    "cells": 240,
+    "completed_adapter_runs": 63,
+    "rate_limited_adapter_failures": 177
+  },
+  "protocol": "phase-2-confirmation-r5-dispatch-v1",
+  "retry_attempt": {
+    "cells": 177,
+    "source": "/private/tmp/subtraction-confirmation-r5-20260801-b/launch-results.json",
+    "successful_launches": 177
+  }
+}

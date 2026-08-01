@@ -60,11 +60,34 @@ receipts.
 - `ablation-screen-r5-token-analysis.json` — descriptive Phase 3 token
   accounting
 
+## Confirmation wave
+
+The completed confirmation crossed four tasks
+(`refactor-shared-strip`, `cleanup-legacy-flag`, corrected
+`feature-format-total`, and `control-rename`) × three models × four arms
+(`neutral_control`, `delete_first_gate`,
+`task_type_delete_first_net_loc_budget`, and `subtractive_rubric`) × five
+repetitions: `240` cells. The first dispatch completed 63 cells and recorded
+177 provider rate-limit failures; all 177 were retried from fresh cells at
+lower concurrency. The final selected dataset contains 240/240 completed
+adapter receipts and 240/240 behavior-oracle passes. See
+[`CONFIRMATION_FINDINGS.md`](CONFIRMATION_FINDINGS.md) for the evidence-first
+memo and the complete paired deltas.
+
+This confirmation does not show a universal standalone D-arm effect: on
+`refactor-shared-strip`, D-only was 0 for Grok, while T+D+B was -2.4 and the
+legacy rubric was -3.0. Effects were task- and model-conditional, with the
+strongest differentiation on refactor, no effect on the control, little
+effect on cleanup, and model-dependent results on the corrected feature task.
+Do not interpret these descriptive results as statistically significant,
+generalizable, or causal. Token analysis is descriptive matched-receipt
+telemetry only; no pricing was supplied.
+
+Transport provenance is preserved in
+`live/confirmation-r5-initial-rate-limit-failures.json` and
+`live/confirmation-r5-retry-provenance.json`.
+
 ## Next work
 
-- Prepare the exact 240-cell confirmation wave: four tasks
-  (`refactor-shared-strip`, `cleanup-legacy-flag`, corrected
-  `feature-format-total`, and `control-rename`) × three models × four arms
-  (`neutral_control`, `delete_first_gate`,
-  `task_type_delete_first_net_loc_budget`, and `subtractive_rubric`) × five
-  repetitions. This is a planned wave; no results are claimed here.
+- Pre-register a larger-task replication or an interaction-focused factorial
+  follow-up. Do not make another broad claim from this wave.
