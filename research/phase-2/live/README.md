@@ -1,8 +1,9 @@
 # Phase 2 live pilot evidence
 
-This directory records two six-cell pilots for `refactor-shared-strip`. Each
-crosses `neutral_control` and `subtractive_rubric` with GPT-5.6 Luna, Grok
-4.5, and Composer 2.5 at the explicit Phase 2 effort levels.
+This directory records three six-cell pilots for `refactor-shared-strip` and
+`cleanup-legacy-flag`. Each crosses `neutral_control` and
+`subtractive_rubric` with GPT-5.6 Luna, Grok 4.5, and Composer 2.5 at the
+explicit Phase 2 effort levels.
 
 ## Provenance boundary
 
@@ -25,7 +26,10 @@ independent setup validation.
 - `pilot-2026-08-01-refactor-git-results.json` and
   `pilot-2026-08-01-refactor-git-summary.json` — six successful records with
   receipts, job IDs, hashes, and grouped metrics.
-- The twelve pilot `.py` files — exact model-produced candidate sources.
+- `pilot-2026-08-01-cleanup-git-results.json` and
+  `pilot-2026-08-01-cleanup-git-summary.json` — six successful cleanup
+  records.
+- The eighteen pilot `.py` files — exact model-produced candidate sources.
 - `seam-check-2026-08-01-grok-neutral-result.json` and its `.py` source —
   the first successful git-backed seam check.
 
@@ -36,3 +40,10 @@ net LOC was negative in both arms: Luna `-6/-6`, Grok `-3/-6`, and Composer
 one-repetition evidence, not a causal prompt or cost estimate: the isolated
 file-only context differs from the earlier repository-root pilot, and
 trajectory-level effort and tool counts were not reported.
+
+The cleanup replication removed the unused flag and debug helper in all six
+runs, with raw net LOC `-5` under both arms for every model. Its successful
+receipt totals were `361,412` tokens for neutral and `309,400` for
+subtractive; the exact per-cell values are preserved in the JSON artifacts.
+This task contrast is the stronger result: when the task itself explicitly
+requires deletion, the rubric adds no directional change.

@@ -1,0 +1,410 @@
+[
+  {
+    "actual": {
+      "adapter_job_id": "job_083d2c29c2bb",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 189646,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 1512,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": 191158,
+      "turns": null
+    },
+    "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-56776aa3c08f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "neutral_control",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -12,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [],
+        "likely_move_or_copy": false,
+        "raw_added": 0,
+        "raw_net": -5,
+        "raw_removed": 5,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 1,
+        "symbols_added": [],
+        "symbols_removed": [
+          "obsolete_debug_message"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "negative",
+      "failure_reasons": [],
+      "model": "gpt-5.6-luna",
+      "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "reasoning_effort": "maximum",
+      "task_id": "cleanup-legacy-flag",
+      "task_type": "cleanup",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 189646,
+        "output_tokens": 1512
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e1b3e49b8098",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 151327,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 1419,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": 152746,
+      "turns": null
+    },
+    "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-2c0d3d529520",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "subtractive_rubric",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -12,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [],
+        "likely_move_or_copy": false,
+        "raw_added": 0,
+        "raw_net": -5,
+        "raw_removed": 5,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 1,
+        "symbols_added": [],
+        "symbols_removed": [
+          "obsolete_debug_message"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "negative",
+      "failure_reasons": [],
+      "model": "gpt-5.6-luna",
+      "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "reasoning_effort": "maximum",
+      "task_id": "cleanup-legacy-flag",
+      "task_type": "cleanup",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 151327,
+        "output_tokens": 1419
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_49e32d381ee3",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 84579,
+      "model": "grok-4.5",
+      "output_tokens": 964,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": 85543,
+      "turns": null
+    },
+    "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-403feb6d90e4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "neutral_control",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -12,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [],
+        "likely_move_or_copy": false,
+        "raw_added": 0,
+        "raw_net": -5,
+        "raw_removed": 5,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 1,
+        "symbols_added": [],
+        "symbols_removed": [
+          "obsolete_debug_message"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "negative",
+      "failure_reasons": [],
+      "model": "grok-4.5",
+      "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "reasoning_effort": "high",
+      "task_id": "cleanup-legacy-flag",
+      "task_type": "cleanup",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 84579,
+        "output_tokens": 964
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_7469ac6730f2",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 85043,
+      "model": "grok-4.5",
+      "output_tokens": 1060,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": 86103,
+      "turns": null
+    },
+    "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-bfdcaba60d19",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "subtractive_rubric",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -12,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [],
+        "likely_move_or_copy": false,
+        "raw_added": 0,
+        "raw_net": -5,
+        "raw_removed": 5,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 1,
+        "symbols_added": [],
+        "symbols_removed": [
+          "obsolete_debug_message"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "negative",
+      "failure_reasons": [],
+      "model": "grok-4.5",
+      "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "reasoning_effort": "high",
+      "task_id": "cleanup-legacy-flag",
+      "task_type": "cleanup",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 85043,
+        "output_tokens": 1060
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_74c2bcfcf48c",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 83534,
+      "model": "composer-2.5",
+      "output_tokens": 1177,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": 84711,
+      "turns": null
+    },
+    "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+    "cell": {
+      "arm": "neutral_control",
+      "cell_id": "cell-98df1a43e13f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "neutral_control",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -12,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [],
+        "likely_move_or_copy": false,
+        "raw_added": 0,
+        "raw_net": -5,
+        "raw_removed": 5,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 1,
+        "symbols_added": [],
+        "symbols_removed": [
+          "obsolete_debug_message"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "negative",
+      "failure_reasons": [],
+      "model": "composer-2.5",
+      "prompt": "Task type: cleanup. Follow the stated task without a prescribed diff direction.\nImplement the task and keep tests green.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "reasoning_effort": "default",
+      "task_id": "cleanup-legacy-flag",
+      "task_type": "cleanup",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 83534,
+        "output_tokens": 1177
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_c1cb2f78ada1",
+      "adapter_status": "completed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": 69539,
+      "model": "composer-2.5",
+      "output_tokens": 1012,
+      "reasoning_effort": "default",
+      "tool_calls": null,
+      "total_tokens": 70551,
+      "turns": null
+    },
+    "candidate_sha256": "ee90df54b3afb267bb2ddd9895a9355b05ee226b8daa83087b435782b4ca45d5",
+    "cell": {
+      "arm": "subtractive_rubric",
+      "cell_id": "cell-cfb9d6c6781f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "cleanup",
+      "task_id": "cleanup-legacy-flag"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "arm": "subtractive_rubric",
+      "diff": {
+        "boilerplate_added": 0,
+        "changed_tokens": -12,
+        "dependencies_added": [],
+        "dependencies_removed": [],
+        "gaming_flags": [],
+        "likely_move_or_copy": false,
+        "raw_added": 0,
+        "raw_net": -5,
+        "raw_removed": 5,
+        "similar_removed_lines": 0,
+        "structural_symbols_added": 0,
+        "structural_symbols_net": -1,
+        "structural_symbols_removed": 1,
+        "symbols_added": [],
+        "symbols_removed": [
+          "obsolete_debug_message"
+        ]
+      },
+      "dry_run": false,
+      "execution_source": "cursor_adapter",
+      "expected_class": "subtractive",
+      "expected_sign": "negative",
+      "failure_reasons": [],
+      "model": "composer-2.5",
+      "prompt": "Maintenance task: do not force additions; prove semantic deletions.\nFor refactor or cleanup work, add no capability: inventory references, identify safe deletions, preserve behavior, and run tests. Feature work remains sign-matched.\nTask: Remove the unused legacy flag and obsolete debug helper without changing parsing.",
+      "reasoning_effort": "default",
+      "task_id": "cleanup-legacy-flag",
+      "task_type": "cleanup",
+      "tests": {
+        "failure_reason": null,
+        "passed": true,
+        "tests_run": 1
+      },
+      "token_usage": {
+        "input_tokens": 69539,
+        "output_tokens": 1012
+      },
+      "tool_calls": null,
+      "turns": null
+    }
+  }
+]
