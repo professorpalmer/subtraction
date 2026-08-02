@@ -75,4 +75,8 @@ notes/                  # scratch, session notes
   - Artifacts: `research/phase-2/live/ablation-screen-r5-results.json`, `ablation-screen-r5-report.json`, `ablation-screen-r5-factor-effects.json`, `ablation-screen-r5-summary.json`, `ablation-screen-r5-token-analysis.json`
 - [x] Phase 2 confirmation wave (r5, 240 completed receipts; [findings](research/phase-2/CONFIRMATION_FINDINGS.md))
   - Artifacts: `research/phase-2/live/confirmation-r5-results.json`, `confirmation-r5-report.json`, `confirmation-r5-summary.json`, `confirmation-r5-token-analysis.json`, `confirmation-r5-initial-rate-limit-failures.json`, `confirmation-r5-retry-provenance.json`
+- [x] Phase 2 larger-refactor replication (r5, 240 completed receipts; [findings](research/phase-2/LARGER_REFACTOR_FINDINGS.md))
+  - Result: task- and model-conditional interaction; D did not replicate across both larger fixtures
+  - Artifacts: `research/phase-2/live/larger-refactor-r5-results.json`, `larger-refactor-r5-report.json`, `larger-refactor-r5-factor-effects.json`, `larger-refactor-r5-summary.json`, `larger-refactor-r5-wave-meta.json`, `larger-refactor-r5-initial-failures.json`, `larger-refactor-r5-retry-provenance.json`
 - [x] Phase 3 token-usage analysis with optional cost and scenario reporting
+  - Priced multi-turn cost wave deferred because the larger-refactor effect did not survive both fixtures

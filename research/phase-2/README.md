@@ -153,3 +153,43 @@ Confirmation artifacts are in `live/`:
 `confirmation-r5-summary.json`, `confirmation-r5-token-analysis.json`,
 `confirmation-r5-initial-rate-limit-failures.json`, and
 `confirmation-r5-retry-provenance.json`.
+
+## Larger-refactor replication (completed)
+
+The completed interaction-focused replication crossed two larger, deterministic
+multi-function refactors (`refactor-shared-normalizer` and
+`refactor-dead-compatibility-path`), the full eight atomic T/D/B arms in
+`COMPONENT_SCREEN_ARMS`, the frozen model/effort pairs
+(`gpt-5.6-luna`/`maximum`, `grok-4.5`/`high`, and `composer-2.5`/`default`),
+and repetitions 1..5: **2 × 3 × 8 × 5 = 240 cells**. The frozen manifest is
+`research/phase-2/design-larger-refactor-screen-r5.json`.
+
+The protocol and validity gates are in
+[`LARGER_REFACTOR_PROTOCOL.md`](LARGER_REFACTOR_PROTOCOL.md). The selected
+dataset contains 240/240 completed adapter receipts and 240/240 behavior
+oracle passes. Six initial adapter failures were retained as separate
+provenance and excluded from completed comparisons. Existing `control-rename`
+and prior confirmation artifacts remain validity anchors; they were not
+silently pooled with this wave.
+
+The evidence-first result is in
+[`LARGER_REFACTOR_FINDINGS.md`](LARGER_REFACTOR_FINDINGS.md). D was negative
+for GPT-5.6 Luna and Grok 4.5 on `refactor-shared-normalizer`, but the effect
+did not replicate on `refactor-dead-compatibility-path` and was null for
+Composer. The supported claim is therefore a task- and model-conditional
+interaction, not a universal standalone D component. The wave has no legacy
+`subtractive_rubric` arm, and observed token telemetry is descriptive only.
+
+Live artifacts:
+
+- `larger-refactor-r5-results.json`
+- `larger-refactor-r5-report.json`
+- `larger-refactor-r5-factor-effects.json`
+- `larger-refactor-r5-summary.json`
+- `larger-refactor-r5-wave-meta.json`
+- `larger-refactor-r5-initial-failures.json`
+- `larger-refactor-r5-retry-provenance.json`
+
+The negative patch-shape result did not survive on both larger fixtures, so
+the planned priced multi-turn cost wave is deferred. No dollar-saving claim is
+supported.

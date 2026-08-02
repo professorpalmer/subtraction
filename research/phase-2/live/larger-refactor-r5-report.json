@@ -1,0 +1,6579 @@
+{
+  "component_effects": {
+    "effects": [
+      {
+        "factor": "T",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0,
+        "raw_net_delta_sample_sd": 0.0,
+        "raw_net_deltas": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "D",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0,
+        "raw_net_delta_sample_sd": 0.0,
+        "raw_net_deltas": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "B",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0,
+        "raw_net_delta_sample_sd": 0.0,
+        "raw_net_deltas": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "T",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.2,
+        "raw_net_delta_sample_sd": 0.32596012026013244,
+        "raw_net_deltas": [
+          0,
+          0.25,
+          0.0,
+          0.75,
+          0
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "D",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.3,
+        "raw_net_delta_sample_sd": 0.6471089552772392,
+        "raw_net_deltas": [
+          0,
+          -0.25,
+          1,
+          -0.25,
+          1.0
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "B",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.3,
+        "raw_net_delta_sample_sd": 0.54198708471697,
+        "raw_net_deltas": [
+          0,
+          1.25,
+          0.0,
+          0.25,
+          0
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "T",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.8,
+        "raw_net_delta_sample_sd": 1.8148691412881537,
+        "raw_net_deltas": [
+          3.25,
+          -0.5,
+          2.25,
+          -0.5,
+          -0.5
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "D",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 2.0,
+        "raw_net_delta_sample_sd": 1.8285923547909742,
+        "raw_net_deltas": [
+          4.25,
+          -0.5,
+          3.25,
+          1.5,
+          1.5
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "B",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.1,
+        "raw_net_delta_sample_sd": 2.3358617253596154,
+        "raw_net_deltas": [
+          -3.25,
+          -0.5,
+          3.25,
+          0.5,
+          0.5
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-dead-compatibility-path"
+      },
+      {
+        "factor": "T",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.65,
+        "raw_net_delta_sample_sd": 1.4534441853748632,
+        "raw_net_deltas": [
+          0,
+          3.25,
+          0,
+          0,
+          0
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "D",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -0.65,
+        "raw_net_delta_sample_sd": 1.4534441853748632,
+        "raw_net_deltas": [
+          0,
+          -3.25,
+          0,
+          0,
+          0
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "B",
+        "model": "composer-2.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": 0.65,
+        "raw_net_delta_sample_sd": 1.4534441853748632,
+        "raw_net_deltas": [
+          0,
+          3.25,
+          0,
+          0,
+          0
+        ],
+        "reasoning_effort": "default",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "T",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -0.5,
+        "raw_net_delta_sample_sd": 1.0752906583803283,
+        "raw_net_deltas": [
+          0.5,
+          -0.5,
+          -2.25,
+          0.25,
+          -0.5
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "D",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -3.1,
+        "raw_net_delta_sample_sd": 3.1354824190226296,
+        "raw_net_deltas": [
+          2.0,
+          -4.5,
+          -2.25,
+          -5.75,
+          -5.0
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "B",
+        "model": "gpt-5.6-luna",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -2.0,
+        "raw_net_delta_sample_sd": 3.5044614422190468,
+        "raw_net_deltas": [
+          0.5,
+          -4.0,
+          2.75,
+          -5.75,
+          -3.5
+        ],
+        "reasoning_effort": "maximum",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "T",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "delete_first_gate",
+          "semantic_net_loc_budget",
+          "delete_first_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "task_type_gate",
+          "task_type_delete_first",
+          "task_type_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -0.45,
+        "raw_net_delta_sample_sd": 3.2519225083018197,
+        "raw_net_deltas": [
+          0.75,
+          -5.75,
+          -1.25,
+          2.25,
+          1.75
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "D",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "delete_first_gate",
+          "task_type_delete_first",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -3.25,
+        "raw_net_delta_sample_sd": 2.345207879911715,
+        "raw_net_deltas": [
+          -6.75,
+          -1.75,
+          -2.75,
+          -0.75,
+          -4.25
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-shared-normalizer"
+      },
+      {
+        "factor": "B",
+        "model": "grok-4.5",
+        "off_arms": [
+          "neutral_control",
+          "task_type_gate",
+          "delete_first_gate",
+          "task_type_delete_first"
+        ],
+        "off_behavior_pass_count": 20,
+        "on_arms": [
+          "semantic_net_loc_budget",
+          "task_type_net_loc_budget",
+          "delete_first_net_loc_budget",
+          "task_type_delete_first_net_loc_budget"
+        ],
+        "on_behavior_pass_count": 20,
+        "raw_net_delta_mean": -3.85,
+        "raw_net_delta_sample_sd": 3.4532593299664014,
+        "raw_net_deltas": [
+          -6.75,
+          -2.25,
+          -3.25,
+          0.75,
+          -7.75
+        ],
+        "reasoning_effort": "high",
+        "task_id": "refactor-shared-normalizer"
+      }
+    ],
+    "protocol": "phase-2-component-effects-v1"
+  },
+  "groups": [
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 358842,
+          "sample_sd": 55408.06344748028,
+          "values": [
+            268537,
+            405711,
+            345574,
+            395703,
+            378685
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2840.2,
+          "sample_sd": 211.65703390154553,
+          "values": [
+            2789,
+            3143,
+            2750,
+            2938,
+            2581
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 361682.2,
+          "sample_sd": 55491.75889445207,
+          "values": [
+            271326,
+            408854,
+            348324,
+            398641,
+            381266
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 463161.2,
+          "sample_sd": 94599.86164207642,
+          "values": [
+            466228,
+            602360,
+            436335,
+            472628,
+            338255
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2874.8,
+          "sample_sd": 212.79262205255142,
+          "values": [
+            3074,
+            3005,
+            2784,
+            2965,
+            2546
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 466036,
+          "sample_sd": 94766.69161683338,
+          "values": [
+            469302,
+            605365,
+            439119,
+            475593,
+            340801
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 419679.6,
+          "sample_sd": 60117.61439295475,
+          "values": [
+            497718,
+            453402,
+            358188,
+            427595,
+            361495
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2845.2,
+          "sample_sd": 263.46384951260393,
+          "values": [
+            2973,
+            2924,
+            3005,
+            2947,
+            2377
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 422524.8,
+          "sample_sd": 60246.352750187296,
+          "values": [
+            500691,
+            456326,
+            361193,
+            430542,
+            363872
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 330577.6,
+          "sample_sd": 108300.12699577042,
+          "values": [
+            393880,
+            300116,
+            174791,
+            320800,
+            463301
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2637.4,
+          "sample_sd": 302.13705499325965,
+          "values": [
+            3033,
+            2818,
+            2238,
+            2528,
+            2570
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 333215,
+          "sample_sd": 108470.97292133044,
+          "values": [
+            396913,
+            302934,
+            177029,
+            323328,
+            465871
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 286126.6,
+          "sample_sd": 59216.792122674124,
+          "values": [
+            345638,
+            210639,
+            284635,
+            246737,
+            342984
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2412.2,
+          "sample_sd": 452.32256189582233,
+          "values": [
+            2372,
+            1771,
+            2795,
+            2234,
+            2889
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 288538.8,
+          "sample_sd": 59553.48130630148,
+          "values": [
+            348010,
+            212410,
+            287430,
+            248971,
+            345873
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 278080,
+          "sample_sd": 129151.56503697507,
+          "values": [
+            208956,
+            286054,
+            485799,
+            141588,
+            268003
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2673.6,
+          "sample_sd": 240.16306960063613,
+          "values": [
+            2801,
+            2693,
+            2906,
+            2694,
+            2274
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 280753.6,
+          "sample_sd": 129230.86586725325,
+          "values": [
+            211757,
+            288747,
+            488705,
+            144282,
+            270277
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 350913.4,
+          "sample_sd": 144789.1858834768,
+          "values": [
+            411609,
+            542970,
+            340138,
+            146578,
+            313272
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2711,
+          "sample_sd": 479.8421615489827,
+          "values": [
+            3003,
+            3176,
+            2523,
+            1967,
+            2886
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 353624.4,
+          "sample_sd": 145228.73458203787,
+          "values": [
+            414612,
+            546146,
+            342661,
+            148545,
+            316158
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 299322.6,
+          "sample_sd": 152940.4719484022,
+          "values": [
+            565781,
+            261308,
+            234486,
+            259534,
+            175504
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2297.8,
+          "sample_sd": 506.96765182800374,
+          "values": [
+            3073,
+            1936,
+            2436,
+            2272,
+            1772
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 301620.4,
+          "sample_sd": 153394.21784017805,
+          "values": [
+            568854,
+            263244,
+            236922,
+            261806,
+            177276
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.2,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -10,
+        -10,
+        -8,
+        -10,
+        -8
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 199162.2,
+          "sample_sd": 29805.462615097924,
+          "values": [
+            172135,
+            214095,
+            174851,
+            191420,
+            243310
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2016.8,
+          "sample_sd": 239.54373295914047,
+          "values": [
+            1836,
+            2336,
+            2062,
+            1730,
+            2120
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 201179,
+          "sample_sd": 29934.734699008106,
+          "values": [
+            173971,
+            216431,
+            176913,
+            193150,
+            245430
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.2,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -10,
+        -8,
+        -10,
+        -10,
+        -8
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 247379,
+          "sample_sd": 68798.05829382106,
+          "values": [
+            247310,
+            228368,
+            173676,
+            360234,
+            227307
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1950.4,
+          "sample_sd": 284.30054519821095,
+          "values": [
+            2137,
+            1853,
+            1590,
+            2323,
+            1849
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 249329.4,
+          "sample_sd": 69061.54405528448,
+          "values": [
+            249447,
+            230221,
+            175266,
+            362557,
+            229156
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -10,
+      "raw_net_mean": -10,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -10,
+        -10,
+        -10,
+        -10,
+        -10
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 171812.8,
+          "sample_sd": 42378.76915626503,
+          "values": [
+            185924,
+            98852,
+            206312,
+            174640,
+            193336
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1583.8,
+          "sample_sd": 345.4022292921689,
+          "values": [
+            1256,
+            1163,
+            1820,
+            1893,
+            1787
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 173396.6,
+          "sample_sd": 42612.38907055083,
+          "values": [
+            187180,
+            100015,
+            208132,
+            176533,
+            195123
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.4,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        -10,
+        -8,
+        -10,
+        -9,
+        -10
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 206934.6,
+          "sample_sd": 92334.1248742847,
+          "values": [
+            136002,
+            364089,
+            212157,
+            152126,
+            170299
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1933.4,
+          "sample_sd": 562.5818162720868,
+          "values": [
+            1665,
+            2720,
+            2329,
+            1501,
+            1452
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 208868,
+          "sample_sd": 92838.22431520328,
+          "values": [
+            137667,
+            366809,
+            214486,
+            153627,
+            171751
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.6,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        -10,
+        -10,
+        -10,
+        -8,
+        -10
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 146441.6,
+          "sample_sd": 52209.737562067865,
+          "values": [
+            225474,
+            118526,
+            97694,
+            117881,
+            172633
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1623.8,
+          "sample_sd": 325.5398593106534,
+          "values": [
+            1971,
+            1500,
+            1146,
+            1634,
+            1868
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 148065.4,
+          "sample_sd": 52498.6550808685,
+          "values": [
+            227445,
+            120026,
+            98840,
+            119515,
+            174501
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -8.8,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -10,
+        -8,
+        -8,
+        -10,
+        -8
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 212200,
+          "sample_sd": 21898.185004698447,
+          "values": [
+            216325,
+            212288,
+            190320,
+            246196,
+            195871
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1955.8,
+          "sample_sd": 177.0838784305336,
+          "values": [
+            2137,
+            2088,
+            1695,
+            1876,
+            1983
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 214155.8,
+          "sample_sd": 21936.63703031985,
+          "values": [
+            218462,
+            214376,
+            192015,
+            248072,
+            197854
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.2,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -10,
+        -8,
+        -10,
+        -10,
+        -8
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 152536,
+          "sample_sd": 30404.66734730048,
+          "values": [
+            156349,
+            133188,
+            204028,
+            136904,
+            132211
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1469.6,
+          "sample_sd": 273.1882135085626,
+          "values": [
+            1735,
+            1291,
+            1701,
+            1525,
+            1096
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 154005.6,
+          "sample_sd": 30595.318560198062,
+          "values": [
+            158084,
+            134479,
+            205729,
+            138429,
+            133307
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.4,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        -10,
+        -9,
+        -10,
+        -8,
+        -10
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 160689.2,
+          "sample_sd": 49976.14713740946,
+          "values": [
+            116383,
+            153219,
+            245642,
+            154208,
+            133994
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1490.4,
+          "sample_sd": 288.53128079984674,
+          "values": [
+            1317,
+            1517,
+            1928,
+            1530,
+            1160
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 162179.6,
+          "sample_sd": 50242.51107180054,
+          "values": [
+            117700,
+            154736,
+            247570,
+            155738,
+            135154
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8.4,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        -8,
+        -10,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 166910.4,
+          "sample_sd": 107667.30414243686,
+          "values": [
+            156013,
+            355408,
+            102023,
+            101710,
+            119398
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2716.8,
+          "sample_sd": 1158.811546369814,
+          "values": [
+            2876,
+            4631,
+            1959,
+            1711,
+            2407
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 169627.2,
+          "sample_sd": 108801.97439936464,
+          "values": [
+            158889,
+            360039,
+            103982,
+            103421,
+            121805
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8,
+      "raw_net_min": -8,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5,
+        "failed": 1
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 120532.4,
+          "sample_sd": 31840.56728923026,
+          "values": [
+            102458,
+            176205,
+            102720,
+            118260,
+            103019
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2142.4,
+          "sample_sd": 258.2117348224127,
+          "values": [
+            1886,
+            2556,
+            2035,
+            2025,
+            2210
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 122674.8,
+          "sample_sd": 32065.816584019813,
+          "values": [
+            104344,
+            178761,
+            104755,
+            120285,
+            105229
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -11.8,
+      "raw_net_min": -21,
+      "raw_net_sample_sd": 5.215361924162119,
+      "raw_net_values": [
+        -10,
+        -8,
+        -21,
+        -10,
+        -10
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 173266,
+          "sample_sd": 130999.92070799127,
+          "values": [
+            102184,
+            135803,
+            406283,
+            102538,
+            119522
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2580.2,
+          "sample_sd": 968.9706909912188,
+          "values": [
+            2032,
+            2220,
+            4309,
+            2164,
+            2176
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 175846.2,
+          "sample_sd": 131966.4686433641,
+          "values": [
+            104216,
+            138023,
+            410592,
+            104702,
+            121698
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -11,
+      "raw_net_min": -21,
+      "raw_net_sample_sd": 5.656854249492381,
+      "raw_net_values": [
+        -21,
+        -8,
+        -8,
+        -8,
+        -10
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 143625.8,
+          "sample_sd": 51064.12132505562,
+          "values": [
+            214278,
+            105465,
+            135975,
+            173721,
+            88690
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2810,
+          "sample_sd": 539.122898790248,
+          "values": [
+            3404,
+            3041,
+            2544,
+            3045,
+            2016
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 146435.8,
+          "sample_sd": 51485.67301881175,
+          "values": [
+            217682,
+            108506,
+            138519,
+            176766,
+            90706
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8.4,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        -8,
+        -8,
+        -8,
+        -8,
+        -10
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 122498.4,
+          "sample_sd": 34524.929359811875,
+          "values": [
+            103022,
+            102795,
+            120460,
+            103442,
+            182773
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2556,
+          "sample_sd": 586.2273449780383,
+          "values": [
+            2238,
+            2111,
+            2682,
+            2220,
+            3529
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 125054.4,
+          "sample_sd": 35102.58983038146,
+          "values": [
+            105260,
+            104906,
+            123142,
+            105662,
+            186302
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -8.8,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -8,
+        -10,
+        -10,
+        -8,
+        -8
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5,
+        "failed": 1
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 122882.6,
+          "sample_sd": 24172.790163735754,
+          "values": [
+            163919,
+            107511,
+            120947,
+            119134,
+            102902
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2506,
+          "sample_sd": 390.5553737948052,
+          "values": [
+            2784,
+            2911,
+            2655,
+            2106,
+            2074
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 125388.6,
+          "sample_sd": 24330.823163222405,
+          "values": [
+            166703,
+            110422,
+            123602,
+            121240,
+            104976
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.2,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -8,
+        -8,
+        -10,
+        -10,
+        -10
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 145251.6,
+          "sample_sd": 66555.11774687203,
+          "values": [
+            138617,
+            103396,
+            117996,
+            104668,
+            261581
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2847.2,
+          "sample_sd": 641.9265534311538,
+          "values": [
+            3096,
+            2380,
+            2340,
+            2559,
+            3861
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 148098.8,
+          "sample_sd": 67161.56178723065,
+          "values": [
+            141713,
+            105776,
+            120336,
+            107227,
+            265442
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -8,
+      "raw_net_mean": -9.6,
+      "raw_net_min": -10,
+      "raw_net_sample_sd": 0.8944271909999159,
+      "raw_net_values": [
+        -10,
+        -10,
+        -8,
+        -10,
+        -10
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5,
+        "failed": 2
+      },
+      "task_id": "refactor-dead-compatibility-path",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 139102,
+          "sample_sd": 73151.57254974086,
+          "values": [
+            118920,
+            103089,
+            102627,
+            269330,
+            101544
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2314.4,
+          "sample_sd": 662.6600184106477,
+          "values": [
+            2365,
+            2090,
+            1949,
+            3428,
+            1740
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 141416.4,
+          "sample_sd": 73790.80789163377,
+          "values": [
+            121285,
+            105179,
+            104576,
+            272758,
+            103284
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 443944,
+          "sample_sd": 164910.18928647193,
+          "values": [
+            723138,
+            375187,
+            458389,
+            348968,
+            314038
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3538.2,
+          "sample_sd": 330.67158934507813,
+          "values": [
+            3826,
+            3843,
+            3601,
+            3357,
+            3064
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 447482.2,
+          "sample_sd": 165121.27796017085,
+          "values": [
+            726964,
+            379030,
+            461990,
+            352325,
+            317102
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 434864.2,
+          "sample_sd": 269406.1326245192,
+          "values": [
+            392797,
+            906885,
+            334773,
+            295648,
+            244218
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3925,
+          "sample_sd": 1051.5835677681541,
+          "values": [
+            3458,
+            5628,
+            3784,
+            2792,
+            3963
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 438789.2,
+          "sample_sd": 270323.54439670994,
+          "values": [
+            396255,
+            912513,
+            338557,
+            298440,
+            248181
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 372906.8,
+          "sample_sd": 72805.67988282233,
+          "values": [
+            316641,
+            389032,
+            477227,
+            291651,
+            389983
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2572.4,
+          "sample_sd": 306.1899737091337,
+          "values": [
+            2283,
+            2710,
+            3023,
+            2312,
+            2534
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 375479.2,
+          "sample_sd": 73101.07272605512,
+          "values": [
+            318924,
+            391742,
+            480250,
+            293963,
+            392517
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 341412.2,
+          "sample_sd": 84770.21613573957,
+          "values": [
+            254315,
+            381070,
+            248011,
+            390113,
+            433552
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2848.2,
+          "sample_sd": 712.3452112564526,
+          "values": [
+            2357,
+            2275,
+            2460,
+            3218,
+            3931
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 344260.4,
+          "sample_sd": 85285.05475638741,
+          "values": [
+            256672,
+            383345,
+            250471,
+            393331,
+            437483
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 403348.2,
+          "sample_sd": 137845.44570895334,
+          "values": [
+            443667,
+            392086,
+            329982,
+            609743,
+            241263
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3234.4,
+          "sample_sd": 704.7842222978604,
+          "values": [
+            2937,
+            3537,
+            2899,
+            4305,
+            2494
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 406582.6,
+          "sample_sd": 138480.88256615063,
+          "values": [
+            446604,
+            395623,
+            332881,
+            614048,
+            243757
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 409341.8,
+          "sample_sd": 102922.67643090127,
+          "values": [
+            346525,
+            377102,
+            592283,
+            370767,
+            360032
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 3101.4,
+          "sample_sd": 513.2984511957931,
+          "values": [
+            3540,
+            3109,
+            3445,
+            3171,
+            2242
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 412443.2,
+          "sample_sd": 103105.3727004563,
+          "values": [
+            350065,
+            380211,
+            595728,
+            373938,
+            362274
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 339044.6,
+          "sample_sd": 177267.1179076932,
+          "values": [
+            234062,
+            655001,
+            270609,
+            268944,
+            266607
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2560.2,
+          "sample_sd": 476.8644461479593,
+          "values": [
+            2375,
+            3353,
+            2450,
+            2547,
+            2076
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 341604.8,
+          "sample_sd": 177709.3008404456,
+          "values": [
+            236437,
+            658354,
+            273059,
+            271491,
+            268683
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "composer-2.5",
+      "raw_net_max": 10,
+      "raw_net_mean": -0.4,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 5.813776741499453,
+      "raw_net_values": [
+        -3,
+        10,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "default",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 313346,
+          "sample_sd": 215360.25957450925,
+          "values": [
+            664911,
+            100303,
+            230323,
+            221949,
+            349244
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2691.8,
+          "sample_sd": 450.4982796859495,
+          "values": [
+            3309,
+            2105,
+            2885,
+            2470,
+            2690
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 316037.8,
+          "sample_sd": 215762.2017991103,
+          "values": [
+            668220,
+            102408,
+            233208,
+            224419,
+            351934
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -5,
+      "raw_net_mean": -5.8,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 0.4472135954999579,
+      "raw_net_values": [
+        -5,
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 174946.6,
+          "sample_sd": 40350.25979222439,
+          "values": [
+            207303,
+            150792,
+            209249,
+            116263,
+            191126
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1846.6,
+          "sample_sd": 328.72222316113647,
+          "values": [
+            2079,
+            1559,
+            2026,
+            1427,
+            2142
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 176793.2,
+          "sample_sd": 40660.339530062956,
+          "values": [
+            209382,
+            152351,
+            211275,
+            117690,
+            193268
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -3,
+      "raw_net_mean": -4.2,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 1.0954451150103321,
+      "raw_net_values": [
+        -3,
+        -5,
+        -5,
+        -5,
+        -3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5,
+        "failed": 1
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 211069,
+          "sample_sd": 71627.32192746006,
+          "values": [
+            153894,
+            116273,
+            245749,
+            260088,
+            279341
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1871.6,
+          "sample_sd": 376.7569508317,
+          "values": [
+            1547,
+            1382,
+            2159,
+            2161,
+            2109
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 212940.6,
+          "sample_sd": 71995.0082109864,
+          "values": [
+            155441,
+            117655,
+            247908,
+            262249,
+            281450
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 6,
+      "raw_net_mean": 0.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 6.06630035524124,
+      "raw_net_values": [
+        -6,
+        4,
+        -6,
+        5,
+        6
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 132463.4,
+          "sample_sd": 20572.108601210522,
+          "values": [
+            131863,
+            98853,
+            150448,
+            147916,
+            133237
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1301.4,
+          "sample_sd": 114.60279228709918,
+          "values": [
+            1238,
+            1176,
+            1480,
+            1327,
+            1286
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 133764.8,
+          "sample_sd": 20667.58457585211,
+          "values": [
+            133101,
+            100029,
+            151928,
+            149243,
+            134523
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 6,
+      "raw_net_mean": -2.8,
+      "raw_net_min": -5,
+      "raw_net_sample_sd": 4.919349550499537,
+      "raw_net_values": [
+        -5,
+        -5,
+        6,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 159827.4,
+          "sample_sd": 16916.30919556627,
+          "values": [
+            174735,
+            132966,
+            153784,
+            167730,
+            169922
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1645.2,
+          "sample_sd": 253.43184488141975,
+          "values": [
+            2028,
+            1484,
+            1615,
+            1369,
+            1730
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 161472.6,
+          "sample_sd": 17049.10570381919,
+          "values": [
+            176763,
+            134450,
+            155399,
+            169099,
+            171652
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -3,
+      "raw_net_mean": -4.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.3416407864998738,
+      "raw_net_values": [
+        -3,
+        -6,
+        -3,
+        -5,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 207750.2,
+          "sample_sd": 47748.881077989674,
+          "values": [
+            169779,
+            174340,
+            270022,
+            175956,
+            248654
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2132.8,
+          "sample_sd": 395.53722960045116,
+          "values": [
+            1610,
+            1942,
+            2683,
+            2213,
+            2216
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 209883,
+          "sample_sd": 48070.60142644359,
+          "values": [
+            171389,
+            176282,
+            272705,
+            178169,
+            250870
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -3,
+      "raw_net_mean": -5,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.224744871391589,
+      "raw_net_values": [
+        -3,
+        -5,
+        -6,
+        -6,
+        -5
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 201137.6,
+          "sample_sd": 62997.758379167746,
+          "values": [
+            115077,
+            283013,
+            170133,
+            228335,
+            209130
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1886.6,
+          "sample_sd": 553.1331666063788,
+          "values": [
+            931,
+            2296,
+            1899,
+            2168,
+            2139
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 203024.2,
+          "sample_sd": 63494.45844087498,
+          "values": [
+            116008,
+            285309,
+            172032,
+            230503,
+            211269
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": 7,
+      "raw_net_mean": 0.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 5.639148871948674,
+      "raw_net_values": [
+        -5,
+        3,
+        -6,
+        7,
+        3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 190557,
+          "sample_sd": 6477.20510714305,
+          "values": [
+            189026,
+            192631,
+            184480,
+            185944,
+            200704
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1792.2,
+          "sample_sd": 380.8118958225964,
+          "values": [
+            1967,
+            2365,
+            1466,
+            1696,
+            1467
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 192349.2,
+          "sample_sd": 6490.187185282101,
+          "values": [
+            190993,
+            194996,
+            185946,
+            187640,
+            202171
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "gpt-5.6-luna",
+      "raw_net_max": -3,
+      "raw_net_mean": -5.2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.3038404810405297,
+      "raw_net_values": [
+        -6,
+        -6,
+        -5,
+        -6,
+        -3
+      ],
+      "reasoning_effort": "maximum",
+      "status_counts": {
+        "completed": 5,
+        "failed": 1
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 205105.4,
+          "sample_sd": 42064.43891578729,
+          "values": [
+            211411,
+            204802,
+            267871,
+            151567,
+            189876
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 1945.8,
+          "sample_sd": 436.05297843266703,
+          "values": [
+            2030,
+            1756,
+            2649,
+            1498,
+            1796
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 207051.2,
+          "sample_sd": 42486.44179853144,
+          "values": [
+            213441,
+            206558,
+            270520,
+            153065,
+            191672
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 1,
+      "raw_net_mean": -4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 3.082207001484488,
+      "raw_net_values": [
+        -6,
+        1,
+        -6,
+        -6,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 131027.2,
+          "sample_sd": 28405.343629324394,
+          "values": [
+            138829,
+            117554,
+            119380,
+            176425,
+            102948
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2795.6,
+          "sample_sd": 574.2571723539899,
+          "values": [
+            3456,
+            2277,
+            2455,
+            3384,
+            2406
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 133822.8,
+          "sample_sd": 28880.312536397523,
+          "values": [
+            142285,
+            119831,
+            121835,
+            179809,
+            105354
+          ]
+        }
+      }
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 1,
+      "raw_net_mean": -3.4,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 2.8809720581775866,
+      "raw_net_values": [
+        -6,
+        1,
+        -3,
+        -6,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 127655.2,
+          "sample_sd": 29479.755523070406,
+          "values": [
+            153610,
+            104379,
+            88378,
+            141037,
+            150872
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2690.8,
+          "sample_sd": 501.4047267427781,
+          "values": [
+            2527,
+            2787,
+            1910,
+            3116,
+            3114
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 130346,
+          "sample_sd": 29818.67826547649,
+          "values": [
+            156137,
+            107166,
+            90288,
+            144153,
+            153986
+          ]
+        }
+      }
+    },
+    {
+      "arm": "neutral_control",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 9,
+      "raw_net_mean": 6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 6.708203932499369,
+      "raw_net_values": [
+        9,
+        9,
+        9,
+        -6,
+        9
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 121470.8,
+          "sample_sd": 27568.555769209237,
+          "values": [
+            101341,
+            102403,
+            150801,
+            152504,
+            100305
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2357.6,
+          "sample_sd": 543.1669172547238,
+          "values": [
+            2149,
+            2309,
+            3042,
+            2680,
+            1608
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 123828.4,
+          "sample_sd": 28033.113835248485,
+          "values": [
+            103490,
+            104712,
+            153843,
+            155184,
+            101913
+          ]
+        }
+      }
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.3416407864998738,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -6
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 124306.8,
+          "sample_sd": 33674.78033632885,
+          "values": [
+            136759,
+            102087,
+            102048,
+            102380,
+            178260
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2674.4,
+          "sample_sd": 632.2078772049585,
+          "values": [
+            3382,
+            2027,
+            1983,
+            3019,
+            2961
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 126981.2,
+          "sample_sd": 34024.0654272825,
+          "values": [
+            140141,
+            104114,
+            104031,
+            105399,
+            181221
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 1,
+      "raw_net_mean": -2,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 3.0,
+      "raw_net_values": [
+        -3,
+        -6,
+        1,
+        -3,
+        1
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 115261.8,
+          "sample_sd": 8014.609110867479,
+          "values": [
+            119024,
+            119631,
+            118856,
+            100972,
+            117826
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2300.8,
+          "sample_sd": 396.27351665232436,
+          "values": [
+            2658,
+            2624,
+            2428,
+            1733,
+            2061
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 117562.6,
+          "sample_sd": 8351.467014842363,
+          "values": [
+            121682,
+            122255,
+            121284,
+            102705,
+            119887
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 0.0,
+      "raw_net_values": [
+        -3,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 134682.8,
+          "sample_sd": 46341.8705567654,
+          "values": [
+            103485,
+            102390,
+            205466,
+            103312,
+            158761
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2621.4,
+          "sample_sd": 433.0303684500661,
+          "values": [
+            2304,
+            2231,
+            2870,
+            2445,
+            3257
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 137304.2,
+          "sample_sd": 46671.49489463563,
+          "values": [
+            105789,
+            104621,
+            208336,
+            105757,
+            162018
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_gate",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": 9,
+      "raw_net_mean": 1.8,
+      "raw_net_min": -3,
+      "raw_net_sample_sd": 6.572670690061994,
+      "raw_net_values": [
+        9,
+        -3,
+        -3,
+        -3,
+        9
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 102091.6,
+          "sample_sd": 1483.1821533446255,
+          "values": [
+            104107,
+            100152,
+            102773,
+            101378,
+            102048
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2073,
+          "sample_sd": 478.1359639265802,
+          "values": [
+            2707,
+            1418,
+            2288,
+            1880,
+            2072
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 104164.6,
+          "sample_sd": 1960.7852508625213,
+          "values": [
+            106814,
+            101570,
+            105061,
+            103258,
+            104120
+          ]
+        }
+      }
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "behavior_failure_count": 0,
+      "behavior_pass_count": 5,
+      "completed_count": 5,
+      "completed_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model": "grok-4.5",
+      "raw_net_max": -3,
+      "raw_net_mean": -3.6,
+      "raw_net_min": -6,
+      "raw_net_sample_sd": 1.3416407864998738,
+      "raw_net_values": [
+        -6,
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "reasoning_effort": "high",
+      "status_counts": {
+        "completed": 5
+      },
+      "task_id": "refactor-shared-normalizer",
+      "token_stats": {
+        "input_tokens": {
+          "count": 5,
+          "mean": 115151.4,
+          "sample_sd": 31261.271548035278,
+          "values": [
+            152505,
+            88183,
+            144817,
+            87901,
+            102351
+          ]
+        },
+        "output_tokens": {
+          "count": 5,
+          "mean": 2325,
+          "sample_sd": 504.73408840695515,
+          "values": [
+            2425,
+            2034,
+            3157,
+            1889,
+            2120
+          ]
+        },
+        "total_tokens": {
+          "count": 5,
+          "mean": 117476.4,
+          "sample_sd": 31668.706246072004,
+          "values": [
+            154930,
+            90217,
+            147974,
+            89790,
+            104471
+          ]
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.8,
+      "raw_net_delta_sample_sd": 1.0954451150103321,
+      "raw_net_deltas": [
+        0,
+        0,
+        2,
+        0,
+        2
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.8,
+      "raw_net_delta_sample_sd": 1.0954451150103321,
+      "raw_net_deltas": [
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.6,
+      "raw_net_delta_sample_sd": 0.8944271909999159,
+      "raw_net_deltas": [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.4,
+      "raw_net_delta_sample_sd": 0.8944271909999159,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 1.2,
+      "raw_net_delta_sample_sd": 1.0954451150103321,
+      "raw_net_deltas": [
+        0,
+        2,
+        2,
+        0,
+        2
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.8,
+      "raw_net_delta_sample_sd": 1.0954451150103321,
+      "raw_net_deltas": [
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.6,
+      "raw_net_delta_sample_sd": 0.8944271909999159,
+      "raw_net_deltas": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 3.4,
+      "raw_net_delta_sample_sd": 5.639148871948674,
+      "raw_net_deltas": [
+        2,
+        -2,
+        13,
+        2,
+        2
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 13,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 3.8,
+      "raw_net_delta_sample_sd": 5.215361924162119,
+      "raw_net_deltas": [
+        2,
+        0,
+        13,
+        2,
+        2
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 13,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0.8,
+      "raw_net_delta_sample_sd": 8.526429498916883,
+      "raw_net_deltas": [
+        -11,
+        0,
+        13,
+        2,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 13,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 3.4,
+      "raw_net_delta_sample_sd": 5.458937625582473,
+      "raw_net_deltas": [
+        2,
+        0,
+        13,
+        2,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 13,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 3,
+      "raw_net_delta_sample_sd": 4.795831523312719,
+      "raw_net_deltas": [
+        2,
+        -2,
+        11,
+        2,
+        2
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 11,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 2.6,
+      "raw_net_delta_sample_sd": 4.774934554525329,
+      "raw_net_deltas": [
+        2,
+        0,
+        11,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 11,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 2.2,
+      "raw_net_delta_sample_sd": 6.099180272790763,
+      "raw_net_deltas": [
+        0,
+        -2,
+        13,
+        0,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -2,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 13,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-dead-compatibility-path",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "composer-2.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": 2.6,
+      "raw_net_delta_sample_sd": 5.813776741499453,
+      "raw_net_deltas": [
+        0,
+        13,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 13,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -6.4,
+      "raw_net_delta_sample_sd": 6.348228099241552,
+      "raw_net_deltas": [
+        1,
+        -10,
+        0,
+        -11,
+        -12
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -4.8,
+      "raw_net_delta_sample_sd": 6.260990336999411,
+      "raw_net_deltas": [
+        3,
+        -9,
+        1,
+        -10,
+        -9
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -3.4,
+      "raw_net_delta_sample_sd": 9.864076236526156,
+      "raw_net_deltas": [
+        1,
+        -9,
+        12,
+        -10,
+        -11
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 12,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -5,
+      "raw_net_delta_sample_sd": 7.314369419163897,
+      "raw_net_deltas": [
+        3,
+        -10,
+        3,
+        -10,
+        -11
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -5.6,
+      "raw_net_delta_sample_sd": 6.618156843109719,
+      "raw_net_deltas": [
+        3,
+        -9,
+        0,
+        -11,
+        -11
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -0.2,
+      "raw_net_delta_sample_sd": 1.9235384061671346,
+      "raw_net_deltas": [
+        1,
+        -1,
+        0,
+        2,
+        -3
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -1,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 2,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -3,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "gpt-5.6-luna",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -5.8,
+      "raw_net_delta_sample_sd": 5.805170109479997,
+      "raw_net_deltas": [
+        0,
+        -10,
+        1,
+        -11,
+        -9
+      ],
+      "reasoning_effort": "maximum",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -10,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 1,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -11,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -9,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -10,
+      "raw_net_delta_sample_sd": 6.284902544988268,
+      "raw_net_deltas": [
+        -15,
+        -8,
+        -15,
+        0,
+        -12
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -15,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -8,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -15,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "delete_first_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -9.4,
+      "raw_net_delta_sample_sd": 5.813776741499453,
+      "raw_net_deltas": [
+        -15,
+        -8,
+        -12,
+        0,
+        -12
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -15,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -8,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -9.6,
+      "raw_net_delta_sample_sd": 7.162401831787993,
+      "raw_net_deltas": [
+        -12,
+        -12,
+        -12,
+        3,
+        -15
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -15,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "semantic_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -8,
+      "raw_net_delta_sample_sd": 6.819090848492928,
+      "raw_net_deltas": [
+        -12,
+        -15,
+        -8,
+        3,
+        -8
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -15,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -8,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -8,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_delete_first",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -9,
+      "raw_net_delta_sample_sd": 6.708203932499369,
+      "raw_net_deltas": [
+        -12,
+        -12,
+        -12,
+        3,
+        -12
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_delete_first_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -4.2,
+      "raw_net_delta_sample_sd": 7.224956747275377,
+      "raw_net_deltas": [
+        0,
+        -12,
+        -12,
+        3,
+        0
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 0,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_gate",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "both_behavior_pass_count": 5,
+      "model": "grok-4.5",
+      "neutral_arm": "neutral_control",
+      "neutral_only_behavior_pass_count": 0,
+      "neutral_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_net_delta_mean": -9.6,
+      "raw_net_delta_sample_sd": 7.162401831787993,
+      "raw_net_deltas": [
+        -15,
+        -12,
+        -12,
+        3,
+        -12
+      ],
+      "reasoning_effort": "high",
+      "repetitions": [
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -15,
+          "repetition": 1,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 2,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 3,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": 3,
+          "repetition": 4,
+          "treatment_behavior_pass": true
+        },
+        {
+          "neutral_behavior_pass": true,
+          "raw_net_delta": -12,
+          "repetition": 5,
+          "treatment_behavior_pass": true
+        }
+      ],
+      "status": "matched",
+      "task_id": "refactor-shared-normalizer",
+      "treatment_arm": "task_type_net_loc_budget",
+      "treatment_only_behavior_pass_count": 0,
+      "treatment_repetition_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "protocol": "phase-2-controlled-ablation-variance-v1",
+  "status_counts": {
+    "completed": 240,
+    "failed": 6
+  }
+}

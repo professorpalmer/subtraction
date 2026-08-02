@@ -112,3 +112,31 @@ The evidence-first interpretation is in
 comparisons are descriptive, task- and model-conditional, and do not establish
 statistical significance, broad generalization, causal mechanism, or cost
 savings. No pricing was supplied.
+
+## Larger-refactor replication
+
+The completed interaction-focused wave crossed
+`refactor-shared-normalizer` and `refactor-dead-compatibility-path` with the
+full eight-arm T/D/B factorial, three frozen Cursor model/effort pairs, and
+five repetitions: `240` planned cells. The selected dataset contains
+240/240 completed adapter receipts and 240/240 behavior-oracle passes. Six
+initial adapter failures were retained separately and excluded from completed
+comparisons.
+
+Artifacts:
+
+- `larger-refactor-r5-results.json`
+- `larger-refactor-r5-report.json`
+- `larger-refactor-r5-factor-effects.json`
+- `larger-refactor-r5-summary.json`
+- `larger-refactor-r5-wave-meta.json`
+- `larger-refactor-r5-initial-failures.json`
+- `larger-refactor-r5-retry-provenance.json`
+
+The D effect was negative on `refactor-shared-normalizer` for GPT-5.6 Luna
+and Grok 4.5, null for Composer, and null or positive for every model on
+`refactor-dead-compatibility-path`. The findings memo is
+[`../LARGER_REFACTOR_FINDINGS.md`](../LARGER_REFACTOR_FINDINGS.md). The
+supported result is a task- and model-conditional interaction, not a
+universal standalone component. No priced multi-turn cost wave was run, and
+the observed token fields do not support dollar-saving claims.

@@ -1,0 +1,46 @@
+{
+  "arms": [
+    "neutral_control",
+    "task_type_gate",
+    "delete_first_gate",
+    "semantic_net_loc_budget",
+    "task_type_delete_first",
+    "task_type_net_loc_budget",
+    "delete_first_net_loc_budget",
+    "task_type_delete_first_net_loc_budget"
+  ],
+  "behavior_oracle_passes": 240,
+  "completed_cells": 240,
+  "concurrency_cap": 2,
+  "cost_status": "not_run: replication effect did not meet multi-task survival gate",
+  "initial_failed_attempts": 6,
+  "manifest": "research/phase-2/design-larger-refactor-screen-r5.json",
+  "models": [
+    {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum"
+    },
+    {
+      "model": "grok-4.5",
+      "reasoning_effort": "high"
+    },
+    {
+      "model": "composer-2.5",
+      "reasoning_effort": "default"
+    }
+  ],
+  "planned_cells": 240,
+  "protocol": "phase-2-larger-refactor-replication-v1",
+  "repetitions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "retry_policy": "fresh isolated run roots; initial failures retained separately",
+  "tasks": [
+    "refactor-shared-normalizer",
+    "refactor-dead-compatibility-path"
+  ]
+}

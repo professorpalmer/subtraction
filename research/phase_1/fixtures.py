@@ -45,6 +45,23 @@ def _refactor_oracle(namespace: dict) -> bool:
     return namespace["display_name"]("Ada", "Lovelace") == "Ada Lovelace"
 
 
+def _shared_normalizer_oracle(namespace: dict) -> bool:
+    return (
+        namespace["display_name"](" Ada ", "Lovelace ") == "Ada Lovelace"
+        and namespace["initials"](" Ada ", "Lovelace ") == "AL"
+        and namespace["lookup_key"](" Ada ", "Lovelace ") == "ada-lovelace"
+    )
+
+
+def _dead_compatibility_path_oracle(namespace: dict) -> bool:
+    return (
+        namespace["parse_profile"](" Ada ", "admin") == {"name": "Ada", "role": "admin"}
+        and namespace["profile_label"](" Ada ", "admin") == "Ada (admin)"
+        and namespace["is_privileged"]({"name": "Ada", "role": "admin"}) is True
+        and namespace["is_privileged"]({"name": "Grace", "role": "viewer"}) is False
+    )
+
+
 def _cleanup_oracle(namespace: dict) -> bool:
     return namespace["parse_enabled"]("true") is True and namespace["parse_enabled"]("off") is False
 
@@ -66,6 +83,77 @@ def last_name(first, last):
 
 def display_name(first, last):
     return first_name(first, last) + " " + last_name(first, last)
+"""
+    shared_normalizer_before = """def normalize_display_name(value):
+    return value.strip()
+
+def normalize_initial(value):
+    return value.strip()
+
+def normalize_lookup_part(value):
+    return value.strip().lower()
+
+def display_name(first, last):
+    return normalize_display_name(first) + " " + normalize_display_name(last)
+
+def initials(first, last):
+    return normalize_initial(first)[0] + normalize_initial(last)[0]
+
+def lookup_key(first, last):
+    return normalize_lookup_part(first) + "-" + normalize_lookup_part(last)
+"""
+    shared_normalizer_after = """def clean_name(value):
+    return value.strip()
+
+def display_name(first, last):
+    return clean_name(first) + " " + clean_name(last)
+
+def initials(first, last):
+    return clean_name(first)[0] + clean_name(last)[0]
+
+def lookup_key(first, last):
+    return clean_name(first).lower() + "-" + clean_name(last).lower()
+"""
+    dead_compatibility_before = """LEGACY_PROFILE_KEYS = {"display": "name", "access": "role"}
+
+def _normalize_profile_name(value):
+    return value.strip()
+
+def parse_profile(name, role):
+    profile = {
+        LEGACY_PROFILE_KEYS["display"]: _normalize_profile_name(name),
+        LEGACY_PROFILE_KEYS["access"]: role,
+    }
+    return profile
+
+def profile_label(name, role):
+    profile = parse_profile(name, role)
+    return profile["name"] + " (" + profile["role"] + ")"
+
+def is_privileged(profile):
+    if profile.get("role") == "admin":
+        return True
+    if profile.get("role") == "owner":
+        return True
+    return False
+
+def legacy_profile_adapter(payload):
+    return parse_profile(payload["display"], payload["access"])
+
+def compatibility_profile_label(name, role, legacy=False):
+    if legacy:
+        return legacy_profile_adapter({"display": name, "access": role})
+    return profile_label(name, role)
+"""
+    dead_compatibility_after = """def parse_profile(name, role):
+    return {"name": name.strip(), "role": role}
+
+def profile_label(name, role):
+    profile = parse_profile(name, role)
+    return profile["name"] + " (" + profile["role"] + ")"
+
+def is_privileged(profile):
+    return profile.get("role") in {"admin", "owner"}
 """
     cleanup = """LEGACY_FLAG = True
 
@@ -140,6 +228,26 @@ def display_name(first, last):
             "nonpositive",
             "subtractive",
             _refactor_oracle,
+        ),
+        FixtureTask(
+            "refactor-shared-normalizer",
+            "refactor",
+            "Preserve name display, initials, and lookup behavior while consolidating shared normalization.",
+            shared_normalizer_before,
+            shared_normalizer_after,
+            "nonpositive",
+            "subtractive",
+            _shared_normalizer_oracle,
+        ),
+        FixtureTask(
+            "refactor-dead-compatibility-path",
+            "refactor",
+            "Preserve profile parsing, labeling, and privilege checks while removing the unused compatibility path.",
+            dead_compatibility_before,
+            dead_compatibility_after,
+            "nonpositive",
+            "subtractive",
+            _dead_compatibility_path_oracle,
         ),
         FixtureTask(
             "refactor-inline-default",

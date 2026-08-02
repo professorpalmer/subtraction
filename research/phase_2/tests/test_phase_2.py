@@ -27,7 +27,7 @@ from research.phase_2.variance import analyze_component_effects, analyze_varianc
 class PhaseTwoTests(unittest.TestCase):
     def test_default_factorial_cardinality_and_completeness(self):
         design = build_default_design(2)
-        self.assertEqual(len(design.cells), 8 * 3 * 2 * 2)
+        self.assertEqual(len(design.cells), len(build_fixture_corpus()) * 3 * 2 * 2)
         self.assertEqual(len({cell.cell_id for cell in design.cells}), len(design.cells))
         self.assertEqual({cell.task_id for cell in design.cells}, {
             task.task_id for task in build_fixture_corpus()

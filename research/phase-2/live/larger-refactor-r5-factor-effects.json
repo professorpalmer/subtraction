@@ -1,0 +1,527 @@
+{
+  "effects": [
+    {
+      "factor": "T",
+      "model": "composer-2.5",
+      "off_arms": [
+        "neutral_control",
+        "delete_first_gate",
+        "semantic_net_loc_budget",
+        "delete_first_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "task_type_gate",
+        "task_type_delete_first",
+        "task_type_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "D",
+      "model": "composer-2.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "delete_first_gate",
+        "task_type_delete_first",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "B",
+      "model": "composer-2.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "delete_first_gate",
+        "task_type_delete_first"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0,
+      "raw_net_delta_sample_sd": 0.0,
+      "raw_net_deltas": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "T",
+      "model": "gpt-5.6-luna",
+      "off_arms": [
+        "neutral_control",
+        "delete_first_gate",
+        "semantic_net_loc_budget",
+        "delete_first_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "task_type_gate",
+        "task_type_delete_first",
+        "task_type_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.2,
+      "raw_net_delta_sample_sd": 0.32596012026013244,
+      "raw_net_deltas": [
+        0,
+        0.25,
+        0.0,
+        0.75,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "D",
+      "model": "gpt-5.6-luna",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "delete_first_gate",
+        "task_type_delete_first",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.3,
+      "raw_net_delta_sample_sd": 0.6471089552772392,
+      "raw_net_deltas": [
+        0,
+        -0.25,
+        1,
+        -0.25,
+        1.0
+      ],
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "B",
+      "model": "gpt-5.6-luna",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "delete_first_gate",
+        "task_type_delete_first"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.3,
+      "raw_net_delta_sample_sd": 0.54198708471697,
+      "raw_net_deltas": [
+        0,
+        1.25,
+        0.0,
+        0.25,
+        0
+      ],
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "T",
+      "model": "grok-4.5",
+      "off_arms": [
+        "neutral_control",
+        "delete_first_gate",
+        "semantic_net_loc_budget",
+        "delete_first_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "task_type_gate",
+        "task_type_delete_first",
+        "task_type_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.8,
+      "raw_net_delta_sample_sd": 1.8148691412881537,
+      "raw_net_deltas": [
+        3.25,
+        -0.5,
+        2.25,
+        -0.5,
+        -0.5
+      ],
+      "reasoning_effort": "high",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "D",
+      "model": "grok-4.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "delete_first_gate",
+        "task_type_delete_first",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 2.0,
+      "raw_net_delta_sample_sd": 1.8285923547909742,
+      "raw_net_deltas": [
+        4.25,
+        -0.5,
+        3.25,
+        1.5,
+        1.5
+      ],
+      "reasoning_effort": "high",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "B",
+      "model": "grok-4.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "delete_first_gate",
+        "task_type_delete_first"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.1,
+      "raw_net_delta_sample_sd": 2.3358617253596154,
+      "raw_net_deltas": [
+        -3.25,
+        -0.5,
+        3.25,
+        0.5,
+        0.5
+      ],
+      "reasoning_effort": "high",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "factor": "T",
+      "model": "composer-2.5",
+      "off_arms": [
+        "neutral_control",
+        "delete_first_gate",
+        "semantic_net_loc_budget",
+        "delete_first_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "task_type_gate",
+        "task_type_delete_first",
+        "task_type_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.65,
+      "raw_net_delta_sample_sd": 1.4534441853748632,
+      "raw_net_deltas": [
+        0,
+        3.25,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "D",
+      "model": "composer-2.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "delete_first_gate",
+        "task_type_delete_first",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -0.65,
+      "raw_net_delta_sample_sd": 1.4534441853748632,
+      "raw_net_deltas": [
+        0,
+        -3.25,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "B",
+      "model": "composer-2.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "delete_first_gate",
+        "task_type_delete_first"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": 0.65,
+      "raw_net_delta_sample_sd": 1.4534441853748632,
+      "raw_net_deltas": [
+        0,
+        3.25,
+        0,
+        0,
+        0
+      ],
+      "reasoning_effort": "default",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "T",
+      "model": "gpt-5.6-luna",
+      "off_arms": [
+        "neutral_control",
+        "delete_first_gate",
+        "semantic_net_loc_budget",
+        "delete_first_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "task_type_gate",
+        "task_type_delete_first",
+        "task_type_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -0.5,
+      "raw_net_delta_sample_sd": 1.0752906583803283,
+      "raw_net_deltas": [
+        0.5,
+        -0.5,
+        -2.25,
+        0.25,
+        -0.5
+      ],
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "D",
+      "model": "gpt-5.6-luna",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "delete_first_gate",
+        "task_type_delete_first",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -3.1,
+      "raw_net_delta_sample_sd": 3.1354824190226296,
+      "raw_net_deltas": [
+        2.0,
+        -4.5,
+        -2.25,
+        -5.75,
+        -5.0
+      ],
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "B",
+      "model": "gpt-5.6-luna",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "delete_first_gate",
+        "task_type_delete_first"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -2.0,
+      "raw_net_delta_sample_sd": 3.5044614422190468,
+      "raw_net_deltas": [
+        0.5,
+        -4.0,
+        2.75,
+        -5.75,
+        -3.5
+      ],
+      "reasoning_effort": "maximum",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "T",
+      "model": "grok-4.5",
+      "off_arms": [
+        "neutral_control",
+        "delete_first_gate",
+        "semantic_net_loc_budget",
+        "delete_first_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "task_type_gate",
+        "task_type_delete_first",
+        "task_type_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -0.45,
+      "raw_net_delta_sample_sd": 3.2519225083018197,
+      "raw_net_deltas": [
+        0.75,
+        -5.75,
+        -1.25,
+        2.25,
+        1.75
+      ],
+      "reasoning_effort": "high",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "D",
+      "model": "grok-4.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "delete_first_gate",
+        "task_type_delete_first",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -3.25,
+      "raw_net_delta_sample_sd": 2.345207879911715,
+      "raw_net_deltas": [
+        -6.75,
+        -1.75,
+        -2.75,
+        -0.75,
+        -4.25
+      ],
+      "reasoning_effort": "high",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "factor": "B",
+      "model": "grok-4.5",
+      "off_arms": [
+        "neutral_control",
+        "task_type_gate",
+        "delete_first_gate",
+        "task_type_delete_first"
+      ],
+      "off_behavior_pass_count": 20,
+      "on_arms": [
+        "semantic_net_loc_budget",
+        "task_type_net_loc_budget",
+        "delete_first_net_loc_budget",
+        "task_type_delete_first_net_loc_budget"
+      ],
+      "on_behavior_pass_count": 20,
+      "raw_net_delta_mean": -3.85,
+      "raw_net_delta_sample_sd": 3.4532593299664014,
+      "raw_net_deltas": [
+        -6.75,
+        -2.25,
+        -3.25,
+        0.75,
+        -7.75
+      ],
+      "reasoning_effort": "high",
+      "task_id": "refactor-shared-normalizer"
+    }
+  ],
+  "protocol": "phase-2-component-effects-v1"
+}

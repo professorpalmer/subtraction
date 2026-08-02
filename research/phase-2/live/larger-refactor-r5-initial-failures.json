@@ -1,0 +1,218 @@
+[
+  {
+    "actual": {
+      "adapter_job_id": "job_78f3dd957dd9",
+      "adapter_status": "failed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-1937cdc4a37a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "invalid isolation provenance: submitted state_dir was truncated and did not match the prepared cell state directory; cell excluded and retry required"
+      ],
+      "tests": {
+        "failure_reason": "invalid isolation provenance: submitted state_dir was truncated and did not match the prepared cell state directory; cell excluded and retry required",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_e43aa7ce020b",
+      "adapter_status": "failed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-6541d14efbfe",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "invalid prompt provenance: worker was pinned to grok-4.5, but the submitted goal identified the worker as gpt-5.6-luna; cell excluded and rerun required"
+      ],
+      "tests": {
+        "failure_reason": "invalid prompt provenance: worker was pinned to grok-4.5, but the submitted goal identified the worker as gpt-5.6-luna; cell excluded and rerun required",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_8ae8f08c1d0b",
+      "adapter_status": "failed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-7c557b365b20",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "unknown: Cursor worker shell probe failed with spawn /bin/zsh ENOENT; candidate diff was not selected."
+      ],
+      "tests": {
+        "failure_reason": "unknown: Cursor worker shell probe failed with spawn /bin/zsh ENOENT; candidate diff was not selected.",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_2532d814d912",
+      "adapter_status": "failed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-bc311144efa7",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "invalid prompt provenance: worker was pinned to grok-4.5, but the submitted goal identified the worker as gpt-5.6-luna; cell excluded and rerun required"
+      ],
+      "tests": {
+        "failure_reason": "invalid prompt provenance: worker was pinned to grok-4.5, but the submitted goal identified the worker as gpt-5.6-luna; cell excluded and rerun required",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_58c2454c9f8e",
+      "adapter_status": "failed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": null,
+      "model": "grok-4.5",
+      "output_tokens": null,
+      "reasoning_effort": "high",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-be02f2288e7d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "adapter failure: Cursor worker ended with run_status_error before producing a candidate; receipt contained only a verification artifact; retry required"
+      ],
+      "tests": {
+        "failure_reason": "adapter failure: Cursor worker ended with run_status_error before producing a candidate; receipt contained only a verification artifact; retry required",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  },
+  {
+    "actual": {
+      "adapter_job_id": "job_20710bd382d0",
+      "adapter_status": "failed",
+      "execution_source": "cursor_adapter",
+      "input_tokens": null,
+      "model": "gpt-5.6-luna",
+      "output_tokens": null,
+      "reasoning_effort": "maximum",
+      "tool_calls": null,
+      "total_tokens": null,
+      "turns": null
+    },
+    "candidate_sha256": null,
+    "cell": {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-de3f81fca743",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    "protocol": "phase-2-controlled-ablation-v1",
+    "record": {
+      "diff": null,
+      "failure_reasons": [
+        "run_status_error: Cursor worker could not spawn /bin/zsh (ENOENT); candidate diff was not selected."
+      ],
+      "tests": {
+        "failure_reason": "run_status_error: Cursor worker could not spawn /bin/zsh (ENOENT); candidate diff was not selected.",
+        "passed": false,
+        "tests_run": 0
+      }
+    }
+  }
+]

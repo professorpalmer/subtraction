@@ -216,6 +216,56 @@ def format_total(cents):
         self.assertNotEqual(tasks["cleanup-legacy-flag"].before, tasks["cleanup-dead-branch"].before)
         self.assertIn("if False", tasks["cleanup-dead-branch"].before)
 
+    def test_expanded_refactor_fixtures_have_expected_metadata_and_oracles(self):
+        tasks = {task.task_id: task for task in build_fixture_corpus()}
+        expected_ids = {
+            "refactor-shared-normalizer",
+            "refactor-dead-compatibility-path",
+        }
+        self.assertTrue(expected_ids.issubset(tasks))
+        for task_id in expected_ids:
+            task = tasks[task_id]
+            self.assertEqual(task.task_type, "refactor")
+            self.assertEqual(task.expected_sign, "nonpositive")
+            self.assertEqual(task.expected_class, "subtractive")
+            self.assertTrue(task.is_source_valid(task.after))
+            self.assertGreater(len(task.before.splitlines()), len(task.after.splitlines()))
+
+    def test_expanded_refactor_oracles_reject_missing_or_changed_behavior(self):
+        tasks = {task.task_id: task for task in build_fixture_corpus()}
+        missing_public_function = tasks["refactor-shared-normalizer"].after.replace(
+            "\ndef initials(first, last):\n    return clean_name(first)[0] + clean_name(last)[0]\n",
+            "",
+        )
+        changed_behavior = tasks["refactor-dead-compatibility-path"].after.replace(
+            'return {"name": name.strip(), "role": role}',
+            'return {"name": name, "role": role}',
+        )
+        self.assertFalse(tasks["refactor-shared-normalizer"].is_source_valid(missing_public_function))
+        self.assertFalse(tasks["refactor-dead-compatibility-path"].is_source_valid(changed_behavior))
+
+    def test_expanded_refactor_candidate_is_subtractive_and_behavioral(self):
+        tasks = {task.task_id: task for task in build_fixture_corpus()}
+        for task_id in (
+            "refactor-shared-normalizer",
+            "refactor-dead-compatibility-path",
+        ):
+            task = tasks[task_id]
+            record = measure_candidate_patch(
+                task,
+                "neutral_control",
+                task.after,
+                execution_source="offline_fixture",
+                turns=None,
+                tool_calls=None,
+                dry_run=True,
+            )
+            self.assertTrue(record.tests.passed, task_id)
+            self.assertLessEqual(record.diff.raw_net, 0, task_id)
+            self.assertGreater(record.diff.raw_removed, record.diff.raw_added, task_id)
+            self.assertEqual(record.failure_reasons, (), task_id)
+            self.assertNotEqual(record.diff.structural_symbols_net, 0, task_id)
+
     def test_invalid_or_gaming_patch_is_flagged(self):
         flags = classify_patch("def check():\n    # required context\n    assert True\n", "def check():\n    return True\n")
         self.assertIn("comment_deletion_candidate", flags)

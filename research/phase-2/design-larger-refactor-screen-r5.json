@@ -1,0 +1,2192 @@
+{
+  "arms": [
+    "neutral_control",
+    "task_type_gate",
+    "delete_first_gate",
+    "semantic_net_loc_budget",
+    "task_type_delete_first",
+    "task_type_net_loc_budget",
+    "delete_first_net_loc_budget",
+    "task_type_delete_first_net_loc_budget"
+  ],
+  "cells": [
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a001382b0fd1",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-ac328a682291",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a5868c531646",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-a526511dfb92",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-8acdbc88c058",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-4c9f801fa389",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-42eead49833f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-4a9779fb37cc",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-dd7cb64efe96",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-ecd172202ef3",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-b20881577742",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-aaef0ff6a5a0",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-c6d3c332032a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-04f0fa48667b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-5515fc817fe5",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-8a9c99eca63e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-7cf9be8d4a11",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-b89cc2ec81a9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-1614cb1b2ab6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-73cfbd48832a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-ae2979eea272",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-226766c1f365",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-add8fda7073e",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-284b2fb28b0b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-97210b5863f6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-de3f81fca743",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-49c57c698644",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-1e1ab44be0b7",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-f46841a8c7b6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-34fb81ca9c19",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-7c557b365b20",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-16acc5c95be6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-8da7e4397bfe",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-f1c35de4e912",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-0f3620eee358",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-f833fb7d159a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-bc274781923b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-98b0a0d7b26b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-cae0dda51883",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-c530bc405364",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-45789abbeadc",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e72ce32f2cc6",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-65b95581a5e6",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-63bcfd747d18",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-6e3009ac9090",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-9cf2cde3b66d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-c47e98bbc79d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-6c2e86b0a715",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-770f5c9c0217",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-e5a1881a9536",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-7547e2875baa",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-3bc9a6e3e1b7",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-ea6a561c85ed",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-bdfbb395a36c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-f6bafce85ff1",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-c33aef79d227",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-9baa6f334f9e",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-8f69e96d0503",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-da221f76bf0f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-59cae07f5e5a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-5f9f6aa3630f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-fc04285a0615",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-f1b66d4e397c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-a485a468635c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-65ddcb0f53a8",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-b1059b4b0c8d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-ccf3517c7683",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-22cb8790a127",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-fd4a0b595093",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-3165c176e38d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-dcd5c2469481",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-32ac47541c3a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-bf0d961ebd97",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-f008592aa170",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-c44a5bbfaece",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-d3e10db7642a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-1b8b86458548",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-d146fdef6b82",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-7476d5cc9275",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-037f18e6a495",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-fd8b27f8c86b",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-90b6855e4bf0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-bdabe8988c50",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-4a32ad68065a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-0430fe8e8ab9",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-37669cb062f7",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-938986cbeabb",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-88f3db964c30",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-5d8465fb40a4",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-81466e2fdc40",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-bfb0d0c6ff70",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-fad90d60dcbf",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-b429b7cf368e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-18db693f4255",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-93ff5bea263d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-cbe09911cf00",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-d1a2d78d5b64",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-34da87ed5f7b",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-b76b2951e51b",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-3abd03a67c77",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-95df98e4b9e9",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-8bd48c670711",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-32c50754ddbc",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-1934f868f599",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-3ad6aacc8584",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-107c817913e0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-3ceb9168111f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-d5120497459f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-caf1e263f418",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-576f814a5707",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-e6faf47ee418",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-46c9639fdc19",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-9649f248f90a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-e485ff05e135",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-378c9b369693",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-8ae9d2f42ff5",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-5890a0f43638",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-e2981f6f1dee",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-b10a291d869c",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-cf952a075e2e",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e70f9bbfad13",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-d4451353b03f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-7b14939be3fe",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-94aa261586d6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-c8f3523400e8",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-1c501a51ba9b",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-5caa9d43baf0",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-1f2d2b879dac",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-b8371a8b3b36",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-c70d96244646",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-083f6f5b8f8d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-b7795078af2d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-dffa8c19d0e6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-7cb54f45091f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-e75cefafd3e2",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-d8dba5ec7366",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-206edeebc7c8",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-a9f1269495af",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-506dc20a3af4",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-5ffca00c95d3",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-0155177915ec",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-e70cf6c5790d",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-9c25d9de7504",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-e57c50cf97ae",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-e5948d10d3f3",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-49c54d51e55a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-3c565e6a8bb9",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-11f08ef3b0c2",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-678afab6f8e6",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-b9b7c0727f86",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-0b17af86f281",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-0548079df23a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-a914a1f9cc7a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-d1516ebe64f0",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-5915e6ca3e56",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-5c1f9e5f5f3a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-ace4b2e3f20f",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-84b556574306",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-cfe680969ba3",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-f3bd6459e939",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-fbe110fb4290",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-2fa00552c391",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-d223751c7160",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-fce9e00fd587",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-804439e4d016",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-cce2cd859f2d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-c7fb80c9a2bc",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-28df3db44456",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-817e0acf1ccc",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-28f2e9eaa514",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-13e744fe34c1",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-f60a096e3853",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-54e9c47ff243",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-98677588df66",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-ebd915d18ae0",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-fd2dc162f624",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-57a4e9299086",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-bc6a31a84942",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-5e886fb2149f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-1df9116d892f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-67cdb32d90cc",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-672a177bd73f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-cb3cd19e3f6f",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-10063f2d81d4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-dbb6b639c622",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-3fb9a0324e30",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-bc311144efa7",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-6541d14efbfe",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-3e720866d6d3",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-6811d246408c",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-ca8f012d42df",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-5a5febcc68eb",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-5ea641b977c9",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-fc5c0b704705",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-be02f2288e7d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-1937cdc4a37a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-048142a84f93",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-80429f6ac7d4",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-2053cb324f25",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-17ee61530ae9",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-46ff0fc42e6f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-6856453be5d6",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-e0b7d5a203f4",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-03ab93d1e89b",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "neutral_control",
+      "cell_id": "cell-b569c2159849",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-e61d691cde48",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-885ad062493a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-7b9cbf09a996",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-eebf8eb15a17",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_gate",
+      "cell_id": "cell-21f142dad403",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-bbda684f5549",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-bfe1b5eb1e07",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-46ba9a41c7a0",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-950614be5159",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_gate",
+      "cell_id": "cell-04d566b073df",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-3cda3418e7c4",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-1327b8b97ba9",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-467ab760bd42",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-ce0ea13c7906",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "semantic_net_loc_budget",
+      "cell_id": "cell-65068c6fa4fc",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-2b094131ccd5",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-e1e82688cf31",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-0b6fcbf83d4a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-068aacacb391",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first",
+      "cell_id": "cell-1188d91e9160",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-24fb7d6afa08",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-2e58d320361a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-05c4a08350ea",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-5f8e37a8686a",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-4b866e0d0fe1",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-e0ee0cc067dc",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-c932cb2a759d",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-d594418a7e81",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-f1f99d6005ba",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-6ea4e66ddd1f",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-6d6061810689",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-3b8b93184eaf",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-0189995fc134",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-c7f594354052",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 4,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-293791992abb",
+      "model": "composer-2.5",
+      "reasoning_effort": "default",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    }
+  ],
+  "protocol": "phase-2-controlled-ablation-v1",
+  "supported_models": [
+    "composer-2.5",
+    "gpt-5.6-luna",
+    "grok-4.5"
+  ],
+  "tasks": [
+    {
+      "instruction": "Preserve name display, initials, and lookup behavior while consolidating shared normalization.",
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    {
+      "instruction": "Preserve profile parsing, labeling, and privilege checks while removing the unused compatibility path.",
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    }
+  ]
+}

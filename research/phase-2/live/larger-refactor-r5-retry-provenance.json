@@ -1,0 +1,146 @@
+[
+  {
+    "cell": {
+      "arm": "task_type_delete_first_net_loc_budget",
+      "cell_id": "cell-1937cdc4a37a",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "initial_failure": {
+      "adapter_job_id": "job_78f3dd957dd9",
+      "adapter_status": "failed",
+      "failure_reason": "invalid isolation provenance: submitted state_dir was truncated and did not match the prepared cell state directory; cell excluded and retry required",
+      "result_artifact": "larger-refactor-r5-initial-failures.json#cell-1937cdc4a37a"
+    },
+    "retry": {
+      "adapter_job_id": "job_56130f5e4e3f",
+      "adapter_status": "completed",
+      "retry_root": "subtraction-larger-refactor-r5-retry-4",
+      "retry_run_dir": "subtraction-larger-refactor-r5-retry-4/runs/cell-1937cdc4a37a",
+      "total_tokens": 166703
+    }
+  },
+  {
+    "cell": {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-6541d14efbfe",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 3,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "initial_failure": {
+      "adapter_job_id": "job_e43aa7ce020b",
+      "adapter_status": "failed",
+      "failure_reason": "invalid prompt provenance: worker was pinned to grok-4.5, but the submitted goal identified the worker as gpt-5.6-luna; cell excluded and rerun required",
+      "result_artifact": "larger-refactor-r5-initial-failures.json#cell-6541d14efbfe"
+    },
+    "retry": {
+      "adapter_job_id": "job_dc300a2efc13",
+      "adapter_status": "completed",
+      "retry_root": "subtraction-larger-refactor-r5-retry-3",
+      "retry_run_dir": "subtraction-larger-refactor-r5-retry-3/runs/cell-6541d14efbfe",
+      "total_tokens": 104576
+    }
+  },
+  {
+    "cell": {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-7c557b365b20",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    "initial_failure": {
+      "adapter_job_id": "job_8ae8f08c1d0b",
+      "adapter_status": "failed",
+      "failure_reason": "unknown: Cursor worker shell probe failed with spawn /bin/zsh ENOENT; candidate diff was not selected.",
+      "result_artifact": "larger-refactor-r5-initial-failures.json#cell-7c557b365b20"
+    },
+    "retry": {
+      "adapter_job_id": "job_e9190b635a43",
+      "adapter_status": "completed",
+      "retry_root": "subtraction-larger-refactor-r5-retry-2",
+      "retry_run_dir": "subtraction-larger-refactor-r5-retry-2/runs/cell-7c557b365b20",
+      "total_tokens": 155441
+    }
+  },
+  {
+    "cell": {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-bc311144efa7",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 2,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "initial_failure": {
+      "adapter_job_id": "job_2532d814d912",
+      "adapter_status": "failed",
+      "failure_reason": "invalid prompt provenance: worker was pinned to grok-4.5, but the submitted goal identified the worker as gpt-5.6-luna; cell excluded and rerun required",
+      "result_artifact": "larger-refactor-r5-initial-failures.json#cell-bc311144efa7"
+    },
+    "retry": {
+      "adapter_job_id": "job_b3b1978d37eb",
+      "adapter_status": "completed",
+      "retry_root": "subtraction-larger-refactor-r5-retry-3",
+      "retry_run_dir": "subtraction-larger-refactor-r5-retry-3/runs/cell-bc311144efa7",
+      "total_tokens": 105179
+    }
+  },
+  {
+    "cell": {
+      "arm": "delete_first_net_loc_budget",
+      "cell_id": "cell-be02f2288e7d",
+      "model": "grok-4.5",
+      "reasoning_effort": "high",
+      "repetition": 5,
+      "task_class": "refactor",
+      "task_id": "refactor-dead-compatibility-path"
+    },
+    "initial_failure": {
+      "adapter_job_id": "job_58c2454c9f8e",
+      "adapter_status": "failed",
+      "failure_reason": "adapter failure: Cursor worker ended with run_status_error before producing a candidate; receipt contained only a verification artifact; retry required",
+      "result_artifact": "larger-refactor-r5-initial-failures.json#cell-be02f2288e7d"
+    },
+    "retry": {
+      "adapter_job_id": "job_06436abce662",
+      "adapter_status": "completed",
+      "retry_root": "subtraction-larger-refactor-r5-retry-4",
+      "retry_run_dir": "subtraction-larger-refactor-r5-retry-4/runs/cell-be02f2288e7d",
+      "total_tokens": 105229
+    }
+  },
+  {
+    "cell": {
+      "arm": "task_type_net_loc_budget",
+      "cell_id": "cell-de3f81fca743",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "maximum",
+      "repetition": 1,
+      "task_class": "refactor",
+      "task_id": "refactor-shared-normalizer"
+    },
+    "initial_failure": {
+      "adapter_job_id": "job_20710bd382d0",
+      "adapter_status": "failed",
+      "failure_reason": "run_status_error: Cursor worker could not spawn /bin/zsh (ENOENT); candidate diff was not selected.",
+      "result_artifact": "larger-refactor-r5-initial-failures.json#cell-de3f81fca743"
+    },
+    "retry": {
+      "adapter_job_id": "job_c288db8adcd9",
+      "adapter_status": "completed",
+      "retry_root": "subtraction-larger-refactor-r5-retry",
+      "retry_run_dir": "subtraction-larger-refactor-r5-retry/runs/cell-de3f81fca743",
+      "total_tokens": 213441
+    }
+  }
+]
