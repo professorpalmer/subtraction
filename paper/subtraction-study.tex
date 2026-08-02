@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\title{Subtraction Is Conditional:\\
+An Interaction-Focused Replication of Deletion-First Refactoring Prompts}
+\author{The Subtraction Research Project}
+\date{August 1, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Agentic coding systems often produce additive patches even when a task is framed
+as a refactor. We tested whether a previously observed deletion-first component
+effect would replicate across two larger deterministic refactor fixtures. The
+registered design crossed two tasks, three model/effort pairs, eight combinations
+of task-type, delete-first, and semantic net-line-budget components, and five
+repetitions: 240 planned cells. All 240 selected completed receipts passed the
+behavior oracle. The deletion-first factor was negative on the shared-normalizer
+fixture for GPT-5.6 Luna and Grok 4.5, but null for Composer; it was null or
+positive on the dead-compatibility-path fixture for all three models. The result
+is therefore task- and model-conditional subtraction, not a universal standalone
+D component. Six initial adapter failures are retained as separate transport
+provenance and excluded from completed comparisons. No priced cost claim is made.
+\end{abstract}
+
+\section{Question and boundary}
+This study asks whether prompt components can shift the shape of an agentic
+refactor toward subtraction without sacrificing behavior. The claim tested here
+is deliberately narrow: does the deletion-first component produce a stable
+raw-net effect under a larger-refactor replication? A negative raw-net value
+means fewer net lines in the resulting patch; it is not, by itself, evidence of
+better engineering or lower cost.
+
+\section{Registered design}
+The wave used two deterministic tasks:
+\begin{itemize}
+\item \texttt{refactor-shared-normalizer};
+\item \texttt{refactor-dead-compatibility-path}.
+\end{itemize}
+Each was crossed with the full eight-arm T/D/B factorial, three frozen
+model/effort pairs, and repetitions 1--5. Thus the planned size was
+\[
+  2 \times 3 \times 8 \times 5 = 240.
+\]
+The models were GPT-5.6 Luna (maximum), Grok 4.5 (high), and Composer 2.5
+(default). Completed comparisons require matched repetition IDs, completed
+adapter status, and passing behavior oracles. Initial failures remain visible
+in provenance artifacts rather than being silently treated as missing success.
+
+\section{Results}
+Table~\ref{tab:effects} reports the factorial D main effect and the matched
+D-only treatment-minus-neutral contrast, in raw-net lines. These are descriptive
+means over the five repetitions.
+
+\begin{table}[ht]
+\centering
+\caption{Deletion-first effects by task and model. Negative values are more subtractive.}
+\label{tab:effects}
+\begin{tabular}{llrr}
+\toprule
+Task & Model & D factorial & D-only contrast \\
+\midrule
+Shared normalizer & Composer 2.5 & -0.65 & 0.0 \\
+Shared normalizer & GPT-5.6 Luna & -3.10 & -6.4 \\
+Shared normalizer & Grok 4.5 & -3.25 & -10.0 \\
+Dead compatibility path & Composer 2.5 & 0.0 & 0.0 \\
+Dead compatibility path & GPT-5.6 Luna & +0.30 & +0.8 \\
+Dead compatibility path & Grok 4.5 & +2.0 & +3.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All selected observations passed their behavior checks: 240 of 240. The
+negative effect replicated across two models on one fixture, but not across
+both fixtures. This pattern is consistent with an interaction between task
+structure and model behavior. It does not establish a portable one-component
+mechanism, statistical significance, causality, or universality across
+repositories and maintenance tasks.
+
+\section{Provenance and cost boundary}
+The live run recorded six initial adapter failures. They were retried from
+fresh isolated roots and remain separate provenance; the completed dataset
+contains 240 receipts and excludes those six non-completed attempts from
+completed-run statistics. Token fields are preserved as descriptive telemetry.
+The planned priced multi-turn cost wave was deferred because the patch-shape
+effect did not survive both larger fixtures. No dollar-saving claim follows.
+
+\section{Conclusion}
+Deletion-first/reference-proof prompting can produce materially more
+subtractive patches on some larger refactor structures. In this replication,
+the effect is conditional on task and model. The next evidence gate is an
+independently specified refactor replication on a new task or repository before
+making broader claims or modeling priced trajectories.
+
+\section*{Reproducibility}
+The protocol, findings, frozen manifest, receipts, factor effects, summary,
+and wave metadata are committed in the repository:
+\begin{itemize}
+\item \url{../research/phase-2/LARGER_REFACTOR_PROTOCOL.md}
+\item \url{../research/phase-2/LARGER_REFACTOR_FINDINGS.md}
+\item \url{../research/phase-2/design-larger-refactor-screen-r5.json}
+\item \url{../research/phase-2/live/larger-refactor-r5-results.json}
+\end{itemize}
+Build this paper from the repository root with Tectonic using the
+\texttt{paper/subtraction-study.tex} source, or from the \texttt{paper/}
+directory with \texttt{latexmk -pdf subtraction-study.tex}.
+
+\end{document}

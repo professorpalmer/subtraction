@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A bounded, reproducible study of subtraction in agentic refactoring.">
+  <title>Subtraction / an interaction, not a law</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <nav class="nav wrap" aria-label="Primary navigation">
+      <a class="wordmark" href="#top">SUBTRACTION<span>/26</span></a>
+      <div class="nav-links">
+        <a href="#finding">Finding</a>
+        <a href="#design">Design</a>
+        <a href="#evidence">Evidence</a>
+        <a class="nav-button" href="../paper/subtraction-study.pdf">Read the paper ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">A completed research note · August 2026</p>
+      <h1>Subtraction is<br><em>conditional.</em></h1>
+      <p class="lede">Deletion-first prompting can shift the shape of an agentic refactor—but the effect is task- and model-conditional. In a 240-cell larger-refactor replication, it did not behave like a universal component.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#finding">Read the finding <span>↓</span></a>
+        <a class="text-link" href="../research/phase-2/LARGER_REFACTOR_FINDINGS.md">Open findings memo ↗</a>
+      </div>
+      <div class="hero-rule"></div>
+      <div class="hero-meta">
+        <div><strong>240</strong><span>completed cells</span></div>
+        <div><strong>240/240</strong><span>behavior passes</span></div>
+        <div><strong>6</strong><span>initial failures, separate provenance</span></div>
+      </div>
+    </section>
+
+    <section id="finding" class="section section-ink">
+      <div class="wrap two-column">
+        <div>
+          <p class="eyebrow eyebrow-light">01 / The result</p>
+          <h2>One fixture moved.<br><em>One did not.</em></h2>
+        </div>
+        <div class="section-copy">
+          <p>The shared-normalizer task produced negative deletion-first effects for GPT-5.6 Luna and Grok 4.5. The dead-compatibility-path task produced null or positive effects for every model.</p>
+          <p>That is evidence for an interaction between task structure and model behavior—not evidence for a portable “D component.”</p>
+          <div class="boundary"><span>Interpretation boundary</span><strong>No universal mechanism. No significance claim. No priced cost claim.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="section wrap">
+      <p class="eyebrow">02 / The design</p>
+      <div class="design-intro">
+        <h2>A factorial lens<br>on <em>patch shape.</em></h2>
+        <p>Two deterministic refactors crossed with three frozen model/effort pairs, eight combinations of task-type, delete-first, and semantic net-line-budget components, and five repetitions.</p>
+      </div>
+      <div class="formula"><span>2 tasks</span><b>×</b><span>3 models</span><b>×</b><span>8 arms</span><b>×</b><span>5 reps</span><strong>= 240</strong></div>
+      <div class="arm-grid">
+        <div><span class="arm-dot dot-neutral"></span><strong>Neutral</strong><small>control</small></div>
+        <div><span class="arm-dot dot-t"></span><strong>T</strong><small>task type</small></div>
+        <div><span class="arm-dot dot-d"></span><strong>D</strong><small>delete first</small></div>
+        <div><span class="arm-dot dot-b"></span><strong>B</strong><small>net-line budget</small></div>
+      </div>
+    </section>
+
+    <section class="section section-paper">
+      <div class="wrap">
+        <p class="eyebrow">03 / What moved</p>
+        <h2>Raw-net deltas, in lines</h2>
+        <p class="section-note">D factorial main effect by task and model. Negative values indicate a more subtractive patch. Descriptive means over five matched repetitions.</p>
+        <div class="chart" role="img" aria-label="Horizontal bar chart of deletion-first effects">
+          <div class="chart-row chart-header"><span>Model</span><span>Shared normalizer</span><span>Dead compatibility path</span></div>
+          <div class="chart-row"><span>Composer 2.5</span><div class="bar-track"><i class="bar negative" style="width: 16%"></i><b>-0.65</b></div><div class="bar-track"><i class="bar zero" style="width: 2%"></i><b>0.0</b></div></div>
+          <div class="chart-row"><span>GPT-5.6 Luna</span><div class="bar-track"><i class="bar negative" style="width: 62%"></i><b>-3.10</b></div><div class="bar-track"><i class="bar positive" style="width: 6%"></i><b>+0.30</b></div></div>
+          <div class="chart-row"><span>Grok 4.5</span><div class="bar-track"><i class="bar negative" style="width: 65%"></i><b>-3.25</b></div><div class="bar-track"><i class="bar positive" style="width: 40%"></i><b>+2.0</b></div></div>
+        </div>
+        <p class="chart-footnote"><span class="legend negative-legend"></span> more subtractive <span class="legend positive-legend"></span> more additive</p>
+      </div>
+    </section>
+
+    <section id="evidence" class="section wrap evidence">
+      <div>
+        <p class="eyebrow">04 / Evidence kit</p>
+        <h2>Read the work<br>at the <em>source.</em></h2>
+      </div>
+      <div class="evidence-links">
+        <a href="../paper/subtraction-study.pdf"><span>Rendered paper</span><b>PDF ↗</b></a>
+        <a href="../paper/subtraction-study.tex"><span>Paper source</span><b>LaTeX ↗</b></a>
+        <a href="../research/phase-2/LARGER_REFACTOR_PROTOCOL.md"><span>Registered protocol</span><b>Markdown ↗</b></a>
+        <a href="../research/phase-2/LARGER_REFACTOR_FINDINGS.md"><span>Findings memo</span><b>Markdown ↗</b></a>
+        <a href="../research/phase-2/live/larger-refactor-r5-report.json"><span>Full report</span><b>JSON ↗</b></a>
+        <a href="../research/phase-2/live/larger-refactor-r5-factor-effects.json"><span>Factor effects</span><b>JSON ↗</b></a>
+        <a href="../research/phase-2/live/larger-refactor-r5-wave-meta.json"><span>Wave metadata</span><b>JSON ↗</b></a>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap closing-inner">
+        <p class="eyebrow eyebrow-light">The next gate</p>
+        <h2>Try the interaction<br>on a <em>new repository.</em></h2>
+        <p>This wave is a stronger boundary, not a broad generalization. An independent refactor replication comes before priced trajectories or universal claims.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>SUBTRACTION / research archive</span><a href="../README.md">Repository ↗</a></footer>
+</body>
+</html>

@@ -2,6 +2,28 @@
 
 Research on why agentic LLMs prefer **adding** code over **subtracting** it — and what (if anything) can shift that bias without killing usefulness.
 
+## Published research presentation
+
+The completed larger-refactor replication is presented as:
+
+- [Research site](site/index.html) — responsive, static GitHub Pages presentation
+- [Rendered paper](paper/subtraction-study.pdf) — compiled research-style PDF
+- [Paper source](paper/subtraction-study.tex) — reproducible LaTeX manuscript
+- [Paper build instructions](paper/README.md)
+- [Findings memo](research/phase-2/LARGER_REFACTOR_FINDINGS.md)
+- [Registered protocol](research/phase-2/LARGER_REFACTOR_PROTOCOL.md)
+
+The evidence bundle is committed under
+[`research/phase-2/live/`](research/phase-2/live/), including the
+[full report](research/phase-2/live/larger-refactor-r5-report.json),
+[factor effects](research/phase-2/live/larger-refactor-r5-factor-effects.json),
+[summary](research/phase-2/live/larger-refactor-r5-summary.json), and
+[wave metadata](research/phase-2/live/larger-refactor-r5-wave-meta.json).
+
+The bounded result is task- and model-conditional subtraction, not a universal
+D component: 240/240 selected behavior checks passed, six initial adapter
+failures remain separate provenance, and no priced cost claim is made.
+
 ## Thesis (working)
 
 Pre-LLM elite craft often meant *leaning out*: fewer abstractions, tighter control flow, deleting dead paths. LLM-era agentic coding often produces the opposite shape of diff: large `+`, tiny `-`, even on "refactors."
